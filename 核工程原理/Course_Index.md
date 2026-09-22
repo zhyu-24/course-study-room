@@ -31,7 +31,7 @@ status: draft
 #### Lecture 01 — 课程介绍及核能基本概念
 
 - Topics：课程定位；核反应堆与核反应堆物理；压水堆基本结构；反应堆分类与用途；核能发展概况
-- 状态：`draft`（v2重编译，旧版审阅状态不自动继承）
+- 状态：`draft`
 - [完整复习网页（v2默认入口）](Lectures/L01/Review.html)
 - [讲义底稿](Lectures/L01/Lecture_Notes.md)
 - [验收报告](Lectures/L01/QA_Report.md)
@@ -47,17 +47,17 @@ status: draft
 - 状态：`draft`
 - [完整复习网页（v2默认入口）](Lectures/L02/Review.html)
 - [讲义底稿](Lectures/L02/Lecture_Notes.md)
-- [忠实整理与订正稿](Lectures/L02/Transcript_Corrected.md)
+- [课堂回顾](Lectures/L02/Transcript_Corrected.md)
 - [验收报告](Lectures/L02/QA_Report.md)
 - [[Lectures/L02/Lecture_Source_Map|Source Map]]
 
 #### Lecture 03 — 核物理基础续讲：衰变、中子核反应与截面
 
 - Topics：2026-09-21；放射性衰变；活度与碳-14断代；复合核；微观/宏观截面；平均自由程
-- 状态：`draft`（原音未核听，数字冲突显式保留）
+- 状态：`draft`
 - [完整复习网页](Lectures/L03/Review.html)
 - [讲义底稿](Lectures/L03/Lecture_Notes.md)
-- [忠实整理与订正稿](Lectures/L03/Transcript_Corrected.md)
+- [课堂回顾](Lectures/L03/Transcript_Corrected.md)
 - [来源与覆盖](Lectures/L03/Lecture_Source_Map.md)
 - [验收报告](Lectures/L03/QA_Report.md)
 - 沿用L02的344页课件；25–28复习、29–85本讲范围，英文插页与重复页另记。
@@ -89,6 +89,6 @@ status: draft
 | 质量亏损与结合能 | [讲义 N09](Lectures/L02/Review.html#N09) | [来源与疑点](Lectures/L02/Review.html#sources) |
 | 平均结合能与聚变/裂变 | [讲义 N10](Lectures/L02/Review.html#N10) | [来源与疑点](Lectures/L02/Review.html#sources) |
 
-## 本轮版本说明
+## 阅读与版本
 
-2026-09-22：按授权完成既有讲次v2重编译，内容保持draft。缺录音/转写时仅生成标明材料边界的讲义，不虚构课堂回顾；其方法先作为候选，等待用户评价。
+讲义采用v2.0.1的讲解型写法，课堂回顾保留授课顺序。学术状态仍为draft；来源、订正和核听进度见各讲来源记录。

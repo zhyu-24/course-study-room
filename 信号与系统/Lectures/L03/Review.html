@@ -6,17 +6,8 @@
 <body><header><div class="brand">COURSE NOTEBOOK <span>课程复习室</span></div><div class="course">信号与系统 · L03</div><nav aria-label="阅读模式"><button type="button" data-mode="notes" aria-pressed="true">完整讲义</button><button type="button" data-mode="transcript" aria-pressed="false">课堂回顾</button><button type="button" data-mode="sources" aria-pressed="false">来源与订正</button></nav></header>
 <div class="layout"><aside><div class="aside-title">本页目录</div><nav id="toc" aria-label="章节导航"></nav><p class="hint">正文中的课件图可点击放大。<br>来源与疑点可按需展开。</p><button id="print" type="button">打印当前视图</button></aside>
 <main><article id="notes" data-view="notes"><h1 id="notes-_1">连续时间系统的时域分析：从微分方程到卷积</h1>
-<blockquote>
-<p>本讲按同一天的上下两段素材合并归档。上段止于 RC 响应分解，下段从因果卷积积分接续；课件 p.19–25 的中间推导没有对应转写，已明确标为课件补充。课堂可确认讲至 p.53；p.54–56 为未讲预览，不能把整份课件当作全部已授内容。日期来自转写头部。资料状态 draft；原音尚未核听。</p>
-</blockquote>
-<p>本讲要解决的问题是：<strong>给定系统、输入和起始状态，怎样求输出？</strong> 前半段用微分方程直接求解，后半段利用线性与时不变性，把任意输入分解为冲激，再由冲激响应组合出输出。复习时应能亲手完成二阶方程例题、分清两种响应分解，并用图解与性质两种方法计算卷积。</p>
-<h2 id="notes-_2">阅读与原始材料</h2>
-<ul>
-<li><a href="#transcript">课堂回顾</a> 保留授课顺序、例子、问答和学习要求；时间均为各段原转写定位。</li>
-<li><a href="#sources">来源与订正</a> 包含两段对齐、全部课件页覆盖、重要差异和教材定位。</li>
-<li><a href="Raw/Ch2.pdf">原课件 Ch2.pdf</a>；教材为郑君里等《信号与系统》第三版上册，课件推荐第四版，题号需按实际版本核页。</li>
-</ul>
-<p>正文中的“课件补充”“补充推导”均为编者整理，不能视作缺失录音中的教师原话。其余主线由课件事实与可读转写支持。</p>
+<p>给定系统、输入和起始状态，怎样求输出？本讲先用微分方程直接求解，再利用线性与时不变性，把输入分解为冲激，由冲激响应组合出输出。复习时应能完成二阶方程例题，分清两种响应分解，并用图解和性质计算卷积。配套教材为第三版，使用第四版时需核对习题题面。</p>
+<p><a href="#sources">来源与订正</a></p>
 <p><a id="N01"></a></p>
 <h2 id="notes-1-lti">1. 先把问题放回 LTI 框架</h2>
 <p>信号分析关心信号怎样表示、有何性质；系统分析更关心激励 \(e(t)\) 经过系统后产生怎样的响应 \(r(t)\)。本讲只讨论连续时间系统的时域分析，后续才转到傅里叶与拉普拉斯等变换域方法。</p>
@@ -27,7 +18,7 @@
 e(t)=\int_{-\infty}^{\infty}e(\tau)\delta(t-\tau)\,d\tau.
 \]</p>
 <p>这里 \(t\) 是观察时刻，\(\tau\) 是积分中的时间标签。它既是筛选公式，也把一个信号写成一系列移位冲激的加权叠加；本讲的卷积公式正从这里出发。</p>
-<p><a href="#T01">对应课堂 T01–T03</a> · 来源：课件 p.1–4、上段 00:03–06:45。</p>
+<p><a href="#T01">对应课堂 T01–T03</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：知道输入和微分方程，能唯一确定全响应吗？</summary>
 <p>通常还需要系统起始状态。只给输入与系统、同时规定初始静止，才能唯一确定相应的零状态响应。</p>
@@ -48,7 +39,7 @@ v_R=Ri_R,\qquad i_C=C\frac{dv_C}{dt},\qquad v_L=L\frac{di_L}{dt}.
 i&#x27;&#x27;+7i&#x27;+10i=e&#x27;&#x27;+6e&#x27;+4e.
 \]</p>
 <p>教师明确降低了复杂电路列式要求：<strong>不要求从这类复杂电路独立列出方程，但要求拿到方程后会求解。</strong> 感兴趣者可练习列式；不能因此把后面的求解也当作选学。</p>
-<p><a href="#T04">对应课堂 T04–T05</a> · 来源：课件 p.5–6、上段 06:45–11:56。</p>
+<p><a href="#T04">对应课堂 T04–T05</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：模型中的二阶导数是否代表输入必须是二次多项式？</summary>
 <p>不是。微分阶次描述系统关系；输入可以是常数、指数、阶跃或其他信号。输入的具体形式决定特解如何选取。</p>
@@ -65,7 +56,7 @@ C_0a^n+C_1a^{n-1}+\cdots+C_n=0.
 r_h(t)=\sum_{k=1}^{n}A_k e^{a_kt}.
 \]</p>
 <p>教师用指数在求导后保持形式解释这种尝试；复根对应的指数可组合成正弦、余弦，因此“指数形式”不只指实数指数衰减。</p>
-<p><strong>补充推导：</strong> 共轭根 \(\alpha\pm j\beta\) 的实解为 \(e^{\alpha t}(B\cos\beta t+C\sin\beta t)\)。若根 \(a\) 重复 \(q\) 次，该部分要写成 \((A_0+A_1t+\cdots+A_{q-1}t^{q-1})e^{at}\)，不能仍只写一个指数。这补足课件“无重根”条件。</p>
+<p>共轭根 \(\alpha\pm j\beta\) 的实解为 \(e^{\alpha t}(B\cos\beta t+C\sin\beta t)\)。若根 \(a\) 重复 \(q\) 次，该部分要写成 \((A_0+A_1t+\cdots+A_{q-1}t^{q-1})e^{at}\)，不能仍只写一个指数。重根会改变齐次解的形式，因此求出特征根后还要检查重数。</p>
 <h3 id="notes-32">3.2 特解由代回方程配平得到</h3>
 <table>
 <thead>
@@ -93,7 +84,7 @@ r_h(t)=\sum_{k=1}^{n}A_k e^{a_kt}.
 </tr>
 </tbody>
 </table>
-<p>这些是待定系数法的常用候选。<strong>特解系数靠方程两边恒等来确定，不靠初始条件。</strong> 若候选与齐次解重合，应乘适当的 \(t\) 次幂后再试；若模型右端含输入导数，应先写出实际右端再选形式。这两点为编者补充适用条件。</p>
+<p>这些是待定系数法的常用候选。<strong>特解系数靠方程两边恒等来确定，不靠初始条件。</strong> 若候选与齐次解重合，应乘适当的 \(t\) 次幂后再试；若模型右端含输入导数，应先写出实际右端再选形式。</p>
 <h3 id="notes-33">3.3 合成完全解，再求剩余系数</h3>
 <p>\[
 r(t)=r_h(t)+r_p(t).
@@ -101,7 +92,7 @@ r(t)=r_h(t)+r_p(t).
 <p>按课件的分解习惯，齐次部分称自由响应，特解部分称强迫响应。给定 \(r(0^+),r&#x27;(0^+),\ldots,r^{(n-1)}(0^+)\)，代入完全解及其导数得到 \(n\) 个代数方程，确定 \(A_k\)。<strong>自由响应的函数形状由系统决定，但它的系数可以同时受输入与起始状态影响。</strong> 因而不能把自由响应直接等同于零输入响应。</p>
 <p><img alt="经典解法流程：模型、齐次解与特解、初始条件、最终响应" src="assets/slides/p-11.jpg" /></p>
 <p>读图时注意两条支路先汇合成完全解，初始条件随后用于确定齐次项的系数，而不是用来猜特解。</p>
-<p><a href="#T06">对应课堂 T06–T09</a> · 来源：课件 p.7–13；教材 PDF p.76 对自由响应系数的说明。</p>
+<p><a href="#T06">对应课堂 T06–T09</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：输入为指数，是否总可直接设同指数的特解？</summary>
 <p>不能无条件照抄。若该指数已是齐次解的一部分，直接代入会被齐次算子消掉，需要乘 \(t\) 的适当次幂。</p>
@@ -110,13 +101,13 @@ r(t)=r_h(t)+r_p(t).
 <h2 id="notes-4-0-0">4. 起始点：为什么必须区分 0− 与 0+</h2>
 <p>\(0^-\) 是激励加入前的起始状态，\(0^+\) 是激励加入后的初始条件。它们虽都靠近零时刻，却可能因冲激作用而不同。时域解法通常求 \(t&gt;0\) 的表达式，需要代入的是 \(0^+\) 条件；现实中已知的往往是 \(0^-\) 状态。</p>
 <p>系统状态是：配合系统模型和未来输入，足以确定未来响应的一组最少独立数据。对本课的 \(n\) 阶常系数方程，通常可用输出及前 \(n-1\) 阶导数的适当状态数据表示。</p>
-<p><strong>补充推导：</strong> 对 \(r&#x27;+ar=b\delta(t)\)，假设 \(r\) 只含有限跳变而无冲激本身，对零点两侧积分：</p>
+<p>对 \(r&#x27;+ar=b\delta(t)\)，假设 \(r\) 只含有限跳变而无冲激本身，对零点两侧积分：</p>
 <p>\[
 r(0^+)-r(0^-)+\lim_{\varepsilon\to0}\int_{-\varepsilon}^{\varepsilon}ar(t)\,dt=b,
 \]</p>
 <p>得到 \(r(0^+)-r(0^-)=b\)。若右端只有有界阶跃而无冲激，该一阶模型的 \(r\) 不跳变。电容电压连续也需要“无冲激电流”这一条件，不能说任何情况下都不会突变。</p>
-<p>转写用“零时刻无穷大”直观说明冲激；严格地说，\(\delta\) 是由积分性质定义的广义函数，不是普通的有限跳变函数。后续单边拉普拉斯法可以直接引入 \(0^-\) 数据，<strong>并非忽略跳变，而是把其作用纳入计算。</strong></p>
-<p><a href="#T09">对应课堂 T09–T10、T13</a> · 来源：课件 p.9–10、14。</p>
+<p>在处理起始点时，\(\delta\) 是由积分性质定义的广义函数，不是普通的有限跳变函数。后续单边拉普拉斯法可以直接引入 \(0^-\) 数据，<strong>并非忽略跳变，而是把其作用纳入计算。</strong></p>
+<p><a href="#T09">对应课堂 T09–T10、T13</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：零状态是否保证输出的 0+ 值为零？</summary>
 <p>不保证。零状态约束激励加入前的系统状态；冲激输入或直接传递可使输出在零点出现跳变乃至奇异项。是否连续要看方程。</p>
@@ -149,7 +140,7 @@ A_1+A_2+1=1,\qquad-2A_1-A_2-1=0.
 \boxed{r(t)=-e^{-2t}+e^{-t}+\frac12t^2-t+1.}
 \]</p>
 <p>复算时先验 \(r(0)=1\)、\(r&#x27;(0)=0\)，再验方程。教师特别要求动手写：听懂每一步不等于能够独立求出系数。</p>
-<p><a href="#T11">对应课堂 T11–T12</a> · 来源：课件 p.12、上段 21:12–27:17。</p>
+<p><a href="#T11">对应课堂 T11–T12</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：如果初始值改变，哪些系数要重算？</summary>
 <p>方程和右端不变，所选特解 \(r_p\) 不变；改变的是由初始条件确定的 \(A_1,A_2\)。</p>
@@ -203,10 +194,7 @@ r&#x27;+3r=3u(t),\qquad r(0^-)=\frac32.
 r= Ae^{-3t}+1,\quad A=\frac12,
 \qquad r(t)=\frac12e^{-3t}+1.
 \]</p>
-<blockquote>
-<p>订正：上段 32:07 转写为特征根“−1”。此处按课件的元件值及方程采用 −3；无法在未核听情况下判断是 ASR 错误还是口头差异。</p>
-</blockquote>
-<p><strong>以下零输入/零状态细算由课件 p.19–20 补足，恰落在素材断点，不冒充原话。</strong> 零输入时 \(r_{zi}&#x27;+3r_{zi}=0\)，保留 \(3/2\) 初值；零状态时 \(r_{zs}&#x27;+3r_{zs}=3\)，初值为零。因此在 \(t\ge0\)：</p>
+<p>再按响应产生的原因拆分同一个结果。 零输入时 \(r_{zi}&#x27;+3r_{zi}=0\)，保留 \(3/2\) 初值；零状态时 \(r_{zs}&#x27;+3r_{zs}=3\)，初值为零。因此在 \(t\ge0\)：</p>
 <p>\[
 \begin{aligned}
 r_{zi}&amp;=\frac32e^{-3t},&amp;r_{zs}&amp;=1-e^{-3t},\\
@@ -216,16 +204,14 @@ r&amp;=r_{zi}+r_{zs}=r_h+r_p=1+\frac12e^{-3t}.
 \]</p>
 <p><img alt="同一全响应分别按自由/强迫、零输入/零状态分解" src="assets/slides/p-20.jpg" /></p>
 <p>读图：全响应从 1.5 衰减到 1。右图的零输入从 1.5 衰减到 0，零状态从 0 上升到 1；两者相加仍是全响应。左图自由项的初值却是 0.5。这一差别就是两种分解不能混用的直接证据。</p>
-<p><a href="#T14">对应课堂 T14–T17</a> · 来源：课件 p.15–20、上段 27:59–录音末端；教材 PDF p.76 的定义。</p>
+<p><a href="#T14">对应课堂 T14–T17</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：本例零状态响应中的自由项是哪一项？</summary>
 <p>是 \(-e^{-3t}\)，而非零输入响应 \((3/2)e^{-3t}\)。它用来使零状态响应在起点满足零初值。</p>
 </details>
 <p><a id="N07"></a></p>
-<h2 id="notes-7">7. 课件补充：零状态线性与“固定初始状态”</h2>
-<blockquote>
-<p>对应 p.21–22。现有转写没有覆盖，以下只作为课件支持的复习内容。</p>
-</blockquote>
+<h2 id="notes-7">7. 零状态线性与固定初始状态</h2>
+<p>前面的RC例题还能说明：只缩放输入与同时缩放输入、初始状态，得到的结果不同。</p>
 <p>课件另取 \(RC=1/2\) 的例子，不要与前面的 \(RC=1/3\) 混淆。对 \(t\ge0\)，</p>
 <p>\[
 r_{zs}[u]=1-e^{-2t},\qquad r_{zs}[5u]=5(1-e^{-2t});
@@ -238,16 +224,14 @@ r_2=5(1-e^{-2t})+2e^{-2t}\ne5r_1.
 \]</p>
 <p>此时“从输入到全响应”的映射带着固定的非零自由演化项，不能直接套零状态齐次性；若输入和起始状态一同缩放，全响应才随之缩放。</p>
 <p>课件“零输入从 \(0^-\) 到 \(0^+\) 不跳变”的说法在这里指系统本身不发生额外切换、无外加奇异激励的状态延续。用 \(u(t)\) 把观察区间截到 \(t\ge0\) 是书写约定，不应把人为截断产生的分布导数误当成零输入系统真实受了冲激。</p>
-<p><a href="#gap">断点说明</a> · 来源：课件 p.21–22。</p>
+<p><a href="#gap">课堂衔接</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：输入扩大5倍，要让全响应也扩大5倍，还要怎样处理？</summary>
 <p>起始状态也要扩大 5 倍；或者一开始就规定零状态，此时没有额外的零输入项。</p>
 </details>
 <p><a id="N08"></a></p>
 <h2 id="notes-8">8. 冲激响应、阶跃响应与卷积公式的来源</h2>
-<blockquote>
-<p>定义及冲激分解的详细链条来自断点处课件 p.23–26；下段 00:00 起的讲授确认因果积分限并回顾此结论。</p>
-</blockquote>
+<p>零状态响应只由外加输入引起。选择冲激和阶跃作为输入，可以得到两种特别有用的典型响应。</p>
 <p>冲激响应 \(h(t)\)：系统对 \(\delta(t)\) 的<strong>零状态响应</strong>。阶跃响应 \(g(t)\)：系统对 \(u(t)\) 的零状态响应。测试输入固定后，二者体现系统本身的特性。</p>
 <p><img alt="把一般激励拆成窄脉冲，再将各个响应叠加" src="assets/slides/p-27.jpg" /></p>
 <p>图左把输入切成窄脉冲。每一块的高度约为 \(e(\tau)\)、宽度为 \(\Delta\)，面积是 \(e(\tau)\Delta\)。当宽度趋零，以归一化窄脉冲逼近冲激，得到</p>
@@ -264,18 +248,18 @@ e(\tau)\delta(t-\tau)d\tau\mapsto e(\tau)h(t-\tau)d\tau.
 \boxed{r_{zs}(t)=\int_{-\infty}^{\infty}e(\tau)h(t-\tau)\,d\tau=e*h.}
 \]</p>
 <p>这是 LTI 零状态输入输出关系。在相应积分或广义函数卷积存在的条件下，知道 \(h\) 就知道所有输入的零状态响应；如果系统原来有储能，全响应还要加 \(r_{zi}\)。这也不能推广为“所有任意系统都由一个 \(h\) 完全描述”。</p>
-<h3 id="notes-_3">因果条件怎样改变积分限</h3>
+<h3 id="notes-_2">因果条件怎样改变积分限</h3>
 <p>若输入是因果信号，则 \(e(\tau)=0\) 对 \(\tau&lt;0\) 成立；若系统因果，则 \(h(t-\tau)=0\) 对 \(\tau&gt;t\) 成立。因此对 \(t&gt;0\)，</p>
 <p>\[
 r_{zs}(t)=\int_0^t e(\tau)h(t-\tau)\,d\tau.
 \]</p>
 <p>零点存在冲激时需按广义函数与端点约定处理，不能把只适用于普通函数的积分端点规则机械套用。</p>
-<p><strong>补充推导：</strong> 因 \(u\) 是冲激的累积积分，在卷积存在时</p>
+<p>因 \(u\) 是冲激的累积积分，在卷积存在时</p>
 <p>\[
 g(t)=h*u=\int_{-\infty}^{t}h(\lambda)d\lambda,\qquad h=g&#x27;
 \]</p>
 <p>（含奇异项时导数在分布意义下理解）。这把两种典型响应联系起来。</p>
-<p><a href="#T18">对应课堂 T18–T20</a> · 来源：课件 p.23–28、34；教材 PDF p.80。</p>
+<p><a href="#T18">对应课堂 T18–T20</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：输入因果，但系统非因果，能直接把上限改成 t 吗？</summary>
 <p>不能。输入因果只保证下限可从 0 开始；上限能截到 \(t\) 还需要 \(h(t)=0\) 对负时间成立。</p>
@@ -309,16 +293,14 @@ h&#x27;&#x27;=q&#x27;&#x27;u+q&#x27;(0)\delta+q(0)\delta&#x27;.
 \boxed{h(t)=\frac12(e^{-t}+e^{-3t})u(t).}
 \]</p>
 <p>这也说明 \(h(0^-)=0\) 并不要求 \(h(0^+)=0\)：本例右极限为 1。</p>
-<h3 id="notes-_4">何时含冲激及其导数</h3>
+<h3 id="notes-_3">何时含冲激及其导数</h3>
 <p>设方程输入最高导数阶次为 \(m\)，输出为 \(n\)，最高系数非零。对因果初始静止解，通常分成普通的右侧齐次项与零点奇异项：</p>
 <p>\[
 h(t)=q(t)u(t)+\sum_{k=0}^{m-n}D_k\delta^{(k)}(t)\quad(m\ge n).
 \]</p>
 <p>\(m&lt;n\) 时没有这种直接奇异项；\(m=n\) 有 \(\delta\) 项；\(m&gt;n\) 的最高奇异阶次为 \(m-n\)，低阶项系数可能为零。重根时 \(q\) 含指数乘多项式。</p>
-<blockquote>
-<p>课件 p.32 的求和从 \(k=1\) 起，会漏掉 \(\delta\) 本身，与同页 \(m=n\) 的说明不一致。这里改为从 0 起，并记录在订正表。此处讲的是本课常系数因果模型，不是说任意 LTI 响应天然都乘 \(u(t)\)。</p>
-</blockquote>
-<p><a href="#T20">对应课堂 T20–T23</a> · 来源：课件 p.28–32；教材 PDF p.80。</p>
+<p>求和必须包含零阶项，也就是 \(\delta\) 本身。以上表达针对常系数因果模型；对其他系统仍需根据其定义范围和性质确定响应形式。</p>
+<p><a href="#T20">对应课堂 T20–T23</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：为什么不能把 A₁、A₂ 都由 h(0−)=0 直接定为零？</summary>
 <p>它们描述冲激作用后的响应；零点冲激会改变右侧初始条件。应平衡方程中的 \(\delta,\delta&#x27;\) 等项，或等价地推导跳变条件。</p>
@@ -331,7 +313,7 @@ h(t)=q(t)u(t)+\sum_{k=0}^{m-n}D_k\delta^{(k)}(t)\quad(m\ge n).
 <p>固定一个 \(t\)，在 \(\tau\) 轴上操作：先把 \(f_2(\tau)\) 反折成 \(f_2(-\tau)\)，再右移 \(t\) 得到 \(f_2(t-\tau)\)；与 \(f_1(\tau)\) 点乘，对乘积积分。这得到一个时刻的输出值。不断改变 \(t\)，才得到完整输出函数。不要把“对 \(\tau\) 积分”和“让 \(t\) 从左到右扫描”混成同一件事。</p>
 <p><img alt="矩形与有限斜坡卷积的六步图示" src="assets/slides/p-36.jpg" /></p>
 <p>图中固定矩形覆盖 \([-1/2,1]\)，原斜坡覆盖 \([0,2]\)。反折平移后的斜坡从左侧进入矩形，重叠面积从零增大，经过峰值后减小，最后在 \(t=3\) 离开；首次接触在 \(t=-1/2\)。右列每个点都是当时乘积曲线的面积，不能直接拿两个原函数在同一 \(t\) 的值相乘。</p>
-<h3 id="notes-_5">积分区间是交集，输出支撑看端点之和</h3>
+<h3 id="notes-_4">积分区间是交集，输出支撑看端点之和</h3>
 <p>若两函数的支撑分别位于 \([A,B]\)、\([C,D]\)，则</p>
 <p>\[
 \tau\in[A,B],\qquad t-\tau\in[C,D]\iff\tau\in[t-D,t-C].
@@ -342,7 +324,7 @@ h(t)=q(t)u(t)+\sum_{k=0}^{m-n}D_k\delta^{(k)}(t)\quad(m\ge n).
 \]</p>
 <p>下限取大，上限取小；若下限超过上限，结果为零。输出可能非零的范围位于 \([A+C,B+D]\)。本课非负且填满区间的例子呈现宽度相加；一般应说支撑包含关系，不能忽略抵消或空洞。</p>
 <p>教师与学生从图中归纳出“变长、变平滑”。这对本课矩形和斜坡例子成立，也是许多平滑核的作用；并非卷积的无条件性质，\(f*\delta=f\) 就没有变宽或平滑。</p>
-<p><a href="#T24">对应课堂 T24–T28、T32</a> · 来源：课件 p.33–36、41。</p>
+<p><a href="#T24">对应课堂 T24–T28、T32</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：支撑为 [−1,1] 与 [0,3]，输出可能非零在哪里？</summary>
 <p>在 \([-1,4]\) 内。固定 \(t\) 的积分范围则是 \([\max(-1,t-3),\min(1,t)]\)，不是这个输出区间本身。</p>
@@ -383,9 +365,9 @@ i_{zs}(t)=e^{-t}\int_0^{\min(t,2)}e^{\tau/2}\,d\tau.
 -2(e^{-t/2}-e^{-(t-1)})u(t-2).
 \]</p>
 <p><img alt="截断指数输入、冲激响应和具有衰减尾部的输出" src="assets/slides/p-40.jpg" /></p>
-<p>读图：输入在 2 时归零，输出仍有指数尾部，这是储能延续的表现。<strong>补充复算：</strong> 前一段导数在 \(t=2\ln2\) 为零，真实峰值在 \(2\ln2\approx1.386\)，不是在截断时刻 2；课件曲线是示意图，应以公式为准。两段公式在 \(t=2\) 连续。</p>
-<p>教师明确要求课后把该例独立算一遍；这里保留课堂例题解法，后面的指定教材作业另列。</p>
-<p><a href="#T29">对应课堂 T29–T31</a> · 来源：课件 p.37–40、下段 18:42–22:55。</p>
+<p>读图：输入在 2 时归零，输出仍有指数尾部，这是储能延续的表现。对输出求导可以找到峰值： 前一段导数在 \(t=2\ln2\) 为零，真实峰值在 \(2\ln2\approx1.386\)，不是在截断时刻 2；课件曲线是示意图，应以公式为准。两段公式在 \(t=2\) 连续。</p>
+<p>课后需要把该例独立算一遍，检查积分限、分段结果和波形是否相互吻合。指定教材作业见本讲末尾。</p>
+<p><a href="#T29">对应课堂 T29–T31</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：为什么输入归零后输出不立即归零？</summary>
 <p>\(h\) 有无限长的衰减尾部。零状态描述的是激励前没有储能，不代表输入作用期间不能储能、停激励后不能继续响应。</p>
@@ -394,7 +376,7 @@ i_{zs}(t)=e^{-t}\int_0^{\min(t,2)}e^{\tau/2}\,d\tau.
 <h2 id="notes-12">12. 有限支撑例题：矩形与斜坡</h2>
 <p>课件 p.42：\(f_1(t)=1\) 对 \(|t|&lt;1\)，其余为零；\(f_2(t)=t/2\) 对 \(0\le t\le3\)，其余为零。波形的端点取值不影响本例普通积分。</p>
 <p><img alt="矩形与斜坡的输入波形及分段卷积结果" src="assets/slides/p-42.jpg" /></p>
-<p><strong>补充推导，展开课件给出的结果：</strong> 取 \(f_1(\tau)\) 为固定函数，则</p>
+<p>先用非零区间的交集确定积分限。 取 \(f_1(\tau)\) 为固定函数，则</p>
 <p>\[
 g(t)=\int_{\max(-1,t-3)}^{\min(1,t)}\frac{t-\tau}{2}\,d\tau
 \]</p>
@@ -435,8 +417,8 @@ g(t)=\int_{\max(-1,t-3)}^{\min(1,t)}\frac{t-\tau}{2}\,d\tau
 </tr>
 </tbody>
 </table>
-<p>首段的积分为 \([t\tau/2-\tau^2/4]_{-1}^{t}\)，其余同理。复算结果在 −1、1、2、4 连续，在 2 达到最大值 2。教师未在转写中逐行展开计算，而是指出后面可利用卷积性质简化。</p>
-<p><a href="#T32">对应课堂 T32–T33</a> · 来源：课件 p.41–42、下段 22:55–25:20。</p>
+<p>首段的积分为 \([t\tau/2-\tau^2/4]_{-1}^{t}\)，其余同理。复算结果在 −1、1、2、4 连续，在 2 达到最大值 2。接下来学习卷积性质后，还可以用更简洁的方法计算这类结果。</p>
+<p><a href="#T32">对应课堂 T32–T33</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：为什么分界点不是只有 −1 和 4？</summary>
 <p>−1、4 决定首次接触和最后离开；1、2 决定重叠区间哪一侧由固定端点限制，积分限发生变化，所以也必须分段。</p>
@@ -458,10 +440,7 @@ f_1*(f_2*f_3)=(f_1*f_2)*f_3.
 <p>第一行说明 \(e*h=h*e\)：把 \(h\) 当信号，把 \(e\) 当另一系统的冲激响应，数学上的零状态输出相同；不保证这个新系统一定具有原系统的物理可实现性。第二行两路接收同一输入，再把输出相加，所以并联等效冲激响应为 \(h_1+h_2\)。第三行先经过 \(h_1\) 再经过 \(h_2\)，输出 \((e*h_1)*h_2=e*(h_1*h_2)\)，级联等效响应为 \(h_1*h_2\)。</p>
 <p>本课单输入单输出 LTI 框图的级联次序可交换。若是真实电路直接相接，前后级可能互相加载，应先确认单个模块模型仍适用；也不能把上述结论套给任意非线性、时变或带独立初始状态的系统。</p>
 <p>教师用这三种框图解释信号与系统的紧密联系，并预告：在适当变换条件下，时域卷积会变成频域或复频域的乘法。本讲只把它作为后续课程的动机。</p>
-<blockquote>
-<p>下段 27:10 的转写把分配律第二项记为 \(f_2*f_3\)，按课件 p.43 订正为 \(f_1*f_3\)。</p>
-</blockquote>
-<p><a href="#T34">对应课堂 T34–T36</a> · 来源：课件 p.43–47。</p>
+<p><a href="#T34">对应课堂 T34–T36</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：两个模块先级联，再与第三个模块并联，等效 h 是什么？</summary>
 <p>在本节条件下为 \(h=h_1*h_2+h_3\)，不能写成 \(h_1h_2+h_3\)。</p>
@@ -496,7 +475,7 @@ f*u&amp;=If,\\
 \delta(t-a)*\delta(t-b)&amp;=\delta(t-a-b).
 \end{aligned}
 \]</p>
-<p>课堂问答：\(\delta\) 是偶分布，\(\delta&#x27;\) 是奇分布。平移冲激产生时间平移，不是转写中“频率影响”。导数含跳变时应保留冲激项。</p>
+<p>课堂问答：\(\delta\) 是偶分布，\(\delta&#x27;\) 是奇分布。与移位冲激卷积会产生相应的时间平移。导数含跳变时应保留冲激项。</p>
 <h3 id="notes-143">14.3 矩形与斜坡：一边求导、一边积分</h3>
 <p><img alt="矩形求导为一正一负冲激，斜坡积分后平移相减" src="assets/slides/p-50.jpg" /></p>
 <p>这张图延续 p.36，<strong>与 p.42 的端点不同</strong>：\(e(t)=u(t+1/2)-u(t-1)\)，\(h(t)=t/2\) 对 \(0\le t\le2\)，其余为零。于是</p>
@@ -505,7 +484,7 @@ e&#x27;=\delta(t+1/2)-\delta(t-1),\qquad
 H(t)=Ih(t)=\begin{cases}0,&amp;t&lt;0,\\t^2/4,&amp;0\le t\le2,\\1,&amp;t&gt;2.\end{cases}
 \]</p>
 <p>根据微积分性质，\(r=e*h=e&#x27;*H=H(t+1/2)-H(t-1)\)。这就是图右两条曲线相加的含义：一条提前半单位，另一条延后一单位后取负。</p>
-<p><strong>补充推导：</strong> 结果按 \(-1/2,1,3/2,3\) 分段：</p>
+<p>结果按 \(-1/2,1,3/2,3\) 分段：</p>
 <p>\[
 r(t)=\begin{cases}
 0,&amp;t&lt;-1/2,\\
@@ -532,7 +511,7 @@ t-3,&amp;2\le t\le3,\\
 \]</p>
 <p><img alt="先积分成三角形，再用两个冲激平移相减" src="assets/slides/p-52.jpg" /></p>
 <p>图中蓝色三角形减去右移 1 的三角形，得到先正后负的输出。面积检验：\(\int f=0\)，所以输出总面积也为零。教师指出也可以交换求导、积分的对象，选择更简单的一边。</p>
-<p><a href="#T37">对应课堂 T37–T41</a> · 来源：课件 p.48–52；教材 PDF p.92。</p>
+<p><a href="#T37">对应课堂 T37–T41</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：f 与 δ(t−2)−δ(t−5) 卷积，是否还要分段积分？</summary>
 <p>无需重新积分，直接为 \(f(t-2)-f(t-5)\)。若要求分段表达式，再按平移后波形的端点整理。</p>
@@ -548,7 +527,7 @@ t-3,&amp;2\le t\le3,\\
 (\operatorname{sgn})&#x27;*I\delta=(2\delta)*u=2u(t),
 \]</p>
 <p>而 \(\operatorname{sgn}(t)=2u(t)-1\)（零点按一致约定或分布意义），两者相差常数 1。</p>
-<p><strong>补充推导，解释边界项：</strong> 对适当可积、分段光滑的函数，若 \(f(-\infty)\) 存在，</p>
+<p>从微积分基本关系可以看出缺少的边界项。 对适当可积、分段光滑的函数，若 \(f(-\infty)\) 存在，</p>
 <p>\[
 \int_{-\infty}^{t}f&#x27;(\lambda)d\lambda=f(t)-f(-\infty).
 \]</p>
@@ -557,14 +536,14 @@ t-3,&amp;2\le t\le3,\\
 f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 \]</p>
 <p>这里需保证各项定义良好。只有相关边界项为零，才可放心把 \(f*g\) 改写为 \(f&#x27;*Ig\)。不能只看到两个形式像“微分、积分抵消”就省略检查。</p>
-<p>课堂最后以“负无穷处不为零”解释，并保留了“我不保证全对，大概是这样”的口头限定。教材第三版 PDF p.92、式(2-70)后也强调时间受限及负无穷的条件。这里给出的是编者展开的数学说明，不把课堂探索性说法写成无条件定理。满足零边界还须确认卷积、积分和换序本身合法。</p>
-<p><a href="#T41">对应课堂 T41–T43</a> · 来源：课件 p.53；教材 PDF p.92 / 印刷 p.76。</p>
+<p>这个反例说明，微分后能否通过积分恢复原函数，取决于下端点条件。满足零边界之后，还须确认卷积、积分和换序本身合法，才能使用混合微积分性质。</p>
+<p><a href="#T41">对应课堂 T41–T43</a> · <a href="#sources">来源</a></p>
 <details>
 <summary>自测：把 sgn 求导再从负无穷积回来，得到什么？</summary>
 <p>得到 \(2u(t)\)，比原符号函数多 1。微分丢失的常数由下端点条件决定，不能凭形式自动恢复。</p>
 </details>
 <p><a id="N16"></a></p>
-<h2 id="notes-16">16. 课堂要求、作业和下一讲边界</h2>
+<h2 id="notes-16">16. 作业与下一讲预习</h2>
 <p>本讲要求：掌握经典解法；理解零输入与零状态；理解 \(h,g\) 的定义；重点练习卷积定义、图解与性质。复杂电路建模要求已降低，时域求 \(h,g\) 不是后续最常用的工具，但能帮助理解起始状态和物理过程。</p>
 <p>教师要求动手完成课堂二阶方程练习、重算截断指数卷积例题，并自行推导卷积的微分、积分性质。不要用“把所有题型刷遍”代替理解这些知识点。</p>
 <h3 id="notes-p58">指定作业（课件 p.58；以下为第三版实际页码）</h3>
@@ -573,7 +552,7 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <tr>
 <th>作业</th>
 <th>要求</th>
-<th>已核验的教材位置与题目线索</th>
+<th>教材位置与题目线索</th>
 </tr>
 </thead>
 <tbody>
@@ -614,14 +593,14 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 </tr>
 </tbody>
 </table>
-<p>以上保留任务与定位，不默认代做全部作业。第四版尚未提供，不能宣称两版全部题面一致。尤其 2-19(b) 的第一个信号在负时间也为 1，不可漏成普通因果阶跃；它与上一节边界项问题正好有关。</p>
+<p>以上页码对应第三版，使用第四版时需核对题面。尤其 2-19(b) 的第一个信号在负时间也为 1，不可漏成普通因果阶跃；它与上一节边界项问题正好有关。</p>
 <p><img alt="课堂小结、作业、题面更正与预习要求" src="assets/slides/p-58.jpg" /></p>
-<h3 id="notes-_6">未讲内容与预习</h3>
-<p>下段 41:54 明确说用冲激响应分析因果性留到下次，让大家先自学。因此课件 p.54–56 的因果性、稳定性判据只保留为未讲预览，不编入本讲教师整理稿。p.57 是课件要求汇总，无法确认课堂逐项讲过。p.59 为致谢。</p>
-<p>课件预习范围：<strong>§3.1–§3.3</strong>。本讲不是第二章全部教材内容的逐节授课记录；教材的多径消除与算子法等不因章名相同就自动补成已讲内容。</p>
-<p><a href="#T44">对应课堂 T44</a> · <a href="../../Global/Textbook_Index.md">教材导航</a> · <a href="#sources">完整来源与待核听项</a></p>
+<h3 id="notes-_5">未讲内容与预习</h3>
+<p>课件第54–56页用冲激响应分析因果性与稳定性，留待下次讲解，课前可先自学。第57页汇总了本章学习要求。</p>
+<p>课件预习范围：<strong>§3.1–§3.3</strong>。复习本讲时，先掌握经典法、双零分解和卷积这条主线。</p>
+<p><a href="#T44">对应课堂 T44</a> · <a href="../../Global/Textbook_Index.md">教材导航</a> · <a href="#sources">来源与订正</a></p>
 <details>
-<summary>复习闭环：能回答这四个问题再去做作业</summary>
+<summary>自测：本讲的四个关键问题</summary>
 <ol>
 <li>全响应已知非零初始状态时，为什么通常不能只写 \(e*h\)？——还缺零输入响应。</li>
 <li>为什么自由响应不等于零输入响应？——零状态中也有齐次形式部分，其系数由输入与零状态条件共同确定。</li>
@@ -629,19 +608,14 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <li>一边求导、一边积分前查什么？——卷积存在、边界项消失以及微积分交换是否合法，特别注意负无穷处的非零常数。</li>
 </ol>
 </details></article>
-<article id="transcript" data-view="transcript" hidden><h1 id="transcript-_1">忠实课堂整理与订正稿</h1>
-<blockquote>
-<p>基于两份完整转写及课件整理；不是逐字记录。合并重复、停顿和无实质口头赘词，保留知识解释、例题讨论、有效问答和课程要求。转写中未识别的公式依课件补全，关键数字差异就地标注。所有音频均未实际核听，不能判断疑点是 ASR 错误还是教师口头差异。</p>
-</blockquote>
-<h2 id="transcript-_2">两段原音与时间说明</h2>
-<p>上段 A：2026-09-20 13:29，文件实测约34:40。下段 B：同日14:23，实测约42:31。时间来自转写头部，秒级墙钟起止未验证。音频与转写按名称顺序、时长对应配对，未用原音内容核验。</p>
+<article id="transcript" data-view="transcript" hidden><h1 id="transcript-_1">课堂回顾</h1>
+<p>本页分为上下两段课堂回顾。播放器先播放上段，再接下段；正文时间分别标为A、B，便于对照各段原音。中间知识衔接可从讲义第6–8节补齐。</p>
+<p><a href="#sources">来源与订正</a></p>
 <p><audio id="class-audio" controls preload="metadata" src="assets/audio/combined.m4a"></audio></p>
-<p>这是为原音定位制作的<strong>派生拼接播放版</strong>：A 后直接接 B，总长约77:11；播放器约34:40切到B，没有补造中断时段。B段定位=2080.0065秒+B原时间。正文始终同时写明A/B与各自原时间，不把拼接时刻当真实授课时间。按钮只定位，不代表核听完成。</p>
-<p><a href="Raw/7687485415771655366_record_audio.m4a">上段原音</a> · <a href="Raw/7687499313052323003_record_audio.m4a">下段原音</a> · <a href="Raw/连续时间系统时域分析讲解.txt">上段原转写</a> · <a href="Raw/信号系统卷积与冲击响应讲解.txt">下段原转写</a></p>
 <p><a id="T01"></a></p>
 <h2 id="transcript-t01">T01 · 本讲任务：连续时间系统的时域分析</h2>
 <p>时间：A 00:03–03:01。对应：课件 PDF 1,3,4 页。<a href="#N01">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3">原音定位 A 00:03（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3">原音定位 A 00:03</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-01.jpg" alt="课件 PDF 第 1 页"><figcaption>PDF 第 1 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-03.jpg" alt="课件 PDF 第 3 页"><figcaption>PDF 第 3 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-04.jpg" alt="课件 PDF 第 4 页"><figcaption>PDF 第 4 页</figcaption></figure></details>
 
 <p>同学们下午好。前两次课相对轻松，已经把绪论的基本铺垫完成了。今天计划用一次课、一个半小时讲第二章连续时间系统的时域分析；书上的内容有几十页，我们抓住主线来讲。</p>
@@ -649,18 +623,15 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T02"></a></p>
 <h2 id="transcript-t02-lti">T02 · 回顾 LTI 与冲激分解</h2>
 <p>时间：A 03:01–04:44。对应：课件 PDF 2 页。<a href="#N01">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="181">原音定位 A 03:01（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="181">原音定位 A 03:01</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-02.jpg" alt="课件 PDF 第 2 页"><figcaption>PDF 第 2 页</figcaption></figure></details>
 
 <p>先回顾与今天关系最密切的线性时不变系统。提到 LTI，要知道“线性”和“时不变”分别是什么意思，今天就要用到它们。</p>
 <p>上节课还学了冲激函数及其一个重要性质。从冲激函数性质看，它很直接；但从信号分解看，它体现了课程的核心理念：把一个已知信号分解成一系列冲激信号。我们今天也会用到这个分解。</p>
-<blockquote>
-<p>公式依上文和课件 p.25 补全为 \(e(t)=\int e(\tau)\delta(t-\tau)d\tau\)。开场转写只留下“有这么一个性质”等指代，没有完整识别公式；不是新增的教师逐字引文。</p>
-</blockquote>
 <p><a id="T03"></a></p>
 <h2 id="transcript-t03">T03 · 系统建模与求解路线</h2>
 <p>时间：A 04:44–06:45。对应：课件 PDF 3,4 页。<a href="#N01">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="284">原音定位 A 04:44（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="284">原音定位 A 04:44</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-03.jpg" alt="课件 PDF 第 3 页"><figcaption>PDF 第 3 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-04.jpg" alt="课件 PDF 第 4 页"><figcaption>PDF 第 4 页</figcaption></figure></details>
 
 <p>用数学语言描述系统就是建模，模型表征输入与输出的关系。连续时间里一般用微分方程，离散时间里用差分方程。有了模型，我们更关心给定输入后输出是什么。</p>
@@ -668,7 +639,7 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T04"></a></p>
 <h2 id="transcript-t04">T04 · 课程重点与电路建模基础</h2>
 <p>时间：A 06:45–09:08。对应：课件 PDF 4,5 页。<a href="#N02">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="405">原音定位 A 06:45（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="405">原音定位 A 06:45</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-04.jpg" alt="课件 PDF 第 4 页"><figcaption>PDF 第 4 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-05.jpg" alt="课件 PDF 第 5 页"><figcaption>PDF 第 5 页</figcaption></figure></details>
 
 <p>今天会讲零输入、零状态、冲激响应和卷积性质。冲激响应就是激励取冲激函数时的相应响应；它和卷积可能是大家在其他课上没有接触过的内容。通过时域讲解，要理解输入输出关系和这些基本概念。</p>
@@ -676,7 +647,7 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T05"></a></p>
 <h2 id="transcript-t05">T05 · 复杂电路列式要求降低，给定方程仍须会求</h2>
 <p>时间：A 09:08–11:56。对应：课件 PDF 5,6 页。<a href="#N02">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="548">原音定位 A 09:08（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="548">原音定位 A 09:08</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-05.jpg" alt="课件 PDF 第 5 页"><figcaption>PDF 第 5 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-06.jpg" alt="课件 PDF 第 6 页"><figcaption>PDF 第 6 页</figcaption></figure></details>
 
 <p>有了微分方程，接下来要解决怎样求解。今天讲经典法、双零法，等学到拉普拉斯变换时还会介绍变换域求法。经典法可以概括为求齐次解、求特解并组成完全解，再确定系数。</p>
@@ -685,18 +656,15 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T06"></a></p>
 <h2 id="transcript-t06">T06 · 由指数试解得到特征方程</h2>
 <p>时间：A 11:56–13:58。对应：课件 PDF 7 页。<a href="#N03">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="716">原音定位 A 11:56（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="716">原音定位 A 11:56</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-07.jpg" alt="课件 PDF 第 7 页"><figcaption>PDF 第 7 页</figcaption></figure></details>
 
 <p>拿到微分方程后求解，是课程要求掌握的。经典办法先求齐次解，再求特解。对线性常系数齐次方程，尝试用指数形式的函数，把它代入求导，就得到一个代数形式的特征方程。</p>
 <p>微分方程有多少阶，特征多项式就有相应的次数。求出它的特征根，在没有重根的情况下，每个特征根对应一项指数，齐次解就是这些指数的线性组合，每一项前面有一个待定系数。</p>
-<blockquote>
-<p>术语“其次解”统一订正为“齐次解”。指数形式及无重根条件以课件 p.7 为准；重根补充放在讲义，不写成教师本段讲授。</p>
-</blockquote>
 <p><a id="T07"></a></p>
 <h2 id="transcript-t07">T07 · 指数形式也包含正弦与余弦</h2>
 <p>时间：A 13:58–15:38。对应：课件 PDF 7,8 页。<a href="#N03">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="838">原音定位 A 13:58（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="838">原音定位 A 13:58</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-07.jpg" alt="课件 PDF 第 7 页"><figcaption>PDF 第 7 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-08.jpg" alt="课件 PDF 第 8 页"><figcaption>PDF 第 8 页</figcaption></figure></details>
 
 <p>大家回顾一下微积分里的求法。因为是微分方程，指数函数求导后仍保持相同形式，所以用指数来构造解很自然。即便最简单的一阶方程，导数和原函数的线性组合等于零，解也具有指数形式。</p>
@@ -705,18 +673,15 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T08"></a></p>
 <h2 id="transcript-t08">T08 · 特解形式与自由/强迫响应</h2>
 <p>时间：A 15:38–17:19。对应：课件 PDF 8,13 页。<a href="#N03">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="938">原音定位 A 15:38（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="938">原音定位 A 15:38</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-08.jpg" alt="课件 PDF 第 8 页"><figcaption>PDF 第 8 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-13.jpg" alt="课件 PDF 第 13 页"><figcaption>PDF 第 13 页</figcaption></figure></details>
 
 <p>与输入有关的部分用激励函数来确定，可以参考课件上的表：输入为常数，尝试常数形式；输入为多项式，尝试多项式；指数输入尝试指数，正弦、余弦输入尝试正弦和余弦组合。这样代入后，方程两边才可能匹配。</p>
 <p>最后把齐次解和特解加起来。工程上，齐次部分称自由响应，特解部分称强迫响应。先得到完全解的形式并不难，后面还有一项工作：求出那些尚未确定的系数。</p>
-<blockquote>
-<p>编者注：原转写把自由响应概括为“跟输入无关”，应理解为齐次模态的形式由系统决定；系数仍可能与激励有关，见课件 p.22。课件查表也有不与齐次解重合等条件，讲义已单列说明。</p>
-</blockquote>
 <p><a id="T09"></a></p>
 <h2 id="transcript-t09">T09 · 用初始条件确定系数</h2>
 <p>时间：A 17:19–19:16。对应：课件 PDF 9 页。<a href="#N03">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="1039">原音定位 A 17:19（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1039">原音定位 A 17:19</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-09.jpg" alt="课件 PDF 第 9 页"><figcaption>PDF 第 9 页</figcaption></figure></details>
 
 <p>强迫响应与激励有关。有了完全解，还要给出边界条件来确定待定系数。常见的是零时刻输出的值、输出导数的值以及更高阶导数的值；把这些条件代进去，就得到一组代数方程。</p>
@@ -724,60 +689,49 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T10"></a></p>
 <h2 id="transcript-t10">T10 · 激励接入瞬间可能跳变</h2>
 <p>时间：A 19:16–21:12。对应：课件 PDF 10,14 页。<a href="#N04">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="1156">原音定位 A 19:16（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1156">原音定位 A 19:16</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-10.jpg" alt="课件 PDF 第 10 页"><figcaption>PDF 第 10 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-14.jpg" alt="课件 PDF 第 14 页"><figcaption>PDF 第 14 页</figcaption></figure></details>
 
 <p>输入加入前后的零时刻要区分成 \(0^-\) 和 \(0^+\)。开关闭合或信号到来的一瞬间，输出或相关状态可能发生跳变，因此两个时刻的值可能不同。</p>
 <p>课堂用冲激信号说明零点附近的瞬时作用：它在零点以外为零，集中于零点。时域求解中，题目可能给的是 \(0^-\) 条件，而计算需要 \(0^+\) 条件，怎样转换往往比较费劲。以后学习拉普拉斯变换，可以直接处理 \(0^-\) 条件，使这类计算方便很多。</p>
-<blockquote>
-<p>编者注：冲激不是普通跳变函数；转写的“零时刻取无穷大”只保留为直观描述。变换法把跳变计入结果，并非可以不顾跳变。</p>
-</blockquote>
 <p><a id="T11"></a></p>
 <h2 id="transcript-t11">T11 · 经典法流程与课堂动笔练习</h2>
 <p>时间：A 21:12–23:26。对应：课件 PDF 11,12 页。<a href="#N05">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="1272">原音定位 A 21:12（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1272">原音定位 A 21:12</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-11.jpg" alt="课件 PDF 第 11 页"><figcaption>PDF 第 11 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-12.jpg" alt="课件 PDF 第 12 页"><figcaption>PDF 第 12 页</figcaption></figure></details>
 
 <p>经典法的整体流程是：依据元件关系和基尔霍夫定律建立微分方程，求齐次解、特解，组成完全解，再由初始条件定系数，得到系统响应。</p>
 <p>现在拿出笔和纸，看能不能用一分钟理清课件二阶方程的解法。左边是系统的微分算子，右边是多项式输入，题目给了 \(r(0)\) 和 \(r&#x27;(0)\)。仍然按刚才的基本操作完成。</p>
 <p>一定要写，不要只听。这个课每个知识点未必难，但内容很多，而且容易产生“我都懂了”的错觉；如果没有亲手做，可能还不会独立求解。</p>
-<blockquote>
-<p>题设依课件 p.12：\(r&#x27;&#x27;+3r&#x27;+2r=t^2+t\)，\(r(0)=1,r&#x27;(0)=0\)。</p>
-</blockquote>
+<p>题设为\(r&#x27;&#x27;+3r&#x27;+2r=t^2+t\)，\(r(0)=1,r&#x27;(0)=0\)。</p>
 <p><a id="T12"></a></p>
 <h2 id="transcript-t12">T12 · 二阶例题：配平特解、代初值定齐次项</h2>
 <p>时间：A 23:26–27:17。对应：课件 PDF 12 页。<a href="#N05">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="1406">原音定位 A 23:26（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1406">原音定位 A 23:26</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-12.jpg" alt="课件 PDF 第 12 页"><figcaption>PDF 第 12 页</figcaption></figure></details>
 
 <p>时间有限，大家先检查自己有没有思路。特征方程是 \(a^2+3a+2=0\)，根是 −2 和 −1，没有重根，因此齐次解含两个待定系数。</p>
 <p>特解尝试二次多项式 \(B_1t^2+B_2t+B_3\)。要强调：特解不是由初始条件算出来的，而是代入后要求方程两端恒等、比较系数求得。它的一阶导数为 \(2B_1t+B_2\)，二阶导数为 \(2B_1\)。合并系数后得到 \(2B_1=1\)、\(6B_1+2B_2=1\)、\(2B_1+3B_2+2B_3=0\)。由此求出特解 \(t^2/2-t+1\)。</p>
 <p>剩下的两个待定系数，正好由两个初始值来求。得到 \(A_1=-1,A_2=1\)，完全解也就确定了。这是非常典型的求解过程；觉得有困难的同学课后再练习。</p>
-<blockquote>
-<p>转写中的“没有零根”按上下文及 p.7 的条件订正为“没有重根”；公式系数和最终结果按 p.12 补全。</p>
-</blockquote>
 <p><a id="T13"></a></p>
 <h2 id="transcript-t13">T13 · 回看两部分解与起始点条件</h2>
 <p>时间：A 27:17–27:59。对应：课件 PDF 13,14 页。<a href="#N04">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="1637">原音定位 A 27:17（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1637">原音定位 A 27:17</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-13.jpg" alt="课件 PDF 第 13 页"><figcaption>PDF 第 13 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-14.jpg" alt="课件 PDF 第 14 页"><figcaption>PDF 第 14 页</figcaption></figure></details>
 
 <p>从线性微分系统角度看，经典法把解分成齐次解与特解，对应自由响应和强迫响应。系统在起始点从 \(0^-\) 到 \(0^+\) 的关系需要注意：实际给你的条件，或者现实中知道的条件，往往是激励到来之前的值，要据此推出激励到来之后的值。</p>
 <p><a id="T14"></a></p>
 <h2 id="transcript-t14">T14 · 按响应起因分成零输入与零状态</h2>
 <p>时间：A 27:59–29:50。对应：课件 PDF 15 页。<a href="#N06">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="1679">原音定位 A 27:59（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1679">原音定位 A 27:59</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-15.jpg" alt="课件 PDF 第 15 页"><figcaption>PDF 第 15 页</figcaption></figure></details>
 
 <p>刚才是大家在微积分中学过的经典方法。下面介绍双零法，按响应的产生原因分成两部分：一部分由系统内部储能引起，叫零输入响应；另一部分由外部激励引起，叫零状态响应。</p>
 <p>“零状态”是说起始状态取零，不再保留原来储能的作用，只看输入带来的响应；“零输入”是没有外界激励，只看系统原有储能。还可以按表现分成瞬态响应、稳态响应，但这里重点讨论零输入和零状态。</p>
-<blockquote>
-<p>本段口头“初始条件就是零”在严谨定义中指激励前状态为零；不代表各种输入下输出 \(0^+\) 值都必须为零。</p>
-</blockquote>
 <p><a id="T15"></a></p>
 <h2 id="transcript-t15">T15 · 双零分解与经典分解怎样相容</h2>
 <p>时间：A 29:50–31:40。对应：课件 PDF 16,17 页。<a href="#N06">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="1790">原音定位 A 29:50（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1790">原音定位 A 29:50</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-16.jpg" alt="课件 PDF 第 16 页"><figcaption>PDF 第 16 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-17.jpg" alt="课件 PDF 第 17 页"><figcaption>PDF 第 17 页</figcaption></figure></details>
 
 <p>从方程看，零输入响应满足齐次方程，但只对应完整自由响应中的一部分，因为它的系数要用原来的起始条件确定。零状态响应则是完全解的一部分，这次把系统原有储能看成零，只保留激励作用。</p>
@@ -785,56 +739,45 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T16"></a></p>
 <h2 id="transcript-t16-rc">T16 · RC 例题：初始电压与单位阶跃</h2>
 <p>时间：A 31:40–33:19。对应：课件 PDF 18 页。<a href="#N06">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="1900">原音定位 A 31:40（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1900">原音定位 A 31:40</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-18.jpg" alt="课件 PDF 第 18 页"><figcaption>PDF 第 18 页</figcaption></figure></details>
 
 <p>举一个电路例子。在零时刻，开关从 \(3/2\) 的电压切到 1 的电压，求电容两端电压的自由、强迫、零输入、零状态和完全响应。</p>
 <p>切换前已经稳定，所以电容初始电压为 \(3/2\)；新的激励可写成单位阶跃 \(u(t)\)。方程见课件，齐次解只有一个指数项；在 \(t&gt;0\) 的求解区间，\(u(t)=1\)，因此特解取常数 1。</p>
-<blockquote>
-<p>重要差异：上段 32:07 原转写为“特征根 a 等于 −1”，但 p.18 明确为 \(r&#x27;+3r=3e\)、\(R=1\Omega,C=1/3\mathrm F\)，因此本稿计算采用 −3，齐次解为 \(Ae^{-3t}\)。原音未核听，不判断差异由谁造成。</p>
-</blockquote>
+<p>方程为 \(r&#x27;+3r=3e\)，特征根为−3，齐次解为 \(Ae^{-3t}\)。</p>
 <p><a id="T17"></a></p>
 <h2 id="transcript-t17">T17 · 由连续性求完全解，上段在此中断</h2>
 <p>时间：A 33:19–34:40 音频末端。对应：课件 PDF 18 页。<a href="#N06">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="1999">原音定位 A 33:19（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1999">原音定位 A 33:19</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-18.jpg" alt="课件 PDF 第 18 页"><figcaption>PDF 第 18 页</figcaption></figure></details>
 
 <p>这里求的是 \(0^+\) 以后的值，所以阶跃在这一段相当于常数。电容电压在本例中不会突然跳变，因此 \(r(0^+)=r(0^-)=3/2\)。用这个初始值求得 \(A=1/2\)，完全解为 \(1+(1/2)e^{-3t}\)。</p>
 <p>接下来要继续问：如果求零输入和零状态，到底分别是什么意思？教师开始再次回顾“零输入”，上段转写在“其实也是零，零……”处截断。</p>
-<blockquote>
-<p>本例电压连续有无冲激电流的前提。最后一个转写时间戳是 34:03，音频总长约 34:40；两者不是同一个概念。</p>
-</blockquote>
 <p><a id="gap"></a></p>
-<h2 id="transcript-_3">中间断点：这里没有可确认的课堂转写</h2>
-<p>上段在 p.18 的RC例题后截断，下段从 p.26 的因果卷积积分接续。课件 p.19–25 包含双零例题后续、线性说明、冲激/阶跃定义及冲激分解；不能据两份转写复原教师在中间说过什么。讲义 N06后半、N07及N08相关内容用“课件补充”恢复复习链条，本稿不伪造 T 段或给这些页编造时间。</p>
-<p><a href="#N07">课件补充入口</a></p>
+<h2 id="transcript-_2">两段课堂回顾的衔接</h2>
+<p>上段在RC例题后结束，下段从因果卷积积分接续。中间涉及的双零分解、零状态线性与冲激分解，可先阅读讲义第6–8节，再继续下段。</p>
+<p><a href="#N07">相关讲义</a></p>
 <p><a id="T18"></a></p>
 <h2 id="transcript-t18">T18 · 下段接续：因果输入与因果系统的积分限</h2>
 <p>时间：B 00:00–01:30。对应：课件 PDF 26 页。<a href="#N08">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2080.0065">原音定位 B 00:00（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2080.0065">原音定位 B 00:00</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-26.jpg" alt="课件 PDF 第 26 页"><figcaption>PDF 第 26 页</figcaption></figure></details>
 
 <p>因果信号输入因果系统时，输入在 \(\tau&lt;0\) 为零，因此积分不需要从负无穷开始，可以从零开始。另一方面，因果系统的响应只与当前及之前的激励有关，不能再把未来的激励也算进去，因此上限到 \(t\)。</p>
 <p>教师让大家检查这个结论，并说因果系统本身还具有相应性质，后面再解释。</p>
-<blockquote>
-<p>编者注：数学条件是 \(h(t-\tau)=0\) 对 \(\tau&gt;t\) 成立。下段开头已经在讨论卷积积分限；前面的详细推导没有出现在已提供的两份转写中。</p>
-</blockquote>
 <p><a id="T19"></a></p>
 <h2 id="transcript-t19-lti">T19 · 由冲激响应确定 LTI 零状态特性</h2>
 <p>时间：B 01:30–02:57。对应：课件 PDF 27,28 页。<a href="#N08">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2170.0065">原音定位 B 01:30（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2170.0065">原音定位 B 01:30</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-27.jpg" alt="课件 PDF 第 27 页"><figcaption>PDF 第 27 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-28.jpg" alt="课件 PDF 第 28 页"><figcaption>PDF 第 28 页</figcaption></figure></details>
 
 <p>用图来概括刚才的推演：有一个激励就有相应输出，激励平移，输出也平移；几个激励相加，输出也是相应响应的叠加。只要知道冲激响应，就能用它组合任意输入的响应，这个组合就是后面要讲的卷积。</p>
 <p>冲激响应反映系统固有特性。虽然用冲激信号来求它，它所表征的是系统自身，不随着之后选择的外部输入改变。对线性时不变系统，\(h(t)\) 确定后，相应零状态特性就确定了。</p>
 <p>在 \(t&gt;0\) 的区间，冲激已不再作用，方程的强迫项为零，响应呈自由响应形式。</p>
-<blockquote>
-<p>本段“任意输入的响应”限定为零状态；零点可能存在的冲激直接项另见 T23。</p>
-</blockquote>
 <p><a id="T20"></a></p>
 <h2 id="transcript-t20">T20 · 冲激后的自由演化与掌握知识点</h2>
 <p>时间：B 02:57–04:44。对应：课件 PDF 28,29 页。<a href="#N09">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2257.0065">原音定位 B 02:57（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2257.0065">原音定位 B 02:57</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-28.jpg" alt="课件 PDF 第 28 页"><figcaption>PDF 第 28 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-29.jpg" alt="课件 PDF 第 29 页"><figcaption>PDF 第 29 页</figcaption></figure></details>
 
 <p>冲激响应是零状态响应，但在冲激作用后的区间具有自由响应的形式。可以从 \(0^-\) 到 \(0^+\) 储能变化的角度理解。它的一般表达可能包含冲激及其导数，也包含普通函数部分，代入微分方程配平就能求出系数。</p>
@@ -842,18 +785,15 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T21"></a></p>
 <h2 id="transcript-t21">T21 · 冲激响应例题：让求导产生冲激项</h2>
 <p>时间：B 04:44–06:36。对应：课件 PDF 30,31 页。<a href="#N09">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2364.0065">原音定位 B 04:44（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2364.0065">原音定位 B 04:44</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-30.jpg" alt="课件 PDF 第 30 页"><figcaption>PDF 第 30 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-31.jpg" alt="课件 PDF 第 31 页"><figcaption>PDF 第 31 页</figcaption></figure></details>
 
 <p>现在求课件微分方程的冲激响应，首先要明确输入 \(e\) 就是 \(\delta\)。可以先求齐次解，得到两个指数项。对本例，把它写成 \((A_1e^{-t}+A_2e^{-3t})u(t)\)。</p>
 <p>为什么显式乘上 \(u(t)\)？因为这里讨论冲激作用后的因果响应，而求导时，阶跃的导数会产生冲激项。再求一次导，得到冲激导数等项。把这些代回方程两边，就可以通过配平来求系数；如果不写阶跃，就看不到这些零点的作用。</p>
-<blockquote>
-<p>公式依 p.30–31 补全：\(h&#x27;&#x27;+4h&#x27;+3h=\delta&#x27;+2\delta\)，配平得到 \(A_1+A_2=1\)、\(3A_1+A_2=2\)。这里不是说所有系统输出天然都是因果信号。</p>
-</blockquote>
 <p><a id="T22"></a></p>
 <h2 id="transcript-t22">T22 · 显式阶跃与“零状态、齐次形式”的关系</h2>
 <p>时间：B 06:36–07:53。对应：课件 PDF 31,32 页。<a href="#N09">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2476.0065">原音定位 B 06:36（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2476.0065">原音定位 B 06:36</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-31.jpg" alt="课件 PDF 第 31 页"><figcaption>PDF 第 31 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-32.jpg" alt="课件 PDF 第 32 页"><figcaption>PDF 第 32 页</figcaption></figure></details>
 
 <p>齐次解在这里默认描述正时间的那一段，把 \(u(t)\) 明写出来，是为了求导时能够处理起始点。这个方法初次看可能不容易完全理解，先学会操作，后面还会用其他办法求冲激响应或系统函数，不止这一个方法。</p>
@@ -861,17 +801,14 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T23"></a></p>
 <h2 id="transcript-t23">T23 · 奇异项与方程阶次</h2>
 <p>时间：B 07:53–08:23。对应：课件 PDF 29,32 页。<a href="#N09">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2553.0065">原音定位 B 07:53（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2553.0065">原音定位 B 07:53</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-29.jpg" alt="课件 PDF 第 29 页"><figcaption>PDF 第 29 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-32.jpg" alt="课件 PDF 第 32 页"><figcaption>PDF 第 32 页</figcaption></figure></details>
 
 <p>冲激响应包不包含 \(\delta\) 及其导数，与方程阶次有关。这里先了解，受时间限制不细讲。这是第一次讲冲激响应，后面还会反复接触，也会讲傅里叶、拉普拉斯等变换域求法；有个别问题还没完全消化，可以先记下来，随着后续方法再理解。</p>
-<blockquote>
-<p>课件 p.32 的求和漏了零阶项，本稿在讲义 N09 订正，并未把完整阶次推导写成这一分钟内的课堂讲解。</p>
-</blockquote>
 <p><a id="T24"></a></p>
 <h2 id="transcript-t24">T24 · 卷积是一种新运算</h2>
 <p>时间：B 08:23–10:47。对应：课件 PDF 33,34 页。<a href="#N10">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2583.0065">原音定位 B 08:23（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2583.0065">原音定位 B 08:23</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-33.jpg" alt="课件 PDF 第 33 页"><figcaption>PDF 第 33 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-34.jpg" alt="课件 PDF 第 34 页"><figcaption>PDF 第 34 页</figcaption></figure></details>
 
 <p>接下来介绍一个非常重要的运算：卷积。教师询问谁学过卷积、在哪里接触过。刚才由冲激响应推导一般响应时，实际上已经出现了这种运算；它在级联系统等问题中很常见，也可以推广到多维。</p>
@@ -879,7 +816,7 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 <p><a id="T25"></a></p>
 <h2 id="transcript-t25">T25 · 卷积表达式与反折、平移</h2>
 <p>时间：B 10:47–12:15。对应：课件 PDF 34,35 页。<a href="#N10">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2727.0065">原音定位 B 10:47（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2727.0065">原音定位 B 10:47</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-34.jpg" alt="课件 PDF 第 34 页"><figcaption>PDF 第 34 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-35.jpg" alt="课件 PDF 第 35 页"><figcaption>PDF 第 35 页</figcaption></figure></details>
 
 <p>再回顾冲激响应：冲激信号经过系统得到的零状态响应叫 \(h(t)\)。任意激励的零状态输出可以表示成输入和 \(h\) 的卷积。数学表达是</p>
@@ -887,24 +824,18 @@ f&#x27;*G=\big[f(\tau)G(t-\tau)\big]_{-\infty}^{\infty}+f*G&#x27;,
 r_{zs}(t)=\int_{-\infty}^{\infty}e(\tau)h(t-\tau)d\tau=e(t)*h(t).
 \]</p>
 <p>卷积有自己的符号，既不是普通乘法，也不是普通加法。计算时涉及几个步骤：把 \(h(\tau)\) 反折为 \(h(-\tau)\)，再平移形成 \(h(t-\tau)\)。</p>
-<blockquote>
-<p>原话提到也可“先平移再反折”。本稿固定采用课件顺序；若调换顺序，平移方向须相应变化，不能原样交换两步。</p>
-</blockquote>
 <p><a id="T26"></a></p>
 <h2 id="transcript-t26-t">T26 · 每个 t 求一个值，组合成输出函数</h2>
 <p>时间：B 12:15–13:47。对应：课件 PDF 35,36 页。<a href="#N10">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2815.0065">原音定位 B 12:15（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2815.0065">原音定位 B 12:15</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-35.jpg" alt="课件 PDF 第 35 页"><figcaption>PDF 第 35 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-36.jpg" alt="课件 PDF 第 36 页"><figcaption>PDF 第 36 页</figcaption></figure></details>
 
 <p>接着把两个函数相乘，然后积分。教师先说到“尺度变化”，随即改为“相乘”，并区分自变量中的尺度变化与这里的点乘。</p>
 <p>两个函数卷积，得到的仍是一个函数，并非只有一个数。我们需要对每一个 \(t\) 求出结果。把其中一个函数反折后，从很左的位置向右平移，观察它与另一个函数什么时候出现重叠。两者没有重叠时，乘积为零，积分也为零。</p>
-<blockquote>
-<p>编者注：图中从左向右移动对应参数 \(t\) 的变化；对某一个固定位置求面积，才是对 \(\tau\) 积分。两者在口头描述中交织，本稿明确区分。</p>
-</blockquote>
 <p><a id="T27"></a></p>
 <h2 id="transcript-t27">T27 · 图示：进入重叠、达到峰值、完全离开</h2>
 <p>时间：B 13:47–16:08。对应：课件 PDF 36 页。<a href="#N10">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="2907.0065">原音定位 B 13:47（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2907.0065">原音定位 B 13:47</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-36.jpg" alt="课件 PDF 第 36 页"><figcaption>PDF 第 36 页</figcaption></figure></details>
 
 <p>计算 \(t\) 从负无穷到正无穷各个位置的输出。移动函数在很远处时碰不到固定函数，输出一直为零；开始挨上以后，两个函数有重叠，乘起来再积分就出现非零值。</p>
@@ -912,19 +843,16 @@ r_{zs}(t)=\int_{-\infty}^{\infty}e(\tau)h(t-\tau)d\tau=e(t)*h(t).
 <p><a id="T28"></a></p>
 <h2 id="transcript-t28">T28 · 课堂观察：卷积的长度与平滑</h2>
 <p>时间：B 16:08–18:42。对应：课件 PDF 36 页。<a href="#N10">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3048.0065">原音定位 B 16:08（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3048.0065">原音定位 B 16:08</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-36.jpg" alt="课件 PDF 第 36 页"><figcaption>PDF 第 36 页</figcaption></figure></details>
 
 <p>教师再次确认大家是否理解反折后的函数从左向右扫过、重叠又分离的过程，并问从卷积前后形状、长度上能发现什么。</p>
 <p>首先，图中的输出变长了。从刚开始接触到最后离开，跨过的是两个信号长度之和。学生又回答“平滑”。教师解释，两个波形组合后，原来的尖锐处在这个例子里不再那么尖，可以把某些视觉、光学中的模糊过程也理解成卷积效果。</p>
 <p>教师同时保留了限定：特殊信号不一定越卷积越模糊；这里说的是常见现象。</p>
-<blockquote>
-<p>讲义以 \(f*\delta=f\) 提醒这不是普遍定理；支撑区间条件见 N10。</p>
-</blockquote>
 <p><a id="T29"></a></p>
 <h2 id="transcript-t29-rl">T29 · RL 阶跃响应与因果积分限</h2>
 <p>时间：B 18:42–20:09。对应：课件 PDF 37,38 页。<a href="#N11">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3202.0065">原音定位 B 18:42（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3202.0065">原音定位 B 18:42</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-37.jpg" alt="课件 PDF 第 37 页"><figcaption>PDF 第 37 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-38.jpg" alt="课件 PDF 第 38 页"><figcaption>PDF 第 38 页</figcaption></figure></details>
 
 <p>来看一个简单电路。如果知道冲激响应，就可以计算给定激励的响应；这里求的是<strong>零状态响应</strong>。课件中 \(h(t)=e^{-t}u(t)\)，输入也是带 \(u(t)\) 的因果信号。</p>
@@ -932,40 +860,31 @@ r_{zs}(t)=\int_{-\infty}^{\infty}e(\tau)h(t-\tau)d\tau=e(t)*h(t).
 <p><a id="T30"></a></p>
 <h2 id="transcript-t30">T30 · 截断指数激励：分段限制积分区间</h2>
 <p>时间：B 20:09–22:15。对应：课件 PDF 38,39 页。<a href="#N11">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3289.0065">原音定位 B 20:09（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3289.0065">原音定位 B 20:09</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-38.jpg" alt="课件 PDF 第 38 页"><figcaption>PDF 第 38 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-39.jpg" alt="课件 PDF 第 39 页"><figcaption>PDF 第 39 页</figcaption></figure></details>
 
 <p>再回顾卷积步骤：反折、平移、相乘、积分。连续时间是积分，离散时间对应求和；只在重叠部分相乘，非重叠处为零。</p>
 <p>下一例的系统不变，输入却变成一个截断指数脉冲，要求零状态响应。以前可以求齐次解、特解再定系数，现在知道冲激响应，直接把它与输入卷积即可。只是输入分段后，积分限也需要分段讨论，大家课后可以练习。</p>
 <p>在积分变量中，\(u(\tau)u(t-\tau)\) 要求 \(0\le\tau\le t\)、\(t\ge0\)；\(u(\tau-2)u(t-\tau)\) 则要求 \(2\le\tau\le t\)、\(t\ge2\)。因此出现从 0 到 \(t\) 和从 2 到 \(t\) 的两项积分。</p>
-<blockquote>
-<p>上述 \(\tau\) 变量按 p.39 订正；原转写数处把积分变量识别成 t。输入题设是 \(e^{-t/2}[u(t)-u(t-2)]\)。</p>
-</blockquote>
 <p><a id="T31"></a></p>
 <h2 id="transcript-t31">T31 · 阶跃表达让分段结果更紧凑</h2>
 <p>时间：B 22:15–22:55。对应：课件 PDF 40 页。<a href="#N11">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3415.0065">原音定位 B 22:15（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3415.0065">原音定位 B 22:15</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-40.jpg" alt="课件 PDF 第 40 页"><figcaption>PDF 第 40 页</figcaption></figure></details>
 
 <p>有了 \(u(t)\)，分段函数可以写成一个紧凑的表达式，不必每次都展开成几行分段。课件同时给出阶跃形式和分段形式，描述的是同一个结果。</p>
 <p>观察这次卷积，输入本来在 2 截断，输出有了衰减尾部，波形也比原来的截断输入更平滑。</p>
-<blockquote>
-<p>编者注：讲义 N11 保留两种结果并补全计算；课件曲线只作示意，峰值位置应由公式复算。</p>
-</blockquote>
 <p><a id="T32"></a></p>
 <h2 id="transcript-t32">T32 · 课后重算要求与卷积区间规则</h2>
 <p>时间：B 22:55–24:03。对应：课件 PDF 40,41 页。<a href="#N10">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3455.0065">原音定位 B 22:55（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3455.0065">原音定位 B 22:55</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-40.jpg" alt="课件 PDF 第 40 页"><figcaption>PDF 第 40 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-41.jpg" alt="课件 PDF 第 41 页"><figcaption>PDF 第 41 页</figcaption></figure></details>
 
 <p>课后应把刚才这道例题自己完整算一遍。再总结卷积区间：要先确定两个因子相乘时非零的范围；卷积之后的信号范围常常比原来更宽。如果输入函数本身分段、不连续，卷积也可能需要分段计算。</p>
-<blockquote>
-<p>关键订正：原转写说积分上下限“取它的并集”。课件 p.41 明写“上限取小，下限取大”，实际是反折平移后两因子非零区间的<strong>交集</strong>。原音未核听，不判定是口误还是识别错误；不应照原转写计算。</p>
-</blockquote>
 <p><a id="T33"></a></p>
 <h2 id="transcript-t33">T33 · 矩形与斜坡例题，预告性质能简化计算</h2>
 <p>时间：B 24:03–25:20。对应：课件 PDF 42 页。<a href="#N12">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3523.0065">原音定位 B 24:03（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3523.0065">原音定位 B 24:03</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-42.jpg" alt="课件 PDF 第 42 页"><figcaption>PDF 第 42 页</figcaption></figure></details>
 
 <p>第一个信号是绝对值小于 1 时取 1、其余取零的矩形脉冲，另一个信号是课件上的有限斜坡。要求它们的卷积，按分段积分可以得到课件给出的结果，但刚开始算可能比较复杂，也容易出错。</p>
@@ -973,29 +892,23 @@ r_{zs}(t)=\int_{-\infty}^{\infty}e(\tau)h(t-\tau)d\tau=e(t)*h(t).
 <p><a id="T34"></a></p>
 <h2 id="transcript-t34">T34 · 为什么重视卷积</h2>
 <p>时间：B 25:20–26:41。对应：课件 PDF 33,43 页。<a href="#N13">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3600.0065">原音定位 B 25:20（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3600.0065">原音定位 B 25:20</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-33.jpg" alt="课件 PDF 第 33 页"><figcaption>PDF 第 33 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-43.jpg" alt="课件 PDF 第 43 页"><figcaption>PDF 第 43 页</figcaption></figure></details>
 
 <p>教师从两个方面说明卷积的重要性。一个信号经过系统，时域中的作用形式可以表现为与冲激响应卷积；一个复杂系统由多个子系统级联组成时，这些子系统之间的等效关系也会涉及卷积。</p>
 <p>另一个原因是卷积具有很多好的数学性质。后面学到傅里叶变换、拉普拉斯变换，会看到卷积在相应变换域中变成乘法，计算就简单了。</p>
-<blockquote>
-<p>“事物相互作用往往是卷积”是课堂直觉性解释；本稿的数学结论限定在相应 LTI、零状态与卷积存在条件下。</p>
-</blockquote>
 <p><a id="T35"></a></p>
 <h2 id="transcript-t35">T35 · 交换律、分配律、结合律</h2>
 <p>时间：B 26:41–28:39。对应：课件 PDF 43,44 页。<a href="#N13">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3681.0065">原音定位 B 26:41（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3681.0065">原音定位 B 26:41</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-43.jpg" alt="课件 PDF 第 43 页"><figcaption>PDF 第 43 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-44.jpg" alt="课件 PDF 第 44 页"><figcaption>PDF 第 44 页</figcaption></figure></details>
 
 <p>卷积虽然包括反折、平移、相乘、积分这一串操作，但仍有清楚的代数性质：交换律、分配律和结合律。交换律是 \(f_1*f_2=f_2*f_1\)。教师用“你卷他等于他卷你”的玩笑帮助记忆。</p>
 <p>分配律是 \(f_1*(f_2+f_3)=f_1*f_2+f_1*f_3\)；结合律是 \(f_1*(f_2*f_3)=(f_1*f_2)*f_3\)。这些都可以从积分定义证明。接下来更要从信号与系统的角度看它们分别意味着什么。</p>
-<blockquote>
-<p>原转写分配律第二项为 \(f_2*f_3\)，按 p.43 订正；27:55 的重复字母无独立教学含义，合并删除。</p>
-</blockquote>
 <p><a id="T36"></a></p>
 <h2 id="transcript-t36">T36 · 信号/系统互换，以及并联与级联</h2>
 <p>时间：B 28:39–30:55。对应：课件 PDF 44,45,46,47 页。<a href="#N13">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3799.0065">原音定位 B 28:39（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3799.0065">原音定位 B 28:39</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-44.jpg" alt="课件 PDF 第 44 页"><figcaption>PDF 第 44 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-45.jpg" alt="课件 PDF 第 45 页"><figcaption>PDF 第 45 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-46.jpg" alt="课件 PDF 第 46 页"><figcaption>PDF 第 46 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-47.jpg" alt="课件 PDF 第 47 页"><figcaption>PDF 第 47 页</figcaption></figure></details>
 
 <p>交换律可以这样解释：信号 \(e\) 经过冲激响应为 \(h\) 的系统，得到一个输出；如果把 \(h\) 拿来当输入信号，再把 \(e\) 当作另一个系统的冲激响应，零状态输出相同。这也是信号与系统紧密相连的一个体现，因为 \(h(t)\) 本身同样是一个信号。</p>
@@ -1004,30 +917,24 @@ r_{zs}(t)=\int_{-\infty}^{\infty}e(\tau)h(t-\tau)d\tau=e(t)*h(t).
 <p><a id="T37"></a></p>
 <h2 id="transcript-t37">T37 · 卷积的微分与累积积分</h2>
 <p>时间：B 30:55–33:15。对应：课件 PDF 47,48 页。<a href="#N14">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="3935.0065">原音定位 B 30:55（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3935.0065">原音定位 B 30:55</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-47.jpg" alt="课件 PDF 第 47 页"><figcaption>PDF 第 47 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-48.jpg" alt="课件 PDF 第 48 页"><figcaption>PDF 第 48 页</figcaption></figure></details>
 
 <p>以后遇到级联子系统，要想到时域等效冲激响应之间是卷积关系；到频域才会出现乘法形式。卷积还有微分与积分性质。</p>
 <p>对 \(f_1*f_2\) 关于 \(t\) 求导，把卷积积分写开，里面只有 \(f_2(t-\tau)\) 这一因子含观察变量 \(t\)，所以可把求导放到这个因子上，得到 \((f_1*f_2)&#x27;=f_1*f_2&#x27;\)。利用交换律，也能写成 \(f_1&#x27;*f_2\)。</p>
 <p>积分也类似，不过这里是从负无穷积到 \(t\)，不是到正无穷。卷积积分外面再加一层积分，通过交换积分次序，可以得到一个函数与另一个函数的累积积分做卷积的形式。</p>
-<blockquote>
-<p>这些交换需要相应数学条件；讲义给出限定。原口头“时域都是卷积”不能扩展为任意系统关系的定理。</p>
-</blockquote>
 <p><a id="T38"></a></p>
 <h2 id="transcript-t38">T38 · 自己推导性质，比只记题目更重要</h2>
 <p>时间：B 33:15–34:00。对应：课件 PDF 48,49 页。<a href="#N14">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="4075.0065">原音定位 B 33:15（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4075.0065">原音定位 B 33:15</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-48.jpg" alt="课件 PDF 第 48 页"><figcaption>PDF 第 48 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-49.jpg" alt="课件 PDF 第 49 页"><figcaption>PDF 第 49 页</figcaption></figure></details>
 
 <p>注意上限一定是 \(t\)；如果积到正无穷，结果就通常不再是一个随 \(t\) 变化的函数。大家课后应自行推导这些性质。</p>
 <p>不可能靠把所有题目做遍来记住全部性质，最好把知识点从脑子里过一遍，再亲手写一遍。性质还可推广到高阶微分、重积分，也可以一边微分、另一边积分来保持原来的卷积。</p>
-<blockquote>
-<p>高阶混合运算的符号在转写中严重错识，公式依 p.49 整理于讲义，并保留后面 p.53 的边界条件。</p>
-</blockquote>
 <p><a id="T39"></a></p>
 <h2 id="transcript-t39">T39 · 用冲激平移简化矩形卷积</h2>
 <p>时间：B 34:00–36:16。对应：课件 PDF 50 页。<a href="#N14">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="4120.0064999999995">原音定位 B 34:00（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4120.0064999999995">原音定位 B 34:00</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-50.jpg" alt="课件 PDF 第 50 页"><figcaption>PDF 第 50 页</figcaption></figure></details>
 
 <p>有了微积分性质，刚才不容易直接算的卷积就能变简单。矩形脉冲求导后变成一正一负两个冲激，而与冲激的卷积最容易处理。另一个信号做积分，也通常比原来直接分段卷积更简单。</p>
@@ -1036,60 +943,45 @@ r_{zs}(t)=\int_{-\infty}^{\infty}e(\tau)h(t-\tau)d\tau=e(t)*h(t).
 <p><a id="T40"></a></p>
 <h2 id="transcript-t40">T40 · 冲激、冲激偶、阶跃与奇偶性问答</h2>
 <p>时间：B 36:16–37:25。对应：课件 PDF 51 页。<a href="#N14">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="4256.0064999999995">原音定位 B 36:16（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4256.0064999999995">原音定位 B 36:16</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-51.jpg" alt="课件 PDF 第 51 页"><figcaption>PDF 第 51 页</figcaption></figure></details>
 
 <p>与 \(\delta\) 卷积，函数不变；与移位冲激卷积，函数作相应时间平移。与冲激偶，即 \(\delta&#x27;\)，卷积则相当于对函数求导。</p>
 <p>教师问：冲激函数是奇函数还是偶函数？课堂回答是偶。再问 \(\delta&#x27;\) 呢？学生回答奇，教师确认。</p>
 <p>还可以推广：\(f*u\) 相当于对 \(f\) 从负无穷累积积分到 \(t\)，这个关系也经常使用。</p>
-<blockquote>
-<p>原稿“频率影响”按 p.51 的平移公式订正为“时间平移”；\(\delta\) 与 \(\delta&#x27;\) 的奇偶性在广义函数意义下理解。</p>
-</blockquote>
 <p><a id="T41"></a></p>
 <h2 id="transcript-t41">T41 · 选择更简单的一边微分或积分</h2>
 <p>时间：B 37:25–39:19。对应：课件 PDF 51,52,53 页。<a href="#N14">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="4325.0064999999995">原音定位 B 37:25（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4325.0064999999995">原音定位 B 37:25</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-51.jpg" alt="课件 PDF 第 51 页"><figcaption>PDF 第 51 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-52.jpg" alt="课件 PDF 第 52 页"><figcaption>PDF 第 52 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-53.jpg" alt="课件 PDF 第 53 页"><figcaption>PDF 第 53 页</figcaption></figure></details>
 
 <p>两个冲激相卷积仍是冲激，移位时把相应位移合起来。用这些性质来算课件的例子，会比直接分段卷积简洁。</p>
 <p>可以对 \(f\) 求导，也可以对 \(h\) 求导，要看另一边积分后哪一种更容易。反过来做也可以，大家自己试一下。把一正一负两个移位结果合起来，就能从图上清楚看出输出。</p>
 <p>但并非任何时候都能这样做：一边求导、另一边积分的性质有条件。对被求导的函数，再从负无穷积回来，要能还原它本身。接下来用一个反例来看。</p>
-<blockquote>
-<p>p.52 的完整题设、图与展开计算见讲义 N14；课堂转写只讨论了选择方法，没有逐行口述所有分段式。</p>
-</blockquote>
 <p><a id="T42"></a></p>
 <h2 id="transcript-t42">T42 · 符号函数反例：差了一个常数</h2>
 <p>时间：B 39:19–40:43。对应：课件 PDF 53 页。<a href="#N15">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="4439.0064999999995">原音定位 B 39:19（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4439.0064999999995">原音定位 B 39:19</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-53.jpg" alt="课件 PDF 第 53 页"><figcaption>PDF 第 53 页</figcaption></figure></details>
 
 <p>考虑符号函数与冲激函数的卷积。直接看就知道结果应是符号函数。如果照刚才的一边求导、另一边积分去做，符号函数的导数是 \(2\delta\)，冲激的积分是 \(u\)，再卷积却得到 \(2u\)，显然与原结果不同。</p>
 <p>错在哪里？学生提示有差别，教师指出差了一个常数。符号函数求导再积分，回不到原来的符号函数；原来被微分消去的常数没有自动回来。大家可以想一想，哪些函数也不满足这种还原条件。</p>
-<blockquote>
-<p>原转写“2倍的预期的”依 p.53 图订正为 \(2u(t)\)。这是影响结论的订正，原音尚待核听。</p>
-</blockquote>
 <p><a id="T43"></a></p>
 <h2 id="transcript-t43">T43 · 负无穷边界条件的课堂解释</h2>
 <p>时间：B 40:43–41:54。对应：课件 PDF 53 页。<a href="#N15">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="4523.0064999999995">原音定位 B 40:43（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4523.0064999999995">原音定位 B 40:43</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-53.jpg" alt="课件 PDF 第 53 页"><figcaption>PDF 第 53 页</figcaption></figure></details>
 
 <p>教师继续让大家思考什么样的函数微分后再积分不等于原函数，并解释问题在无穷远处的值：积分导数时要减去负无穷端的函数值，符号函数在负无穷处不为零，所以出了问题。</p>
-<p>教师以有限长信号作对照，同时保留了口头限定：“我不保证全对……大概是这样”，提醒微积分条件要仔细考虑。</p>
-<blockquote>
-<p>本稿保留探索性说明的确定程度；讲义用边界项公式补足，不把“负无穷为零”写成所有卷积换序的唯一充分条件。</p>
-</blockquote>
+<p>教师以有限长信号作对照，并提醒这一解释仍需结合微积分条件仔细检查。</p>
 <p><a id="T44"></a></p>
 <h2 id="transcript-t44">T44 · 因果性留待下次，作业与下课</h2>
 <p>时间：B 41:54–42:31 音频末端。对应：课件 PDF 54,58 页。<a href="#N16">讲义</a></p>
-<div class="segment-tools"><button type="button" data-seek="4594.0064999999995">原音定位 B 41:54（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4594.0064999999995">原音定位 B 41:54</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-54.jpg" alt="课件 PDF 第 54 页"><figcaption>PDF 第 54 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-58.jpg" alt="课件 PDF 第 58 页"><figcaption>PDF 第 58 页</figcaption></figure></details>
 
 <p>今天还有一些内容没讲完。有了冲激响应 \(h(t)\)，还可以分析系统的因果性，这部分留到后续课，大家先自学。</p>
-<p>课后有几道作业，其中两道是选做的电路题，有兴趣的同学可以画图、尝试求解。随后下课，并说周二再见。</p>
-<blockquote>
-<p>具体题号没有在这一段转写中逐项读出，作业清单及 2-18 更正按课件 p.58 收录在讲义 N16。p.54–56 不记为已经完成讲授。</p>
-</blockquote></article>
+<p>课后有几道作业，其中两道是选做的电路题，有兴趣的同学可以画图、尝试求解。随后下课，并说周二再见。</p></article>
 <article id="sources" data-view="sources" hidden><h1 id="sources-_1">来源、覆盖与订正</h1>
 <h2 id="sources-_2">来源与处理状态</h2>
 <p>本讲为2026-09-20上下两段同一讲素材，归档L03。日期及起始时刻来自转写头部，未验证秒级墙钟。下载原件复制到本讲 Raw，未覆盖、编辑或重命名原件。以下完整SHA256与下载原件逐文件比较一致。</p>
@@ -2026,6 +1918,92 @@ r_{zs}(t)=\int_{-\infty}^{\infty}e(\tau)h(t-\tau)d\tau=e(t)*h(t).
 <li>两份转写共有94个带时间戳发言块，均归入44段；覆盖清单见 <code>assets/qa/transcript-coverage.json</code>。检查覆盖并不自动证明语义忠实，人工已逐段对读。</li>
 <li>删除：无意义的“是吧”等重复、断续重复词、27:55的重复字母，以及与教学无关的闹钟细节；保留课初回顾、学生“平滑/奇函数”回答、动笔要求与课末选做说明。只有删除赘词，不以旧摘要替换正文。</li>
 <li>本页对齐JSON为唯一正式映射；表格由同一数据生成。未创建学习记录，未重编译历史讲次，未修改v2.0基线或共享渲染器。</li>
-</ul></article><footer>课程资料 v2 · 内容状态 draft · 本地离线阅读</footer></main></div>
+</ul>
+<h2 id="sources-v201">v2.0.1语言修订记录</h2>
+<p>2026-09-22：用户已认可L01的讲解型写法，本讲按相同规范通读修订。编校说明移出学习叙述，必要推导自然衔接；原始材料、N/T锚点和片段映射保留。来源与实际处理状态以本文件原有记录为准，本轮语言修订不表示新增原音核听。RC特征根采用原有订正结果−3；中断段的内容补足仍在讲义，未新增课堂T段。上段约34:40，下段約42:31，B段播放器偏移2080.0065秒，按原有映射定位。</p>
+<details markdown="1">
+<summary>按片段归并的编校说明</summary>
+
+<ul>
+<li>
+<p><a href="#T02">T02</a>：公式依上文和课件 p.25 补全为 \(e(t)=\int e(\tau)\delta(t-\tau)d\tau\)。开场转写只留下“有这么一个性质”等指代，没有完整识别公式；不是新增的教师逐字引文。</p>
+</li>
+<li>
+<p><a href="#T06">T06</a>：术语“其次解”统一订正为“齐次解”。指数形式及无重根条件以课件 p.7 为准；重根补充放在讲义，不写成教师本段讲授。</p>
+</li>
+<li>
+<p><a href="#T08">T08</a>：原转写把自由响应概括为“跟输入无关”，应理解为齐次模态的形式由系统决定；系数仍可能与激励有关，见课件 p.22。课件查表也有不与齐次解重合等条件，讲义已单列说明。</p>
+</li>
+<li>
+<p><a href="#T10">T10</a>：冲激不是普通跳变函数；转写的“零时刻取无穷大”只保留为直观描述。变换法把跳变计入结果，并非可以不顾跳变。</p>
+</li>
+<li>
+<p><a href="#T12">T12</a>：转写中的“没有零根”按上下文及 p.7 的条件订正为“没有重根”；公式系数和最终结果按 p.12 补全。</p>
+</li>
+<li>
+<p><a href="#T14">T14</a>：本段口头“初始条件就是零”在严谨定义中指激励前状态为零；不代表各种输入下输出 \(0^+\) 值都必须为零。</p>
+</li>
+<li>
+<p><a href="#T17">T17</a>：本例电压连续有无冲激电流的前提。最后一个转写时间戳是 34:03，音频总长约 34:40；两者不是同一个概念。</p>
+</li>
+<li>
+<p><a href="#T18">T18</a>：数学条件是 \(h(t-\tau)=0\) 对 \(\tau&gt;t\) 成立。下段开头已经在讨论卷积积分限；前面的详细推导没有出现在已提供的两份转写中。</p>
+</li>
+<li>
+<p><a href="#T19">T19</a>：本段“任意输入的响应”限定为零状态；零点可能存在的冲激直接项另见 T23。</p>
+</li>
+<li>
+<p><a href="#T21">T21</a>：公式依 p.30–31 补全：\(h&#x27;&#x27;+4h&#x27;+3h=\delta&#x27;+2\delta\)，配平得到 \(A_1+A_2=1\)、\(3A_1+A_2=2\)。这里不是说所有系统输出天然都是因果信号。</p>
+</li>
+<li>
+<p><a href="#T23">T23</a>：课件 p.32 的求和漏了零阶项，本稿在讲义 N09 订正，并未把完整阶次推导写成这一分钟内的课堂讲解。</p>
+</li>
+<li>
+<p><a href="#T25">T25</a>：原话提到也可“先平移再反折”。本稿固定采用课件顺序；若调换顺序，平移方向须相应变化，不能原样交换两步。</p>
+</li>
+<li>
+<p><a href="#T26">T26</a>：图中从左向右移动对应参数 \(t\) 的变化；对某一个固定位置求面积，才是对 \(\tau\) 积分。两者在口头描述中交织，本稿明确区分。</p>
+</li>
+<li>
+<p><a href="#T28">T28</a>：讲义以 \(f*\delta=f\) 提醒这不是普遍定理；支撑区间条件见 N10。</p>
+</li>
+<li>
+<p><a href="#T30">T30</a>：上述 \(\tau\) 变量按 p.39 订正；原转写数处把积分变量识别成 t。输入题设是 \(e^{-t/2}[u(t)-u(t-2)]\)。</p>
+</li>
+<li>
+<p><a href="#T31">T31</a>：讲义 N11 保留两种结果并补全计算；课件曲线只作示意，峰值位置应由公式复算。</p>
+</li>
+<li>
+<p><a href="#T32">T32</a>：关键订正：原转写说积分上下限“取它的并集”。课件 p.41 明写“上限取小，下限取大”，实际是反折平移后两因子非零区间的<strong>交集</strong>。原音未核听，不判定是口误还是识别错误；不应照原转写计算。</p>
+</li>
+<li>
+<p><a href="#T34">T34</a>：“事物相互作用往往是卷积”是课堂直觉性解释；本稿的数学结论限定在相应 LTI、零状态与卷积存在条件下。</p>
+</li>
+<li>
+<p><a href="#T35">T35</a>：原转写分配律第二项为 \(f_2*f_3\)，按 p.43 订正；27:55 的重复字母无独立教学含义，合并删除。</p>
+</li>
+<li>
+<p><a href="#T37">T37</a>：这些交换需要相应数学条件；讲义给出限定。原口头“时域都是卷积”不能扩展为任意系统关系的定理。</p>
+</li>
+<li>
+<p><a href="#T38">T38</a>：高阶混合运算的符号在转写中严重错识，公式依 p.49 整理于讲义，并保留后面 p.53 的边界条件。</p>
+</li>
+<li>
+<p><a href="#T40">T40</a>：原稿“频率影响”按 p.51 的平移公式订正为“时间平移”；\(\delta\) 与 \(\delta&#x27;\) 的奇偶性在广义函数意义下理解。</p>
+</li>
+<li>
+<p><a href="#T41">T41</a>：p.52 的完整题设、图与展开计算见讲义 N14；课堂转写只讨论了选择方法，没有逐行口述所有分段式。</p>
+</li>
+<li>
+<p><a href="#T42">T42</a>：原转写“2倍的预期的”依 p.53 图订正为 \(2u(t)\)。这是影响结论的订正，原音尚待核听。</p>
+</li>
+<li>
+<p><a href="#T43">T43</a>：本稿保留探索性说明的确定程度；讲义用边界项公式补足，不把“负无穷为零”写成所有卷积换序的唯一充分条件。</p>
+</li>
+<li>
+<p><a href="#T44">T44</a>：具体题号没有在这一段转写中逐项读出，作业清单及 2-18 更正按课件 p.58 收录在讲义 N16。p.54–56 不记为已经完成讲授。</p>
+</li>
+</ul>
+</details></article><footer>课程资料 v2 · 内容状态 draft · 本地离线阅读</footer></main></div>
 <dialog id="lightbox"><button id="close-image" type="button">关闭图片 ×</button><img alt="放大课件图"><p></p></dialog>
 <noscript><style>article[hidden]{display:block!important}</style><p>脚本未启用：所有底稿仍可阅读，公式显示为 LaTeX。</p></noscript></body></html>

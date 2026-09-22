@@ -11,3 +11,6 @@ Thumbs.db
 /docs/publish-*.json
 /AI_Course_Archive_v2/expansion-integrity-*.json
 
+
+# Unredacted local original; publish assets/public derivative instead.
+/聚变能源概论/Lectures/L02/Raw/聚变能源概论2026L2.pdf

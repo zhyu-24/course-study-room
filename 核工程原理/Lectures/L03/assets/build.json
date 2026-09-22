@@ -1,8 +1,8 @@
 {
   "inputs": {
-    "Lecture_Notes.md": "0b9d329059afd83ad07bf47c802a58793cd692aaeb58831759afcca5c7353fc9",
-    "Transcript_Corrected.md": "39a464c27164a570a162c32c33012124b3128416f501ac7eb548343864418ab4",
-    "Lecture_Source_Map.md": "cd23013230ae4c0f6c3f046d470d37c1a7f5c2fc96617889b954580d6312f730"
+    "Lecture_Notes.md": "5fdf4c47c1a11f8ca339a6879ab4e09bc906e7560864c57b3faeb5217bd5a03e",
+    "Transcript_Corrected.md": "c082777e2f226147c560156c4b7fff0a306635a1e36673819b9f6d9a726d204a",
+    "Lecture_Source_Map.md": "0a4359663cb2eac567330d52aa743d81065dcfcbf80e85b3306f1d5cd0b6d3f8"
   },
   "renderer": "Markdown 3.8.2 + KaTeX 0.16.22"
 }

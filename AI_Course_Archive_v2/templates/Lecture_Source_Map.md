@@ -3,6 +3,7 @@ type: lecture-source-map
 course: "待填课程"
 lecture: "Lxx"
 status: draft
+archive_version: v2.0.1
 ---
 
 # 来源与订正

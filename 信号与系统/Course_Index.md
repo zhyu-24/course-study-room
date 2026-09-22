@@ -33,7 +33,7 @@ status: draft
 - 状态：`draft`
 - [完整复习网页（v2默认入口）](Lectures/L01/Review.html)
 - [讲义底稿](Lectures/L01/Lecture_Notes.md)
-- [忠实整理与订正稿](Lectures/L01/Transcript_Corrected.md)
+- [课堂回顾](Lectures/L01/Transcript_Corrected.md)
 - [验收报告](Lectures/L01/QA_Report.md)
 - [[Lectures/L01/Lecture_Source_Map|Source Map]]
 
@@ -42,7 +42,7 @@ status: draft
 - Topics：典型奇异信号；信号分解；系统模型与分类；因果、可逆与 BIBO 稳定；线性时不变系统
 - 状态：`draft`
 - [完整复习网页（默认入口）](Lectures/L02/Review.html)
-- [忠实订正稿](Lectures/L02/Transcript_Corrected.md)
+- [课堂回顾](Lectures/L02/Transcript_Corrected.md)
 - [完整讲义底稿](Lectures/L02/Lecture_Notes.md)
 - [试点验收报告](Lectures/L02/QA_Report.md)
 - [[Lectures/L02/Lecture_Source_Map|Source Map]]
@@ -51,12 +51,12 @@ status: draft
 
 #### Lecture 03 — 经典解法、双零响应、冲激响应与卷积
 
-- 日期：2026-09-20；上下两段素材合并，断点以课件补充明确标识。
+- 日期：2026-09-20；课堂回顾分上下两段，相关知识衔接见讲义第6–8节。
 - Topics：经典解法；起始点跳变；响应分解；冲激与阶跃响应；卷积图解、代数和微积分性质；边界项反例。
-- 状态：`draft`；原音未核听，课堂讲至课件p.53，因果性/稳定性保留为未讲预览。
+- 状态：`draft`；因果性与稳定性判据在L04继续学习。
 - [完整复习网页（默认入口）](Lectures/L03/Review.html)
 - [完整讲义底稿](Lectures/L03/Lecture_Notes.md)
-- [忠实课堂整理与订正稿](Lectures/L03/Transcript_Corrected.md)
+- [课堂回顾](Lectures/L03/Transcript_Corrected.md)
 - [来源、逐页覆盖与订正](Lectures/L03/Lecture_Source_Map.md)
 - [验收报告](Lectures/L03/QA_Report.md)
 
@@ -66,10 +66,10 @@ status: draft
 
 - 日期：2026-09-22；开头补完第二章的因果性与稳定性。
 - Topics：复指数特征响应；三角与指数级数；单双边幅相谱；Parseval；对称性；矩形脉冲、带宽；有限项误差与Gibbs现象。
-- 状态：`draft`；48页逐页核对，44段课堂回顾；原音未核听，源内差异已注明。
+- 状态：`draft`；含44段课堂回顾。
 - [完整复习网页](Lectures/L04/Review.html)
 - [完整讲义底稿](Lectures/L04/Lecture_Notes.md)
-- [忠实整理与订正稿](Lectures/L04/Transcript_Corrected.md)
+- [课堂回顾](Lectures/L04/Transcript_Corrected.md)
 - [来源、覆盖与订正](Lectures/L04/Lecture_Source_Map.md)
 - [验收报告](Lectures/L04/QA_Report.md)
 
@@ -94,6 +94,6 @@ status: draft
 
 - [ ] 课堂课件推荐第四版（2024），当前归档教材为第三版上册。教师说明第三版通常可用、少数习题可能有差异；涉及题号、页码或新增内容时以实际版本页面复核。
 
-## 本轮版本说明
+## 阅读与版本
 
-2026-09-22：按授权完成既有讲次v2重编译，内容保持draft。缺录音/转写时仅生成标明材料边界的讲义，不虚构课堂回顾；其方法先作为候选，等待用户评价。
+讲义采用v2.0.1的讲解型写法，课堂回顾保留授课顺序。学术状态仍为draft；来源、订正和核听进度见各讲来源记录。

@@ -1,7 +1,7 @@
 {
   "inputs": {
-    "Lecture_Notes.md": "b3b75c544d38d538e77a0c9bd91d82b4dc670f71df74599d5337c8c76a84abb7",
-    "Lecture_Source_Map.md": "2893bb59d0aa5dacbb557e952131e973ebaf799a69126203a935e06b23fcb978"
+    "Lecture_Notes.md": "2266eb12851b1ed311b10c305da3f13720b2eb14255b56b3e6a1234894b75cf1",
+    "Lecture_Source_Map.md": "34954bae233af7c858ed8cedda22a55aa996475f26f24c536035cdcbd5e322b1"
   },
   "renderer": "Markdown 3.8.2 + KaTeX 0.16.22"
 }
