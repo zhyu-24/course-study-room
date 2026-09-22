@@ -33,3 +33,11 @@
 ## 本地证据
 
 机器报告位于assets/qa：browser-results.json、content-checks.json、source-coverage.json、all-audio-seeks.json及页面截图。统一入口报告在隔离副本site/qa/browser-results.json。按项目发布规则，本地测试附件不打入公开包；正文、来源记录、课件图、录音和转写均进入交付。
+
+## 发布验证（2026-09-22）
+
+本讲内容与核验过的统一入口已提交并推送；发布内容提交为b52d045d127bdd04d2ace8d8811218cbc5e7c957（教学内容始于0aa2161）。本地共享入口在并行任务生成时曾发生覆盖，已通过隔离索引提交仅含核验输入的发布清单修正；未覆盖其他任务的本地修改。
+
+[本讲完整离线包](https://github.com/zhyu-24/course-study-room/releases/tag/v2026.09.22-ne-l03)已正式发布，非draft。ZIP大小1,034,060,321字节（986.2 MiB），SHA256：`2c72643f50d26661a1370d63fbed20cbc8661845e411bd93ed910c203acd9d6a`。GitHub API回读资产state=uploaded，size及digest与本地完全相同。
+
+打包前1712个跟踪文件逐字节核对，38个Git LFS文件按指针SHA256核对实际原件，差异0；ZIP CRC检查通过。完整包的课程阅读输入与此前99项断网检查的隔离副本一致。本小节为发布后的验证记录，仅文档同步，不重新制作同内容的离线包。
