@@ -1,0 +1,13 @@
+/backups/
+/tmp/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.env
+.env.*
+/site/qa/
+**/assets/qa/
+/docs/publish-*.json
+/AI_Course_Archive_v2/expansion-integrity-*.json
+

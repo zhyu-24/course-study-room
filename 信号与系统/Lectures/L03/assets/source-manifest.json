@@ -1,0 +1,34 @@
+[
+  {
+    "id": "S1",
+    "file": "Ch2.pdf",
+    "sha256": "51b0ea29a9a8af3cbb7a4c31a47f03bbb1e31971687f37e6739fc5bf2edc1960",
+    "bytes": 1458187
+  },
+  {
+    "id": "S2",
+    "file": "连续时间系统时域分析讲解.txt",
+    "sha256": "9a3b2b8437890dea3d8be561c2b893800ddb0b8c2e5b2d70bd5400000926d67b",
+    "bytes": 27850
+  },
+  {
+    "id": "S3",
+    "file": "7687485415771655366_record_audio.m4a",
+    "sha256": "7632906391750824c6705829a93977a389df72efa72d0bf16102eee62796214a",
+    "bytes": 31017728,
+    "duration": 2080.0065
+  },
+  {
+    "id": "S4",
+    "file": "信号系统卷积与冲击响应讲解.txt",
+    "sha256": "1b6d445f83392ccf318050f7db4aaee396f97df7117c4ba2e2fce910f639bc37",
+    "bytes": 34288
+  },
+  {
+    "id": "S5",
+    "file": "7687499313052323003_record_audio.m4a",
+    "sha256": "3794ea7c02bd410268c63e669137628e43300585b83f87ee96a5e9cca1357870",
+    "bytes": 38034762,
+    "duration": 2550.6665
+  }
+]

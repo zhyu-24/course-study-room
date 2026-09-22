@@ -1,0 +1,26 @@
+[
+  {
+    "pdf_page": 11,
+    "printed_page": 7,
+    "purpose": "exercise 1.2/1.3",
+    "first_hit": true,
+    "second_hit": true,
+    "sha256": "895d4bbef9873a6967446f5eff3ed89c07a4278bf866ba1cb02f5a2a0717029a"
+  },
+  {
+    "pdf_page": 17,
+    "printed_page": 13,
+    "purpose": "exercise 2.2/2.3",
+    "first_hit": true,
+    "second_hit": true,
+    "sha256": "f0cbaf8a3d23b39f2aa788fae031e84049280892d0e8f4a7439be715ab7652e0"
+  },
+  {
+    "pdf_page": 22,
+    "printed_page": 18,
+    "purpose": "formula conditions",
+    "first_hit": true,
+    "second_hit": true,
+    "sha256": "59cabed695cb1052c028a8165389590efa1cb3eae36520f4c769a0ad166acad7"
+  }
+]

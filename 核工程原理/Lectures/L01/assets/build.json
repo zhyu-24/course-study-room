@@ -1,0 +1,7 @@
+{
+  "inputs": {
+    "Lecture_Notes.md": "b3b75c544d38d538e77a0c9bd91d82b4dc670f71df74599d5337c8c76a84abb7",
+    "Lecture_Source_Map.md": "2893bb59d0aa5dacbb557e952131e973ebaf799a69126203a935e06b23fcb978"
+  },
+  "renderer": "Markdown 3.8.2 + KaTeX 0.16.22"
+}

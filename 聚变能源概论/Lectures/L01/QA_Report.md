@@ -1,0 +1,37 @@
+---
+status: draft
+archive_version: v2.0
+---
+
+# 聚变能源概论 L01 · 验收记录
+
+日期：2026-09-22。工程检查通过；学术内容仍为draft，等待用户阅读反馈。AI检查不是人工reviewed，也不是逐段原音核听。
+
+## 内容与覆盖
+
+- 讲义10个主要主题，保留图、解释过程、条件及自测；网页从Markdown生成。
+- 44页课件包均有落点；无音频或转写，无法验证课堂顺序、问答和实际讲授边界。
+- 无Transcript_Corrected.md、无课堂回顾视图；不把补讲写成教师原话。缺素材处理仅为本轮候选案例。
+- 重要订正、源内矛盾和待确认项见[来源记录](Lecture_Source_Map.md)。
+
+## 教材与保存
+
+2026-09-22新增用户拍摄教材：33页PDF包含目录V–VIII和正文印刷1–29页（前三章）；目录VI裁切已由用户补图补齐。已逐页视觉查看，建立全书目录级导航；第4章以后只有目录，不能声称正文已收录。未附版权页，实际ISBN、版次和印次仍待核验。
+
+作业1.2、1.3、2.2与选做2.3已按教材原页补全题设；选做及提示来自课件的部分另行标注。教材薄靶条件、麦氏分布同温条件和温度能量单位已核验，第三章内容仅作必要补充/预习，不扩大L01实际课堂范围。书内数值与文字疑点保留在来源记录，不因教材入库自动消除冲突。
+
+33页渲染缓存按完整PDF指纹保存；无OCR和可提取文本层，可搜索定位文件是人工核验节选。作业PDF11、17页及公式条件PDF22页两次查找均复用同一缓存，见[复用记录](../../Global/Cache/ebcbe8a9859b23ca0f2b6d58a955dfb7df8bb55cd2a3e62279e6ab561b17add6/L01_reuse_check.json)。
+
+原始材料与本轮开始时SHA256一致；课件图片和公式库随产物保存。全局教材缓存按实际文件指纹组织，已渲染、文本提取、已视觉阅读分别记账。新来源指纹不复用旧页的机械回归已通过，见[完整性记录](../../../AI_Course_Archive_v2/expansion-integrity-20260922.json)。
+
+本次PDF与目录补图的源文件、归档副本SHA256分别一致；原课件指纹不变，网页构建输入与当前底稿一致，140个Markdown本地链接检查无缺失，见[教材入库完整性记录](assets/qa/textbook-intake-integrity.json)。更新前可恢复副本：`D:/learn/backups/fusion-textbook-before-20260922-161057`。
+
+## 离线阅读检查
+
+[浏览器机器报告](assets/qa/browser-results.json)：Chromium断网打开file URL，外部请求、运行错误、缺图、公式渲染错误、损坏链接和重复锚点均为0；遍历所有视图并滚动加载。1440px桌面和390px窄屏无页面横向溢出，图片放大可用。典型主题、公式与手机截图已人工视觉检查（由Agent看图，不代表用户学术审阅）。
+
+- [讲义首页](assets/qa/notes-top.png)、[典型主题](assets/qa/middle.png)、[窄屏](assets/qa/mobile.png)、[来源入口](assets/qa/sources-top.png)。
+
+教材更新后再次检查：10个主题、80处公式全部正常；断网图片放大和390px窄屏检查通过。[教材专项报告](assets/qa/textbook-check.json)及[原页作业](assets/qa/textbook-homework.png)、[pp反应分支](assets/qa/textbook-branches.png)、[窄屏公式条件](assets/qa/textbook-conditions-mobile.png)均已由Agent看图核对。没有新增录音或转写，仍无教师订正稿；用户认可旧版阅读效果不等于此次新增学术内容已人工reviewed。
+
+本轮授权覆盖旧试点清单中“其余四讲不改写”的范围限制；受保护对象为已确认的信号L02，其冻结版本文件比对全部一致。

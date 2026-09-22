@@ -1,0 +1,874 @@
+{
+  "schema_version": 1,
+  "source_sha256": "10d306ff84e86b481416f9078618de2a72fb0edecc87269348c3caa143c05915",
+  "source_path": "D:\\learn\\信号与系统\\Global\\Raw\\信号与系统_第三版_郑君里_上.pdf",
+  "edition": "第三版上册",
+  "pages": {
+    "1": {
+      "image": "p-001.png",
+      "image_sha256": "24ac94c40516c3e356b104cefac6cb7a80a2c7e6cf660eb37a02a8f61f6e08d4",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visually checked cover, series list, title and copyright: third edition upper volume",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.862
+    },
+    "2": {
+      "image": "p-002.png",
+      "image_sha256": "3f072fa63e580951ec4c0c951aeb9d42e2d3245dacc3dddc4890dbe40e0abbaa",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visually checked cover, series list, title and copyright: third edition upper volume",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.723
+    },
+    "3": {
+      "image": "p-003.png",
+      "image_sha256": "e15877dc4be0357724a636aa8257c53d4e4e140f6ef4911d6a7fc8363da551f4",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visually checked cover, series list, title and copyright: third edition upper volume",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.491
+    },
+    "4": {
+      "image": "p-004.png",
+      "image_sha256": "05252076d710c61bf43c5262dfea7b66e9adeffde7474c7c3f1b7cee22a54627",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visually checked cover, series list, title and copyright: third edition upper volume",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.852
+    },
+    "14": {
+      "image": "p-014.png",
+      "image_sha256": "4807224584ef055117fbc026d999ab702f16ef056800e5fb731ddc4ef6851c10",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.652
+    },
+    "15": {
+      "image": "p-015.png",
+      "image_sha256": "dfe88bc95f9a0c2dd15678dca1d3b42982cc31d0c9f9a0128799b98e95a8abc9",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.845
+    },
+    "16": {
+      "image": "p-016.png",
+      "image_sha256": "cf48499ba504ec767a1988572b23234dcf98d1e21d5a6bce5bbcfc646dfe10ff",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.324
+    },
+    "31": {
+      "image": "p-031.png",
+      "image_sha256": "25a7152b325bb3a183e129dada43ccc7a45ff5ba0a1def063f897a282d4eb0f4",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.779
+    },
+    "32": {
+      "image": "p-032.png",
+      "image_sha256": "cbe5f28db02638f44244fbb7b18a958870216b9a1d6f6c789ad81fc3cb0e749b",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.57
+    },
+    "33": {
+      "image": "p-033.png",
+      "image_sha256": "2821723bc06b2752e5c3548f509e9f030778b655d29595dd4b12eb49cceb7df3",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.573
+    },
+    "34": {
+      "image": "p-034.png",
+      "image_sha256": "291931f50f0d9f222902aa07405cec4ff55395e79e869c0099c3e29e0c421016",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.69
+    },
+    "35": {
+      "image": "p-035.png",
+      "image_sha256": "5133d093af93620ed5ca4b78d2ddfdb351daec03d66157315d52cbe02623272e",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.704
+    },
+    "36": {
+      "image": "p-036.png",
+      "image_sha256": "2dbe6607a1da06e412684947fcdf6c3c3a9c3af6eda4ec742bf32b6f839f0a3a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.416
+    },
+    "37": {
+      "image": "p-037.png",
+      "image_sha256": "479b64d0498a8b3835032e24f40070578b50ad332a77b5156be1a522551589a4",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.769
+    },
+    "38": {
+      "image": "p-038.png",
+      "image_sha256": "f5ecc15cb64be26cfb439d7097c539b578db4dfda76d28a3cdc14583a571e92d",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.624
+    },
+    "39": {
+      "image": "p-039.png",
+      "image_sha256": "a30ba111263fbdab36a04696745818da01a94210cc830abca8c1b5ecb67890cf",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.77
+    },
+    "40": {
+      "image": "p-040.png",
+      "image_sha256": "5603192919854e08aa58a225ceffa729397f7a29919c944a7fef9ff79b56509c",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.479
+    },
+    "41": {
+      "image": "p-041.png",
+      "image_sha256": "8460b668186aff35a417c1d8cc247c9a620d96e24a5bb415f482d0bc53c8eeae",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.655
+    },
+    "42": {
+      "image": "p-042.png",
+      "image_sha256": "00b61772ad4ea3852f0d0346cd6801557e9d3dfd45c5c71b829fd8b297682aac",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.55
+    },
+    "43": {
+      "image": "p-043.png",
+      "image_sha256": "346d00ab12dcca85ce7e571ce6820efa0dfc906c75ec05af111c7a79ccccd1b7",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.606
+    },
+    "44": {
+      "image": "p-044.png",
+      "image_sha256": "cbe441b10d934a8bdb41749b1d50cb17c6316f0509599d378e653bec7e2e2d49",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.63
+    },
+    "45": {
+      "image": "p-045.png",
+      "image_sha256": "d872ef21ae188e1f532d33cedec67cf7d68578db4136deea99d88a74cac966d9",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 1.017
+    },
+    "46": {
+      "image": "p-046.png",
+      "image_sha256": "1f0a4cdd0af9206fd4e45d543e737814262e9a535818e674beeef4ce67e1a368",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 1.388
+    },
+    "47": {
+      "image": "p-047.png",
+      "image_sha256": "f9e132864615947515361fdfc800f0a023fc7b9c7bed5049f5c778418612ed54",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 1.468
+    },
+    "48": {
+      "image": "p-048.png",
+      "image_sha256": "c4a07b290c3e9415fecadaee7ad371bf976a8714df6585c917678663267ed017",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.692
+    },
+    "49": {
+      "image": "p-049.png",
+      "image_sha256": "c4a4351501c57fe4401a81dff2565b52e80c17116b2e70285479ade9550250b5",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 1.547
+    },
+    "50": {
+      "image": "p-050.png",
+      "image_sha256": "337401cac539a3410939d78caa8aff9b9eef6cb98c335c781d4cac0d81493dda",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 1.091
+    },
+    "51": {
+      "image": "p-051.png",
+      "image_sha256": "3b5cc03c9a4030d4e3819911a8205a1e54971458cc3a545a84a03017016f8035",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.936
+    },
+    "52": {
+      "image": "p-052.png",
+      "image_sha256": "79298d1c59f63d7da7c3509bd515812765c231b336da8d3966561ebfbc3f4603",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.588
+    },
+    "53": {
+      "image": "p-053.png",
+      "image_sha256": "262275df852f9b6a0e52c46f6eafe8906e4196768f40a4a7cddd429e56ee48ca",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 1.205
+    },
+    "54": {
+      "image": "p-054.png",
+      "image_sha256": "36aa722a749753b005f8306acf321557e385b60ecde7e0a9eb02d71a1b2ef0b2",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 1.643
+    },
+    "55": {
+      "image": "p-055.png",
+      "image_sha256": "0038756a7fdb02fff4227d3243d1562f40fe93698affc88f7288c6e29b214cd5",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.61
+    },
+    "56": {
+      "image": "p-056.png",
+      "image_sha256": "e507b3a0c91be51d1b2b9ef3880c230371b9ca54348b3d87426932e9c8fba870",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct.",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 1.102
+    },
+    "57": {
+      "image": "p-057.png",
+      "image_sha256": "30b87e8f6f6b0a398fede9142e2d770f387da46f88a808041f0497e20d36e7f4",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct.",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.478
+    },
+    "58": {
+      "image": "p-058.png",
+      "image_sha256": "11efc122234aab03dae18ef9adf9aaa10c50684c1004341081cf1e852fcaa906",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct.",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.399
+    },
+    "59": {
+      "image": "p-059.png",
+      "image_sha256": "ac32d010fc68cda444b09f6ba6f5a31a71411ea7f7ed2e454ab543cb067669d5",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.42
+    },
+    "60": {
+      "image": "p-060.png",
+      "image_sha256": "d2120ec036c63352cc59141c3aa0c47f3f5616f0653ca8ea49f9a958884ff09a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 visual reading: current lecture and exercises",
+      "origin": "reused tmp after comparison with source PDF embedded page image",
+      "legacy_comparison_mean_abs_error": 0.47
+    },
+    "17": {
+      "image": "p-017.png",
+      "image_sha256": "11a557b26716c35d96ae7287841cb24aa5b55d610c045df0870dbbf0db098981",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "18": {
+      "image": "p-018.png",
+      "image_sha256": "36385cc3c4b4172a44c6ea7d782209859e23ae78799ed602fdc6b8f3ae7bcc50",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "19": {
+      "image": "p-019.png",
+      "image_sha256": "d5c5c66446df43495aa93dad61731b8cd8d69bfeead663407446a76203b22b21",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "20": {
+      "image": "p-020.png",
+      "image_sha256": "931ebe9308c056a0cc3950a4b27b05ff367fe37e54f75368443355dace91c897",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "21": {
+      "image": "p-021.png",
+      "image_sha256": "44d658c0f5a258ea350a76cb0bdf117c1c0eb482be401bdfadf9a63fb22af3e5",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "22": {
+      "image": "p-022.png",
+      "image_sha256": "f49185463003d6db4ee0b3245c6471d5773ea82a163e388e63b3b8737a4f7100",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "23": {
+      "image": "p-023.png",
+      "image_sha256": "f9f011e3e67deaf807d0aca72d1f73b292b23a0901e65b86e7e0d3ef904e0e58",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "24": {
+      "image": "p-024.png",
+      "image_sha256": "1e40b572d5a64161fecaae97fea8ebe5c3a95ff8561eba4fc216c6a4d11ddb8e",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "25": {
+      "image": "p-025.png",
+      "image_sha256": "359d816a0a4316fe90d6f54ea941fcbbe7c40e85d3724794feff75ef4666eb8c",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "26": {
+      "image": "p-026.png",
+      "image_sha256": "203b3875eea4a745875eac1c610bd300949eeb629f2756bd739fd9bea2389283",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "27": {
+      "image": "p-027.png",
+      "image_sha256": "f52024c6332502b6233870b5562caf6237707f159d97a46f2f1b367b726bc650",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "28": {
+      "image": "p-028.png",
+      "image_sha256": "2af30cc9bc0a56d490499023ec1cc131a893839a3dbdd7fc5559962c3ac2fb12",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "29": {
+      "image": "p-029.png",
+      "image_sha256": "2bbd84b38fd6c8729309578fc3d2feb7daacadb25d3252d52899ca36bf2403f0",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "30": {
+      "image": "p-030.png",
+      "image_sha256": "7df8cae9f86f2b05b123d4cf09779888ef4aadb8a54236f6aa7f3c3de187ff12",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct."
+    },
+    "66": {
+      "image": "p-066.png",
+      "image_sha256": "7614ae5e923012a038cf6230ff8979ba255d4af75ddfdd54f555636f2a32d65f",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "67": {
+      "image": "p-067.png",
+      "image_sha256": "f562d693d7717394d53709b7ce21c94e199680fc627b9d0fcdaa4f21abc8649c",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "68": {
+      "image": "p-068.png",
+      "image_sha256": "7bc59b98f0eb066c03e27ceba66ded120445556be3936cb5315fce11c7ecafd0",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "69": {
+      "image": "p-069.png",
+      "image_sha256": "e34c948a832d9a55fe186cc914aa1bae715bd94b18b2ec3ef2ae2d564fe4bd8d",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "70": {
+      "image": "p-070.png",
+      "image_sha256": "880ddf0e34449985ab472910fefaac4836da3909afe6b2c6b5f161c5123e9b22",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "71": {
+      "image": "p-071.png",
+      "image_sha256": "4d8e00efc76caf5ef6f8563d942efc61c570a25d80e84ee19acba87a47700a9a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "72": {
+      "image": "p-072.png",
+      "image_sha256": "a04d055cb093e17b097bff72b98526e55fac896a5ca57c21305115eaed3b26fe",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "73": {
+      "image": "p-073.png",
+      "image_sha256": "7997464b6ae90329e9709d4a1a3354879f9613542d165c5339a66a6f13677c72",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "74": {
+      "image": "p-074.png",
+      "image_sha256": "4a5bec7e995fb59fa7ab1068d094a3ed2b9f47700665f03bfed2f774cd843a88",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "75": {
+      "image": "p-075.png",
+      "image_sha256": "28b37f68890bcb9bc6d8ff91fe8b8b81f3c30c924cd7a745d21b960fae0b6aa9",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "76": {
+      "image": "p-076.png",
+      "image_sha256": "36356ed91329ab5a0b5e7931e297764a2e64beb0649edf82a8863477554fec53",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：本页视觉精读，定义/条件/作业题面定位见L03_verified_locator.txt；人工节选非全文OCR"
+    },
+    "77": {
+      "image": "p-077.png",
+      "image_sha256": "6c6c45e0379a94902476f1e9a7de4682dd7333ee287252a1c3dd6a2bf065c397",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "78": {
+      "image": "p-078.png",
+      "image_sha256": "71bc795418380952b4f2221be972429ce4ef3349fadfc4c79fa779e935c313f5",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "79": {
+      "image": "p-079.png",
+      "image_sha256": "22237adb20e9842052c78ace7a6845c37ce2f8ea9b16ac2b8d01b4f1ce996248",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "80": {
+      "image": "p-080.png",
+      "image_sha256": "dbd039f09fd55d64b5bd8451a315188717eeb6c97e248dd7b37adb1468abb647",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：本页视觉精读，定义/条件/作业题面定位见L03_verified_locator.txt；人工节选非全文OCR"
+    },
+    "81": {
+      "image": "p-081.png",
+      "image_sha256": "0cee7105ab30258fa92c8b8fc321a3689bc54cc0b68b3fc8a81a66ada3615a94",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "82": {
+      "image": "p-082.png",
+      "image_sha256": "33f0eed815baa1b5fab543d71e1d3b36ddcb9ad5859c62b6da0b637ed8af9489",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "83": {
+      "image": "p-083.png",
+      "image_sha256": "43783cdf05c236813d344a10b2bf352b7d6f4808be4d863771a267c9de2d0e00",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "84": {
+      "image": "p-084.png",
+      "image_sha256": "c4b13572d39b6b3eb3adbcfe178833fe53f44eaa09a6c395b97cf7da7622cd94",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "85": {
+      "image": "p-085.png",
+      "image_sha256": "6fca09e9a756826d81edd4691c398038458545c67d21a4184395031c3bcb6a21",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "86": {
+      "image": "p-086.png",
+      "image_sha256": "19692a952de8627a94d89db8896d02ad8eef397e2e358e1a5715ca7264cb3382",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "87": {
+      "image": "p-087.png",
+      "image_sha256": "1bc065d0a3845a6891ac6d46dc8060b7d676ef61dc320d285755ff3d5956c480",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "88": {
+      "image": "p-088.png",
+      "image_sha256": "e5f7e2a23db9d1d5e3fad5c344e1659452f9e0eb4eee9d8df79e0fe69327e7af",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "89": {
+      "image": "p-089.png",
+      "image_sha256": "3d0ebd1e26e19fcadbd0e1e073a3b233b78981df6c79ee38bdbc050c921b2572",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "90": {
+      "image": "p-090.png",
+      "image_sha256": "fe92001a3bc7252b4c24aa9032489b320a316bcf96a8d253e0f0a75795c35378",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "91": {
+      "image": "p-091.png",
+      "image_sha256": "6e7b5fb1747ef981d46836e031107612c7dd1dd7159467cce199e4e51a0472b1",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "92": {
+      "image": "p-092.png",
+      "image_sha256": "a1eec06b4662e15a624c6415c1d70c196358887e8e194e795968460465bf60b5",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：本页视觉精读，定义/条件/作业题面定位见L03_verified_locator.txt；人工节选非全文OCR"
+    },
+    "93": {
+      "image": "p-093.png",
+      "image_sha256": "b347994fa4f0a179e25379ef7b292dc382396d6e24eb7a25c549ecada4a8f750",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "94": {
+      "image": "p-094.png",
+      "image_sha256": "b2ae5ec961fbafc0365d9cf72ff23d0d1c177190097a4f5b5be4a0396445371a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "95": {
+      "image": "p-095.png",
+      "image_sha256": "21febf569ab8e4db29dc118dc742beffa3d4433d56a9b50e0ed9ded4257f3331",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "102": {
+      "image": "p-102.png",
+      "image_sha256": "536257a5ae6b1bee36d705e7324d744144b761bfc8211a03becf2dfaa8dff980",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：本页视觉精读，定义/条件/作业题面定位见L03_verified_locator.txt；人工节选非全文OCR"
+    },
+    "103": {
+      "image": "p-103.png",
+      "image_sha256": "d0699fdfef397d822e762eb3b001648314fc375f3a57fc85e7591800766c4871",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：本页视觉精读，定义/条件/作业题面定位见L03_verified_locator.txt；人工节选非全文OCR"
+    },
+    "104": {
+      "image": "p-104.png",
+      "image_sha256": "e2122ed766b9e6b08638c4b554044d0b1033fd50f717e3033fecc0fef6f908f2",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：本页视觉精读，定义/条件/作业题面定位见L03_verified_locator.txt；人工节选非全文OCR"
+    },
+    "105": {
+      "image": "p-105.png",
+      "image_sha256": "467bc0f6b8f3c3862f514cce82cfc52f9d09a9c5f6de4bbcc89e650cfd8af9bd",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：本页视觉精读，定义/条件/作业题面定位见L03_verified_locator.txt；人工节选非全文OCR"
+    },
+    "106": {
+      "image": "p-106.png",
+      "image_sha256": "230afeaacd36a6c64480d520178f22a58038084d0e584dd2ae5386ab84cfef5d",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：本页视觉精读，定义/条件/作业题面定位见L03_verified_locator.txt；人工节选非全文OCR"
+    },
+    "107": {
+      "image": "p-107.png",
+      "image_sha256": "c942485cd92c6e4227cb5d3bf88dd9aa0a79352fc60dd167bd50c0a43c74b75d",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "108": {
+      "image": "p-108.png",
+      "image_sha256": "87dd906c61529b089600c453c3a6461943e01f564a5356628aefa0310b0e1687",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    }
+  }
+}

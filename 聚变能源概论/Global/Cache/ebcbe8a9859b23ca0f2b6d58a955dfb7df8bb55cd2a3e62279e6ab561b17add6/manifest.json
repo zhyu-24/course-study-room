@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "source_sha256": "ebcbe8a9859b23ca0f2b6d58a955dfb7df8bb55cd2a3e62279e6ab561b17add6",
+  "source_path": "D:\\learn\\聚变能源概论\\Global\\Raw\\聚变能源概论_用户拍摄_前三章.pdf",
+  "edition": "用户拍摄前三章；版权页待核",
+  "pages": {
+    "1": {
+      "image": "p-001.png",
+      "image_sha256": "08168afebd57d407090ca9ff5de905953a3365c80b01ad3464f12d5e51a8fbd5",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "V",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "2": {
+      "image": "p-002.png",
+      "image_sha256": "e75c8e999264dac74ef15b86bc0087289fa53f2fedbf38eabca8d322dddc405b",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "VI",
+      "quality_note": "Right page-number column clipped; supplied contents VI image now completes navigation."
+    },
+    "3": {
+      "image": "p-003.png",
+      "image_sha256": "22e58787a98be022843772b86b26e68b9de1ccecda98bfc0e39f86afb6155236",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "VII",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "4": {
+      "image": "p-004.png",
+      "image_sha256": "1e23019d12bf33db42aa8623ab7d49652f0f1c6ec6d26b7068750cc0623b8f9c",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "VIII",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "5": {
+      "image": "p-005.png",
+      "image_sha256": "9b062a6d4b1e9a145e33079fde6f85ddb7240729ed1bc6614ae48470238a56ca",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "1",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "6": {
+      "image": "p-006.png",
+      "image_sha256": "cd6b6abda0a9eb6d6df045104f3f7bb53f5aa5524897ff6f42db8e1e51f7dd6b",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "2",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "7": {
+      "image": "p-007.png",
+      "image_sha256": "274c305f6ef62c6e8ef51202f51bd08067c5967f9c6018cd61d1e0ff598adec9",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "3",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "8": {
+      "image": "p-008.png",
+      "image_sha256": "d681b2effbaf098c95735beecb86d5bc791c0bb8294b26e419786c120e3376c1",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "4",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "9": {
+      "image": "p-009.png",
+      "image_sha256": "38c73dc19a53cf7f78c6c73ca17f9f19568f2f45cc21651777b9e30781d43f8f",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "5",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "10": {
+      "image": "p-010.png",
+      "image_sha256": "32f45d638ea3b6fb3a60e4072078433c78c05379469b29b828cd82a8053fa10d",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "6",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "11": {
+      "image": "p-011.png",
+      "image_sha256": "895d4bbef9873a6967446f5eff3ed89c07a4278bf866ba1cb02f5a2a0717029a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "7",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "12": {
+      "image": "p-012.png",
+      "image_sha256": "581cfc9ac0674df0433a4d9f5ec3ca1065988a3458ad0634aabbf4b97a7ab07a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "8",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "13": {
+      "image": "p-013.png",
+      "image_sha256": "b2469d3d987e4c0c08765412310540bbf1cc9b105b122be69cbfb35b766161ca",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "9",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "14": {
+      "image": "p-014.png",
+      "image_sha256": "8d78720854a6c13d5b25ee634f715d3758911dbe9bc5b501c308d062ed8cae2e",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "10",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "15": {
+      "image": "p-015.png",
+      "image_sha256": "09ab63a8a7a795e2508fff547b53bab12f7841d216dd2cee912f17d5eff3ae8a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "11",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "16": {
+      "image": "p-016.png",
+      "image_sha256": "d5cb7a06fc43b0371f29e9b050c01c9a31ed555b1dc6eb9b41bc7cced3a5b073",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "12",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "17": {
+      "image": "p-017.png",
+      "image_sha256": "f0cbaf8a3d23b39f2aa788fae031e84049280892d0e8f4a7439be715ab7652e0",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "13",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "18": {
+      "image": "p-018.png",
+      "image_sha256": "4f38f63e59e1d1b49fb5c029a4f8e0c9f66179d32284f40cd5136ba64af7e0ae",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "14",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "19": {
+      "image": "p-019.png",
+      "image_sha256": "fcb3b091b4124368b64a10d3b76f9517a71b0bc39491c36fde3f7d51e0aeaa9a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "15",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "20": {
+      "image": "p-020.png",
+      "image_sha256": "08cae68d8b5cd7f0ac48ca2757416cd0c2f22b2ef6b1d08b48e18d1eae84393c",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "16",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "21": {
+      "image": "p-021.png",
+      "image_sha256": "7ceb26f087864f9d249b82e4262e68565e8c7a0506378255b3fdde707ee3afb9",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "17",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "22": {
+      "image": "p-022.png",
+      "image_sha256": "59cabed695cb1052c028a8165389590efa1cb3eae36520f4c769a0ad166acad7",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "18",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "23": {
+      "image": "p-023.png",
+      "image_sha256": "22376dc3620bb1336b61ef1317401d37a921aa1a20e1f98e9d3752560964be2a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "19",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "24": {
+      "image": "p-024.png",
+      "image_sha256": "80c369d3874e64ce03ddf9228b50bfe263dde19cb30950020fc0d6a0761a2472",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. L01 relevant content, exercises and preview formulas checked. Does not certify every printed claim.",
+      "printed_page": "20",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "25": {
+      "image": "p-025.png",
+      "image_sha256": "09d1e5df8a8e5c9ef3149e50f649d98c44f7ca3aa82bde9186b2c29aa15d3033",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. Chapter 3 inventory, figures and section locations inspected; not all incorporated into L01. Does not certify every printed claim.",
+      "printed_page": "21",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "26": {
+      "image": "p-026.png",
+      "image_sha256": "9dc93d3b272b8ef7377b627c0e92b35178bef33ffa0e6dec7b5b5b19673b331a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. Chapter 3 inventory, figures and section locations inspected; not all incorporated into L01. Does not certify every printed claim.",
+      "printed_page": "22",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "27": {
+      "image": "p-027.png",
+      "image_sha256": "badb212429adbe8bfba9428664d622b240552a1c189045813ad5d7ed6d7ed3b0",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. Chapter 3 inventory, figures and section locations inspected; not all incorporated into L01. Does not certify every printed claim.",
+      "printed_page": "23",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "28": {
+      "image": "p-028.png",
+      "image_sha256": "520184b3c60c18762e6c4cba7ca076aa8b23b1dc130e9084f66c84593a71e600",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. Chapter 3 inventory, figures and section locations inspected; not all incorporated into L01. Does not certify every printed claim.",
+      "printed_page": "24",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "29": {
+      "image": "p-029.png",
+      "image_sha256": "cb6a9f44c5920c9f48dda18200e7ca81cd06d45c470c4b99ab14f2f430e3ba42",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. Chapter 3 inventory, figures and section locations inspected; not all incorporated into L01. Does not certify every printed claim.",
+      "printed_page": "25",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "30": {
+      "image": "p-030.png",
+      "image_sha256": "6632cea106b58ba14b2ac3a9f053be2ac85ab418c119b14a84d5d5bcf2b09d3e",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. Chapter 3 inventory, figures and section locations inspected; not all incorporated into L01. Does not certify every printed claim.",
+      "printed_page": "26",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "31": {
+      "image": "p-031.png",
+      "image_sha256": "363220e7e3c0e7cd74447b13cc0419aedfe899c67ce10cf7081a8272e3ff47f2",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. Chapter 3 inventory, figures and section locations inspected; not all incorporated into L01. Does not certify every printed claim.",
+      "printed_page": "27",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    },
+    "32": {
+      "image": "p-032.png",
+      "image_sha256": "57fe0e8343585e8144aaef6774511b2bcc2807a4bdf2c9949b075fba3e8dd5d9",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. Chapter 3 inventory, figures and section locations inspected; not all incorporated into L01. Does not certify every printed claim.",
+      "printed_page": "28",
+      "quality_note": "Photograph with perspective/show-through; some outer-edge line endings clipped. Exact quotations require intact original text."
+    },
+    "33": {
+      "image": "p-033.png",
+      "image_sha256": "430a86fa5f5eb165b1952c10d74954dbe7792f7eb40d60052c59e0fcc376ee39",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 page visually inspected. Chapter 3 inventory, figures and section locations inspected; not all incorporated into L01. Does not certify every printed claim.",
+      "printed_page": "29",
+      "quality_note": "Readable for indexed content; image remains primary evidence."
+    }
+  },
+  "document_scope": "Contents V-VIII and printed pages 1-29, no cover/copyright page.",
+  "edition_identity": "User photographed partial copy; title and chapter sequence checked, imprint not verified.",
+  "supplements": [
+    {
+      "path": "../../Raw/聚变能源概论_目录VI_补全.jpg",
+      "sha256": "4cbe865f162ab85ce7959af6efac9038ffa1f46c4209e3b237b333ec7633d7e4",
+      "supplies": "PDF page 2 contents VI, clipped page-number column",
+      "visual_verified": true
+    }
+  ]
+}

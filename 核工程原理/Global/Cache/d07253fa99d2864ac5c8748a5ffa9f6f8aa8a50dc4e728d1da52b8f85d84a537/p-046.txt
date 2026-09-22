@@ -1,0 +1,42 @@
+ 
+46 
+ 
+如果实验室中的中子能量为 0.025 eV，则在质心系中复合核的激发能是多少？（c）如
+果 α 粒子的动能为 1.47 MeV，反应中发射出 0.48 MeV 的γ射线，则产物核的动能是
+多少？有关原子核的质量，请查阅 https://www-nds.iaea.org/amdc/。 
+13．中子源由 13 g 的 Pu94
+238 和 7 g 的 Be4
+9 混合组成。 Pu94
+238 衰变发射 5.5 MeV 的 α 粒子，半
+衰期为 87.7 年，α 粒子与 Be4
+9 作用产生中子。（a）在此中子源中 Pu94
+238 的放射性活度是
+多少居里（Ci）。（b）α 粒子与 Be4
+9 作用产生什么核？（c）确定产生的中子的最大能
+量。（d）若 106 个 α 粒子会产生 30 个中子，确定中子的产生率。有关原子核的平均结
+合能，请查阅 https://www-nds.iaea.org/amdc/。 
+14．在热中子俘获诱导的 U 二元裂变事件中，裂变产物之一是 141Cs。（a） 如果没有释放
+瞬发中子，另一种裂变产物是什么？（b） 如果两种裂变产物都经过 β 衰变直至稳
+定，最终产物是什么？（c）估计裂变过程释放的能量。 
+参考文献 
+[1]. 环境保护部核与辐 射安全中心组织编写 . 全国注册核安全工程师执业资格考试辅导教
+材——核安全综合知识. 北京：中国原子能出版社，2018 
+[2]. 俞冀阳. 核工程基本原理. 北京：清华大学出版社，2018 
+[3]. 谢仲生主编.核反应堆物理分析（上、下册）.北京：原子能出版社，1996 
+[4]. 俞冀阳. 核能科普 ABC，中国原子能出版，2018 
+[5]. 周明胜，田民波，俞冀阳. 核能利用与核材料. 北京：清华大学出版社，2016 
+[6]. B. R. Martin. Nuclear and Particle Physics. John Wiley & Sons Ltd，England. 2006 
+[7]. C. J. Foot. Atomic Physics. Oxford University Press. 2005 
+[8]. N. K. Glendenning. Direct Nuclear Reactions. World Scientific PublishingCo. Pte. Ltd. 2004 
+[9]. A. Das ，T. Ferbe. Introduction to Nuclear and Particle Physics. Second Edition. World 
+Scientific Publishing Co. Pte. Ltd. 2003 
+[10]. Glasstone，Samuel and Sesonske，Alexander，Nuclear Reactor Engineering，3rd Edition，
+Van Nostrand Reinhold Company，1981. 
+[11]. Glasstone，Samuel，Sourcebook on Atomic Energy，Robert F. Krieger Publishing Company，
+Inc.，1979. 
+[12]. Lamarsh，John R.，Introduction to Nuclear Engineering，Addison-Wesley Company，1977. 
+[13]. Lamarsh，John R.，Introduction to Nuclear Reactor Theory ，Addison-Wesley Company，
+1972.  
+[14]. Kaplan，Irving，Nuclear Physics，2nd Edition，Addison-Wesley Company，1962. 
+ 
+  

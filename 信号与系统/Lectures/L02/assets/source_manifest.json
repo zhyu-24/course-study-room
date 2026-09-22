@@ -1,0 +1,11 @@
+{
+  "source_hashes": {
+    "7686743421407710148_record_audio.m4a": "e23c6617289a2b57dcd418f27951d249a4715e927ca45c7fc33bde9519702bc1",
+    "Ch1_2.pdf": "06a5da10f76e856fedc1444c46ba54b313c338b537f55bdef5b58028c2f5ab26",
+    "信号与系统核心知识点讲解.txt": "5c04e2dc336f6324ec2b987b0678b950722820ba270f9a5af14da94702c3729f"
+  },
+  "textbook_sha256": "10d306ff84e86b481416f9078618de2a72fb0edecc87269348c3caa143c05915",
+  "cache": "D:\\learn\\信号与系统\\Global\\Cache\\10d306ff84e86b481416f9078618de2a72fb0edecc87269348c3caa143c05915",
+  "audio_container_duration_seconds": 5335.58,
+  "audio_listened": false
+}
