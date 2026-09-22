@@ -165,7 +165,7 @@
       "text_extracted": true,
       "ocr": false,
       "visual_verified": true,
-      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct.",
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。",
       "text_file": "p-035.txt",
       "text_note": "Search text only; formulas and figures require image verification. No OCR."
     },
@@ -176,7 +176,7 @@
       "text_extracted": true,
       "ocr": false,
       "visual_verified": true,
-      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct.",
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。",
       "text_file": "p-036.txt",
       "text_note": "Search text only; formulas and figures require image verification. No OCR."
     },
@@ -198,7 +198,7 @@
       "text_extracted": true,
       "ocr": false,
       "visual_verified": true,
-      "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct.",
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。",
       "text_file": "p-045.txt",
       "text_note": "Search text only; formulas and figures require image verification. No OCR."
     },
@@ -366,6 +366,96 @@
       "verification_note": "2026-09-22 current expansion: page content visually read; this status does not certify every source claim as correct.",
       "text_file": "p-419.txt",
       "text_note": "Search text only; formulas and figures require image verification. No OCR."
+    },
+    "29": {
+      "image": "p-029.png",
+      "image_sha256": "dfa5d380e1b70750317343243507d40e0e33a8bed9d4c8a26109b623b4663315",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。"
+    },
+    "37": {
+      "image": "p-037.png",
+      "image_sha256": "ee47ae592b30fa10e68d5a7cb6c32ebbda156e2e7c2fcd8ccca3febb889edd2b",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。"
+    },
+    "38": {
+      "image": "p-038.png",
+      "image_sha256": "1a40d54c49aa005f46c32ecefe2c9230a649d3d11cd6c09284643b3c608fa712",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。"
+    },
+    "47": {
+      "image": "p-047.png",
+      "image_sha256": "a3f18df0c2c5caa3b7b86ccd58fe390405b6b2ec8dc91b21d44f9297ad056a3f",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。"
+    },
+    "48": {
+      "image": "p-048.png",
+      "image_sha256": "b298fda0ae421e2fb5594d752927a6c8e713de0f43a5f9d24abe2a2a55c2cbe4",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。"
+    },
+    "49": {
+      "image": "p-049.png",
+      "image_sha256": "c149486635966613614d44337c6225d62710b420acb49493749823d7e6ba80ab",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。"
+    },
+    "52": {
+      "image": "p-052.png",
+      "image_sha256": "ceb2535fd9ad8158811c2e524a6c3391f84ba1bfe1a662786ef1ae1beb0b1758",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。"
+    },
+    "53": {
+      "image": "p-053.png",
+      "image_sha256": "deefc93781f2abc1cbca22d6c0110ed2414be0ca89cdf49cb1ee8e1c87695e84",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。"
+    },
+    "78": {
+      "image": "p-078.png",
+      "image_sha256": "f4fd8d46f49583268fbc25531b95612ab7bf335f2b0aa48acbfaca53d398dee9",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L03：文本读取与原页看图；只核本讲有关段/公式/题面，不把整章标精读。"
+    },
+    "79": {
+      "image": "p-079.png",
+      "image_sha256": "8f30b69eefba083e3afbf1599ff95a43072a33c36c9656ba17835fc05ad114df",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
     }
   }
 }

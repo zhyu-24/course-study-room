@@ -11,7 +11,7 @@ status: draft
 > 默认阅读入口：[课程复习室](../index.html#course=核工程原理)；下方单讲网页保留为兼容入口。
 
 
-> 课程总入口。当前已收录前两节课；主教材已入库，参考教材保留为辅助核对来源；板书尚未提供。
+> 课程总入口。当前已收录前三节课；主教材已入库，参考教材保留为辅助核对来源；板书尚未提供。
 
 ## Global
 
@@ -51,13 +51,24 @@ status: draft
 - [验收报告](Lectures/L02/QA_Report.md)
 - [[Lectures/L02/Lecture_Source_Map|Source Map]]
 
+#### Lecture 03 — 核物理基础续讲：衰变、中子核反应与截面
+
+- Topics：2026-09-21；放射性衰变；活度与碳-14断代；复合核；微观/宏观截面；平均自由程
+- 状态：`draft`（原音未核听，数字冲突显式保留）
+- [完整复习网页](Lectures/L03/Review.html)
+- [讲义底稿](Lectures/L03/Lecture_Notes.md)
+- [忠实整理与订正稿](Lectures/L03/Transcript_Corrected.md)
+- [来源与覆盖](Lectures/L03/Lecture_Source_Map.md)
+- [验收报告](Lectures/L03/QA_Report.md)
+- 沿用L02的344页课件；25–28复习、29–85本讲范围，英文插页与重复页另记。
+
 ## Planned Course Topics
 
 以下顺序来自第一节课课件中的课程安排，不表示相应内容已经完成编译。
 
 | Topic | Planned location | Current archive status |
 |---|---|---|
-| 核反应堆的核物理基础 | [L02开篇](Lectures/L02/Review.html#N06)，后续待归档 | partial |
+| 核反应堆的核物理基础 | [L02开篇](Lectures/L02/Review.html#N06)、[L03续讲](Lectures/L03/Review.html#N01)，后续待归档 | partial |
 | 堆内中子的慢化 | 后续课程 | not compiled |
 | 中子的扩散 | 后续课程 | not compiled |
 | 反应堆临界理论 | 后续课程 | not compiled |
