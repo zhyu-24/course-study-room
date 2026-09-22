@@ -60,6 +60,19 @@ status: draft
 - [来源、逐页覆盖与订正](Lectures/L03/Lecture_Source_Map.md)
 - [验收报告](Lectures/L03/QA_Report.md)
 
+### Unit 3 — 傅里叶分析
+
+#### Lecture 04 — 傅里叶级数、幅相谱与有限项逼近
+
+- 日期：2026-09-22；开头补完第二章的因果性与稳定性。
+- Topics：复指数特征响应；三角与指数级数；单双边幅相谱；Parseval；对称性；矩形脉冲、带宽；有限项误差与Gibbs现象。
+- 状态：`draft`；48页逐页核对，44段课堂回顾；原音未核听，源内差异已注明。
+- [完整复习网页](Lectures/L04/Review.html)
+- [完整讲义底稿](Lectures/L04/Lecture_Notes.md)
+- [忠实整理与订正稿](Lectures/L04/Transcript_Corrected.md)
+- [来源、覆盖与订正](Lectures/L04/Lecture_Source_Map.md)
+- [验收报告](Lectures/L04/QA_Report.md)
+
 ## Major Topics
 
 | Topic | Primary location | Supporting locations |
@@ -71,6 +84,9 @@ status: draft
 | 奇异信号与冲激性质 | [讲义 N03](Lectures/L02/Review.html#N03) | [课堂回顾 T07](Lectures/L02/Review.html#T07) |
 | 系统分类与 LTI | [讲义 N08](Lectures/L02/Review.html#N08) | [课堂回顾 T22](Lectures/L02/Review.html#T22) |
 | 经典法与双零分解 | [L03 N03](Lectures/L03/Review.html#N03)、[N06](Lectures/L03/Review.html#N06) | [RC差异](Lectures/L03/Review.html#T16) |
+| 因果性与稳定性 | [L04 N02](Lectures/L04/Review.html#N02) | [课堂补讲](Lectures/L04/Review.html#T03) |
+| 傅里叶级数与频谱 | [L04 N05](Lectures/L04/Review.html#N05)、[N09](Lectures/L04/Review.html#N09) | [例题N11](Lectures/L04/Review.html#N11) |
+| 矩形脉冲与Gibbs | [L04 N14](Lectures/L04/Review.html#N14)、[N17](Lectures/L04/Review.html#N17) | [作业N18](Lectures/L04/Review.html#N18) |
 | 冲激响应与卷积 | [L03 N08](Lectures/L03/Review.html#N08)、[N10](Lectures/L03/Review.html#N10) | [课堂回顾](Lectures/L03/Review.html#T18) |
 | 卷积性质与作业 | [L03 N13](Lectures/L03/Review.html#N13)、[N15](Lectures/L03/Review.html#N15) | [作业 N16](Lectures/L03/Review.html#N16) |
 
