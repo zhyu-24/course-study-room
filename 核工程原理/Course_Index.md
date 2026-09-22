@@ -22,7 +22,7 @@ status: draft
 - 主教材：`Global/Raw/核工程原理 第14稿.pdf`（G1，课程知识的首要依据）
 - 参考教材：`Global/Raw/核工程原理参考教材.zip`（G2，仅在主教材未覆盖、需解释或需核对时使用）
 - Syllabus：本次未提供
-- 其他正式全局资料：本次未提供
+- 第一章辅助资料：[思考题与学习资料目录](Global/Global_Source_Map.md#chapter01-supplement)（G3，章级补充）
 
 ## Course Units
 
@@ -38,6 +38,8 @@ status: draft
 - [[Lectures/L01/Lecture_Source_Map|Source Map]]
 
 ### Unit 1 — 反应堆的核物理基础
+
+- [第一章辅助思考题与学习资料](Global/Global_Source_Map.md#chapter01-supplement)：56道思考题、5份参考资料及9份附件，随本章进度使用。
 
 #### Lecture 02 — 反应堆的核物理基础（第一章开篇）
 

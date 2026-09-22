@@ -1,0 +1,116 @@
+{
+  "received": "2026-09-22",
+  "public_redistribution": "user explicitly confirmed authorization on 2026-09-22; repository and offline release permitted",
+  "files": [
+    {
+      "file": "第一章学习资料及思考题.zip",
+      "sha256": "eb73377e45d90fa4aff8c2e0b3ac207799cb49509af657631025c81870034376",
+      "bytes": 8217633,
+      "processing": "archive verified"
+    },
+    {
+      "file": "第一章思考题.pdf",
+      "sha256": "ac05a47216f0af0da03c3ae03043b99c7e08aae30df9fbd2b08ed8e5021c6774",
+      "bytes": 107243,
+      "pages": 3,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "参考资料/lecture02中子源和核反应.pdf",
+      "sha256": "6e6727153f06f9c27be21c264b4804979869592650b48b8cadbdcd4c88c3199a",
+      "bytes": 1604043,
+      "pages": 15,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "参考资料/lecture03有用工具.pdf",
+      "sha256": "9423f85e4e1b3d984aebc9d6db1816a67a04afe501fa9db2bffdb861b1be085f",
+      "bytes": 182267,
+      "pages": 5,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "参考资料/lecture04核反应截面.pdf",
+      "sha256": "a64ea0ecd1cbd3cc68ec561ba49f859349553bfc06a6a0492a5a28a72263f5f5",
+      "bytes": 695579,
+      "pages": 13,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "参考资料/lecture05裂变过程.pdf",
+      "sha256": "37a64c0a3f470342d636ec8a8a87349ac1fda3c858ea6e38a37fd5b07032c42d",
+      "bytes": 1584671,
+      "pages": 15,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "参考资料/lecture07中子循环.pdf",
+      "sha256": "6d095965c5c9635dda7d3335c970d940d1f3ba9f5975304e32265750e73f7cb4",
+      "bytes": 265028,
+      "pages": 10,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "附件/14院士呼吁保护包头钍资源.pdf",
+      "sha256": "9462164aae81534e32dd48117df4ae40c039cf855509a4443973ee648c305d1d",
+      "bytes": 118708,
+      "pages": 3,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "附件/ENDF数据库简介.pdf",
+      "sha256": "f7bd09b674a89713b2f9af98acd73e18da37cd4d5458b9373d3d476b83e7231e",
+      "bytes": 442372,
+      "pages": 10,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "附件/中微子的实验探测和太阳中微子之谜.pdf",
+      "sha256": "421a49ee1afae6da70b7b79afd9bb8b0d60165c59db5e66462762426fc23bbc1",
+      "bytes": 555787,
+      "pages": 9,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "附件/地壳中的元素含量.xlsx",
+      "sha256": "414449a5c64de429c7e61e6ba317c977e47e6da74b5af2978227bc30e6f5be34",
+      "bytes": 17273,
+      "processing": "structure and shared-string headers only"
+    },
+    {
+      "file": "附件/孙文廷调研论文（中微子）.pdf",
+      "sha256": "7d5573e12d0ebed32826acef8754b1f2c9b0336e5df478e2a9cb5ac312f4f3ad",
+      "bytes": 2453304,
+      "pages": 8,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "附件/求二氧化铀中铀５的核密度.pdf",
+      "sha256": "6495f81f5bd508ba9b28c3ab3d11e03b78498da7458ab51b6597f9b0f2c35ceb",
+      "bytes": 58984,
+      "pages": 1,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "附件/深切悼念彭桓武老师.pdf",
+      "sha256": "a15eb9a05e5eef46a8e5d76ba8ecd6f7c31f3a65c58a5317838c06c7b6302924",
+      "bytes": 160963,
+      "pages": 7,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "附件/热中子平均截面公式推导.pdf",
+      "sha256": "4567a95683b20db4fd40076d3843fb52fbdfcb12229fc3b9c14b67f7b5a1de7c",
+      "bytes": 56982,
+      "pages": 1,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    },
+    {
+      "file": "附件/ＭＩＴ铀资源估计.pdf",
+      "sha256": "fed2f8adf62736db39e890c190e3b675b51eaf74c1026b75950e79153c05b53e",
+      "bytes": 479163,
+      "pages": 2,
+      "processing": "text-extracted; topic-only overview; not academically reviewed"
+    }
+  ]
+}
