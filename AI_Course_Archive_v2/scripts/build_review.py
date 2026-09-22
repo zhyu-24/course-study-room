@@ -7,11 +7,15 @@ import markdown
 
 def render_md(path,segments):
     text=path.read_text(encoding='utf-8')
+    # The language revision opts migrated lectures into learner-facing controls.
+    frontmatter=re.match(r'\A---\n(.*?)\n---\n',text,re.S)
+    learner_language=bool(frontmatter and re.search(r'^archive_version:\s*v2\.0\.1\s*$',frontmatter.group(1),re.M))
     text=re.sub(r'\A---\n.*?\n---\n','',text,flags=re.S)
     def segment(match):
         r=segments[match.group(1)]
         gallery=''.join(f'<figure><img loading="lazy" src="assets/slides/p-{p:02}.jpg" alt="课件 PDF 第 {p} 页"><figcaption>PDF 第 {p} 页</figcaption></figure>' for p in r['pages'])
-        return f'<div class="segment-tools"><button type="button" data-seek="{r["start"]}">原音定位 {r["time"].split("–")[0]}（未核听）</button></div>'+ ('<details><summary>展开对应课件页</summary>'+gallery+'</details>' if gallery else '')
+        processing_status='' if learner_language else '（未核听）'
+        return f'<div class="segment-tools"><button type="button" data-seek="{r["start"]}">原音定位 {r["time"].split("–")[0]}{processing_status}</button></div>'+ ('<details><summary>展开对应课件页</summary>'+gallery+'</details>' if gallery else '')
     text=re.sub(r'<!--SEGMENT (T\d+)-->',segment,text)
     text=re.sub(r'<!-- ALIGNMENT_JSON.*?END_ALIGNMENT_JSON -->','',text,flags=re.S)
     math=[]

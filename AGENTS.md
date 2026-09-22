@@ -2,7 +2,7 @@
 
 按需读取，不加载整库或冷备份。开始工作先读目标课程的 `Course_Index.md`，确认讲次、Raw与教材版本；项目当前状态见 [CURRENT_STATE.md](CURRENT_STATE.md)，重要变化见 [CHANGELOG.md](CHANGELOG.md)。
 
-课程编译与辅导的唯一维护规则是 [AI_Course_Archive_v2/README.md](AI_Course_Archive_v2/README.md) 及其指向的规范；当前采用用户确认的v2.0基线。`course-study`仅做执行入口。原始材料不覆盖，网页由Markdown生成；真实核听、文本读取和页面核验分开记录。
+课程编译与辅导的唯一维护规则是 [AI_Course_Archive_v2/README.md](AI_Course_Archive_v2/README.md) 及其指向的规范；当前采用v2.0基线的v2.0.1语言修订，既有资料先试改信号与系统L01，经用户认可后再迁移其余内容。`course-study`仅做执行入口。原始材料不覆盖，网页由Markdown生成；真实核听、文本读取和页面核验分开记录。
 
 状态文档只记录有日期与证据的已验证结果、决策及待办。未知项标待确认，不从历史全局记忆导入。2026-09-22用户已认可本轮缺素材处理与聚变教材补充，已验证方法见编译规范；新的例外仍按实际来源判断。学术自检通过仍为draft。
 

@@ -6,16 +6,16 @@
 <body><header><div class="brand">COURSE NOTEBOOK <span>课程复习室</span></div><div class="course">信号与系统 · L01</div><nav aria-label="阅读模式"><button type="button" data-mode="notes" aria-pressed="true">完整讲义</button><button type="button" data-mode="transcript" aria-pressed="false">课堂回顾</button><button type="button" data-mode="sources" aria-pressed="false">来源与订正</button></nav></header>
 <div class="layout"><aside><div class="aside-title">本页目录</div><nav id="toc" aria-label="章节导航"></nav><p class="hint">正文中的课件图可点击放大。<br>来源与疑点可按需展开。</p><button id="print" type="button">打印当前视图</button></aside>
 <main><article id="notes" data-view="notes"><h1 id="notes-l01">信号与系统 L01 · 课程地图、典型信号与波形运算</h1>
-<p>本讲按约79分钟原始转写与65页课件重建。开场课程要求也保留；末段课件中未详细讲解的例题与微积分图，单独标为课件自学和补充推导。有录音，但本轮未完成核听；关键识别/表述疑点可从课堂回顾定位原音。</p>
-<p>正文依据课件与已注明的课堂材料编写；额外解释标为“补充推导”或“教材补充”。本版尚未经过逐项人工学术复核。</p>
-<p><a href="#sources">来源、覆盖与疑点</a></p>
+<p>声音、图像和电压波形虽然形式不同，都可以用信号来描述；传输、处理这些信号的装置，则可以作为系统来研究。本讲从这两个概念出发，介绍信号的分类与典型波形，再学习平移、反褶和尺度变换。复习时可以把解析式与波形对照起来：式子里的参数变了，图上哪些位置和形状会随之改变？</p>
+<p><a href="#sources">来源与订正</a></p>
 <p><a id="N01"></a></p>
 <h2 id="notes-1">1. 怎样学这门课：先建立课程地图</h2>
-<p>这门课用数学模型研究信号及系统对信号的作用。前半程主要是连续时间系统，后半程主要是离散时间系统；两边都经历“时域描述→变换域分析→应用”。傅里叶变换把信号联系到频率成分，拉普拉斯变换扩大分析工具，离散部分进一步学习Z变换、DTFT、DFT与FFT。第一章提供共同语言，不宜只当成名词目录。</p>
-<p>教师建议先预习教材、再听讲做笔记、课后先复习再做作业。课件是课堂提示，不替代书中的连续论证。参考书可以帮助看同一问题的不同组织方式，英文术语有利于后续读专业材料；AI可辅助讨论，但需要用教材、条件和计算检验答案。</p>
-<p>本班课件推荐郑君里等第四版（2024），教师说第三版也可使用但习题有少量差异。<strong>当前归档教材确认为第三版上册</strong>。讲义中的教材定位以实际第三版为准，不把第四版推荐书目信息当成已归档版本。</p>
-<p>课程图将傅里叶/拉普拉斯、信号空间、变换应用及滤波联系起来，教师明确本学期不覆盖教材第11、12章全部内容。学习时既要能做代数运算，也要理解波形和工程含义；Python、MATLAB可用于画图和数值验证，不能代替概念判断。</p>
-<p>课程要求按原课堂保留：平时作业15%、课堂参与5%、期中40%、期末40%；本年度取消通常的大作业。教师提到的“挑战任务替代考试”仍在考虑中，不是已经生效的规则。作业要求手写后上传，一般次周一23:59前提交，节假日可能调整，迟交按80%计；前后半学期作业还有相应考试前的补交边界。完整日历在PPT p.8，其中11月13日标为期中；转写中个别日期不一致，日程仍须以课程通知核准。课堂强调独立思考与诚信，不接受复制答案或临近结课讨分。</p>
+<p>这门课用数学模型研究信号及系统对信号的作用。前半程主要是连续时间系统，后半程主要是离散时间系统；两边都经历“时域描述→变换域分析→应用”。傅里叶变换把信号联系到频率成分，拉普拉斯变换扩大分析工具，离散部分进一步学习Z变换、DTFT、DFT与FFT。第一章先建立这些分析方法共用的概念和信号表示方式。</p>
+<p>学习时可以按“预习教材—听课并做笔记—复习—完成作业”的顺序推进。课件便于抓住重点，教材则提供更完整的解释和论证。遇到难点，也可以比较参考书的讲法，或借助AI讨论，再结合教材、公式条件和自己的计算检查理解。熟悉常用英文术语，会有助于阅读后续专业材料。</p>
+<p>课程推荐郑君里等编写的《信号与系统》第四版（2024），第三版也可使用，但少数习题有所不同。<strong>本资料配套第三版上册</strong>，下文的教材页码按第三版标注；使用第四版做作业时，需要核对题面。</p>
+<p>课程路线图把傅里叶变换、拉普拉斯变换、信号空间和滤波等内容联系起来，本学期不展开教材第11、12章的全部内容。沿着这条路线学习，既要掌握代数运算，也要理解波形和工程含义。画图前先判断结果的大致形状，再用Python或MATLAB验证，有助于发现公式和直觉之间的偏差。</p>
+<p>课程考核包括：平时作业15%、课堂参与5%、期中40%、期末40%；本年度取消通常的大作业。“挑战任务替代考试”的方案仍在考虑中，尚未定下来。</p>
+<p>作业要求手写后上传，一般次周一23:59前提交，节假日可能调整，迟交按80%计；前后半学期作业还有相应考试前的补交期限。课件第8页的教学日历将11月13日列为期中考试，具体安排以课程通知为准。作业和考试都要求独立完成，评分按课程要求执行。</p>
 <p><img alt="课件 PDF 第 6 页" src="assets/slides/p-06.jpg" /></p>
 <p><img alt="课件 PDF 第 8 页" src="assets/slides/p-08.jpg" /></p>
 <p><img alt="课件 PDF 第 10 页" src="assets/slides/p-10.jpg" /></p>
@@ -24,12 +24,12 @@
 <summary>自测：本课程为什么同时强调解析式和波形？</summary>
 <p>解析式便于推导和计算，波形揭示时间、幅度和结构；两者互相核查。例如自变量乘2代表时间压缩，而不是幅度乘2。</p>
 </details>
-<p><a href="#T01">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T01">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N02"></a></p>
-<h2 id="notes-2">2. 信号、消息、信息：载体与含义分开</h2>
-<p>信号是随时间或空间变化、用于承载消息的物理量或其数学表示。消息是传递的内容；信息可理解为接收者获得的新认识。相同的物理信号是否带来新信息，与接收者已有知识有关。教师用日常消息作直观说明，并非在这里推导严格的信息熵公式，也不能把“字数少”直接等同于“信息量大”。</p>
+<h2 id="notes-2">2. 信号、消息与信息：怎样描述要传递的内容</h2>
+<p>信号是随时间或空间变化、用于承载消息的物理量或其数学表示。消息是传递的内容；信息可理解为接收者获得的新认识。相同的物理信号是否带来新信息，与接收者已有知识有关。例如，一段很长的消息可能只是在重复已知内容，一句简短的消息却可能带来新的认识。因此，信息多少与消息字数没有简单的对应关系。</p>
 <p>语音例子把空气压力变化表示为 \(x(t)\)，横轴时间、纵轴声压或其对应电压，因此是一维信号。灰度图可写成 \(I(x,y)\)，两个空间坐标为自变量，亮度为函数值。彩色图可写成 \((R(x,y),G(x,y),B(x,y))\)：它有三个通道，但仍以两个空间坐标定位，不应把RGB三个分量误称为三个空间维度。</p>
-<p>信号分析关注性质、分解和特征；信号处理对信号作变换以满足任务，例如去噪、滤波；传输关注信号如何从一处到另一处。课程主要研究分析方法并接触处理和传输应用。PPT p.22–26的烽火、电报、卫星、北斗和太空算力插图属于这一背景延伸，转写没有逐图详细解释，不能据此补造讲授过程。</p>
+<p>信号分析关注性质、分解和特征；信号处理对信号作变换以满足任务，例如去噪、滤波；传输关注信号如何从一处到另一处。课程主要研究分析方法，也会接触处理和传输的应用。课件第22–26页用烽火、电报、卫星、北斗和太空算力等例子展示了不同的应用场景。它们涉及的技术各不相同，却都需要回答信号怎样表示、传递和处理的问题。</p>
 <p><img alt="课件 PDF 第 18 页" src="assets/slides/p-18.jpg" /></p>
 <p><img alt="课件 PDF 第 19 页" src="assets/slides/p-19.jpg" /></p>
 <p><img alt="课件 PDF 第 20 页" src="assets/slides/p-20.jpg" /></p>
@@ -38,13 +38,14 @@
 <summary>自测：彩色照片为何可称二维三通道信号？</summary>
 <p>像素位置由x、y两个自变量决定；每个位置有R、G、B三个分量。自变量维数与输出分量数不同。</p>
 </details>
-<p><a href="#T08">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T08">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N03"></a></p>
 <h2 id="notes-3">3. 系统：从框图看输入怎样成为输出</h2>
-<p>系统由相互作用、相互依赖的组成部分构成，整体完成某种功能。研究时可以把系统分成子系统，也可以把多个环节视为一个整体，关键是明确输入、输出和边界。</p>
-<p>广播通信框图从信息源开始：传感器把消息转为可处理信号，发送设备经信道传递，接收设备取得信号，转换器恢复供使用的消息。数字处理框图则是“防混叠滤波→A/D→数字处理→D/A→平滑滤波”。<strong>读图提示：</strong> 中间计算处理的是离散数字表示，输入输出仍可能是连续物理量；A/D前后的对象与D/A前后的对象不能不加区分。</p>
-<p>电路侧重内部电压、电流和元件关系；网络常侧重连接结构；系统侧重整体功能及输入输出关系。这些词在实际语境中可能交叉使用，不能只凭名称认定不同物理对象。系统也不限于电系统，还可按自然/人工/混合、物理/概念等角度讨论。</p>
-<p><strong>分析</strong>是给定系统模型与激励，求响应并解释其意义；<strong>综合/设计</strong>是给定功能或响应要求，构造实现它的系统。教师用滤波任务说明后一类问题，并指出课程以后会接触滤波器。CT例子把信号获取、处理和图像形成联系起来，说明信号与系统研究并非只用于通信。这里不把CT示意扩写成课堂已经推导过重建算法。</p>
+<p>描述了信号，还需要研究它经过某个装置后会发生什么变化。系统由相互作用、相互依赖的组成部分构成，整体完成某种功能。研究时可以把系统分成子系统，也可以把多个环节视为一个整体；明确输入、输出和边界，才能建立相应的模型。</p>
+<p>广播通信框图从信息源开始：传感器把消息转为可处理信号，发送设备经信道传递，接收设备取得信号，转换器恢复供使用的消息。数字处理框图则是“防混叠滤波→A/D→数字处理→D/A→平滑滤波”。沿着框图看，A/D把连续信号转换为数字表示，中间的计算在数字形式下进行，D/A再把处理结果转换为连续输出。因此，整条链路的输入、输出可以是连续物理量，而中间采用数字处理。</p>
+<p>电路侧重内部电压、电流和元件关系；网络常侧重连接结构；系统侧重整体功能及输入输出关系。这些词在实际语境中可能交叉使用，区分时应结合所研究的问题。系统也不限于电系统，还可按自然/人工/混合、物理/概念等角度讨论。</p>
+<p><strong>分析</strong>是给定系统模型与激励，求响应并解释其意义；<strong>综合/设计</strong>是给定功能或响应要求，构造实现它的系统。例如，希望抑制噪声、保留有用成分，需要先明确要求，再选择或设计滤波器。后续学习滤波器时，还会用到这一思路。</p>
+<p>信号与系统的方法也用于成像。CT把信号获取、探测数据处理和图像形成联系起来，可以将这些环节分别看作子系统，再研究它们如何共同完成成像任务。</p>
 <p><img alt="课件 PDF 第 27 页" src="assets/slides/p-27.jpg" /></p>
 <p><img alt="课件 PDF 第 30 页" src="assets/slides/p-30.jpg" /></p>
 <p><img alt="课件 PDF 第 33 页" src="assets/slides/p-33.jpg" /></p>
@@ -52,10 +53,10 @@
 <summary>自测：已知滤波器求输出，与要求压制噪声而设计滤波器，分别是什么问题？</summary>
 <p>前者是系统分析，后者是系统综合/设计。分析还需解释计算结果的物理意义。</p>
 </details>
-<p><a href="#T11">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T11">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N04"></a></p>
-<h2 id="notes-4">4. 分类先问：自变量连续，还是函数值连续</h2>
-<p>确定性信号的取值可由确定规则描述；随机信号用统计规律描述，不能把“看起来乱”当成唯一标准。伪随机序列可能外观随机但由确定算法生成。本课主要从确定性信号开始，概率统计为随机信号的后续分析提供语言。</p>
+<h2 id="notes-4">4. 信号分类：区分时间取值与幅值取值</h2>
+<p>面对不同波形，可以先从生成规律、时间取值和幅值取值三个角度认识它们。确定性信号的取值可由确定规则描述；随机信号则用统计规律描述。外观是否杂乱并不足以区分两者。伪随机序列可能外观随机但由确定算法生成。本课主要从确定性信号开始，概率统计为随机信号的后续分析提供语言。</p>
 <p>连续时间与离散时间按<strong>定义域</strong>分类：连续时间信号在连续的时间范围内定义，允许函数值存在跳变；离散时间信号只在规定的离散时刻定义，其他时刻不是“值为0”，而是通常没有定义。抽样关系写成
 \[
 x[n]=x_c(nT_s),\qquad n\in\mathbb Z.
@@ -93,7 +94,7 @@ x[n]=x_c(nT_s),\qquad n\in\mathbb Z.
 </tbody>
 </table>
 <p>“抽样”改变时间取值集合，“量化”改变幅值集合，两步作用不同。阶梯状波形可能在每一个时刻都有定义，所以不能看见台阶就判为离散时间信号。</p>
-<p>课件p.43三个图的判别过程：第一图是连续时间锯齿，虽然有跳变仍属于连续时间；第二图只在离散时刻给值，幅值未限定为某几个等级，所以判离散时间；第三图同时只取1、2、3三个幅值，判数字信号。后两图只画有限片段，不能单凭当前片段保证全序列周期性。</p>
+<p>用课件第43页的三个波形练习这个判断顺序：第一图是连续时间锯齿，虽然有跳变仍属于连续时间；第二图只在离散时刻给值，幅值未限定为某几个等级，所以判离散时间；第三图同时只取1、2、3三个幅值，判数字信号。后两图只画有限片段，不能单凭当前片段保证全序列周期性。</p>
 <p><img alt="课件 PDF 第 38 页" src="assets/slides/p-38.jpg" /></p>
 <p><img alt="课件 PDF 第 40 页" src="assets/slides/p-40.jpg" /></p>
 <p><img alt="课件 PDF 第 43 页" src="assets/slides/p-43.jpg" /></p>
@@ -101,84 +102,85 @@ x[n]=x_c(nT_s),\qquad n\in\mathbb Z.
 <summary>自测：一条有跳跃的阶梯曲线是否一定是离散时间信号？</summary>
 <p>不一定。先看是否对所有时间定义，再看幅值是否离散。跳跃是函数连续性问题，与时间定义域是否离散不同。</p>
 </details>
-<p><a href="#T15">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T15">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N05"></a></p>
-<h2 id="notes-5">5. 周期性及本讲暂不展开的分类</h2>
-<p>连续时间周期信号要求存在 \(T&gt;0\)，使所有定义域内相应时刻满足 \(x(t+T)=x(t)\)。若存在最小正周期，称为基本周期。离散时间周期信号要求存在正整数 \(N\)，使 \(x[n+N]=x[n]\) 对所有整数 \(n\) 成立。</p>
-<p><strong>补充推导：</strong> 对 \(x[n]=e^{j\omega_0n}\)，周期条件为 \(e^{j\omega_0N}=1\)，即 \(\omega_0N=2\pi k\)，所以须能找到整数 \(N&gt;0,k\)。这解释了为何不能把连续正弦周期公式算出的任意实数直接当成离散序列周期。</p>
-<p>教师用周期延拓说明周期与非周期信号之间的联系：取一段波形反复排列可构造周期波形，令重复间隔越来越大可研究孤立波形的极限。这是一种分析思想，不是“所有非周期信号实际有一个无穷大周期”的严格定义。</p>
-<p>课件还列出能量/功率、一维/多维、因果/非因果信号。能量与功率的完整条件留待后续；本讲不伪造已经讲过的推导。因果信号在此通常指 \(t&lt;0\) 时为0的信号，应与系统因果性区分，系统因果性将在后讲说明。</p>
+<h2 id="notes-5">5. 周期信号：什么才算重复</h2>
+<p>除了时间和幅值的取值，还可以观察波形是否重复。连续时间周期信号要求存在 \(T&gt;0\)，使所有定义域内相应时刻满足 \(x(t+T)=x(t)\)。若存在最小正周期，称为基本周期。离散时间周期信号要求存在正整数 \(N\)，使 \(x[n+N]=x[n]\) 对所有整数 \(n\) 成立。</p>
+<p>对 \(x[n]=e^{j\omega_0n}\)，周期条件为 \(e^{j\omega_0N}=1\)，即 \(\omega_0N=2\pi k\)，所以须能找到整数 \(N&gt;0,k\)。这解释了为何不能把连续正弦周期公式算出的任意实数直接当成离散序列周期。</p>
+<p>周期延拓把周期波形与孤立波形联系起来：取一段波形，每隔一段相同的时间重复一次，就构造出周期波形。逐渐增大重复间隔，各次重复便相隔越来越远，可以据此研究孤立波形的极限。这一分析方法会在后续变换中使用；判断一个信号是否周期，仍须检查它是否满足前面的周期定义。</p>
+<p>信号还可以按能量与功率、维数、因果性等角度分类。一维与多维的区别已经在语音和图像中见到；因果信号通常指 \(t&lt;0\) 时为0的信号。这里描述的是信号自身的取值范围，系统的因果性则涉及输入与输出之间的关系。能量、功率和系统因果性的具体判据将在后续展开。</p>
 <p><img alt="课件 PDF 第 41 页" src="assets/slides/p-41.jpg" /></p>
 <p><img alt="课件 PDF 第 42 页" src="assets/slides/p-42.jpg" /></p>
 <details>
 <summary>自测：周期条件为什么不能只检查几个相邻点？</summary>
 <p>周期性要求对全定义域成立；有限局部重复只是线索。离散信号还要求周期是正整数。</p>
 </details>
-<p><a href="#T17">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T17">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N06"></a></p>
-<h2 id="notes-6">6. 常数、正弦与实指数：参数控制波形的哪里</h2>
-<p>直流信号 \(x(t)=A\) 对所有时间保持同一幅度。正弦类信号可写作 \(x(t)=K\sin(\omega t+\theta)\)，\(K\)控制幅度、\(\omega\)控制变化速度、\(\theta\)控制初始相位。\(\omega\ne0\)时基本周期 \(T=2\pi/|\omega|\)，频率 \(f=1/T\)；余弦可看作相位不同的正弦，不能漏掉角频率与频率间的 \(2\pi\)。</p>
+<h2 id="notes-6">6. 常数、正弦与实指数：参数怎样影响波形</h2>
+<p>掌握分类之后，接下来认识几种常用的基本波形。直流信号 \(x(t)=A\) 对所有时间保持同一幅度。正弦类信号可写作 \(x(t)=K\sin(\omega t+\theta)\)，其中振幅\(K&gt;0\)，\(\omega\)控制变化速度、\(\theta\)控制初始相位。\(\omega\ne0\)时基本周期 \(T=2\pi/|\omega|\)，频率 \(f=1/T\)，因此\(|\omega|=2\pi f\)。余弦可看作相位不同的正弦。</p>
 <p>实指数 \(x(t)=Ke^{\alpha t}\) 中，\(\alpha&gt;0\)随时间增长，\(\alpha&lt;0\)衰减，\(\alpha=0\)变为常数。单边衰减信号还指定起始时刻：
 \[
 x(t)=\begin{cases}0,&amp;t&lt;0,\\e^{-t/\tau},&amp;t\ge0,\end{cases}\qquad\tau&gt;0.
 \]</p>
-<p><strong>教材补充（第三版印刷p.8–9，PDF p.24–25）：</strong> 在 \(t=\tau\) 时，幅度为 \(e^{-1}\approx0.368\)，因此时间常数越大，衰减越慢。若把“衰减快慢”只记成指数前面有负号，就无法区分两条都衰减却速率不同的曲线。</p>
-<p>“单边”意味着负时间被置零，不能只写 \(e^{-t/\tau}\) 却默认为负时间也为零。写公式时同时写参数条件和时间范围，波形才被完整确定。</p>
+<p>在 \(t=\tau\) 时，幅度为 \(e^{-1}\approx0.368\)，因此时间常数越大，衰减越慢。比较两条衰减曲线时，既要看指数的正负，也要看时间常数的大小。</p>
+<p>这里的“单边”由分段条件体现：负时间为零，非负时间按指数衰减。若只写 \(e^{-t/\tau}\)，它在负时间也有非零取值，描述的就是另一条波形。参数条件和时间范围共同确定了完整信号。</p>
 <p><img alt="课件 PDF 第 46 页" src="assets/slides/p-46.jpg" /></p>
 <p><img alt="课件 PDF 第 47 页" src="assets/slides/p-47.jpg" /></p>
 <details>
 <summary>自测：时间常数增大一倍，信号衰减更快还是更慢？</summary>
 <p>更慢。到达原幅度1/e需要的时间正是τ；τ增大意味着相同衰减程度要等待更久。</p>
 </details>
-<p><a href="#T19">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T19">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N07"></a></p>
-<h2 id="notes-7">7. 虚指数与复指数：欧拉公式要会双向使用</h2>
-<p>工程中用 \(j\) 表示虚数单位，\(j^2=-1\)。虚指数
+<h2 id="notes-7">7. 虚指数与复指数：把旋转和包络联系起来</h2>
+<p>正弦与指数还可以统一到复数形式中。工程中用 \(j\) 表示虚数单位，\(j^2=-1\)。虚指数
 \[
 e^{j\omega_0t}=\cos(\omega_0t)+j\sin(\omega_0t)
 \]
 可看成复平面单位圆上的旋转向量，实部和虚部分别为余弦与正弦。模恒为1；\(\omega_0\ne0\)时周期为 \(2\pi/|\omega_0|\)。</p>
-<p><strong>补充推导：</strong> 把正负频率的欧拉公式相加，正弦项抵消；相减，余弦项抵消，于是
+<p>把正负频率的欧拉公式相加，正弦项抵消；相减，余弦项抵消，于是
 \[
 \cos\omega_0t=\frac{e^{j\omega_0t}+e^{-j\omega_0t}}2,\qquad
 \sin\omega_0t=\frac{e^{j\omega_0t}-e^{-j\omega_0t}}{2j}.
 \]
-教师强调从虚指数认出正余弦、从正余弦认出虚指数两种能力都要熟练，这会贯穿傅里叶分析。</p>
-<p>一般复指数为 \(Ke^{st}\)，其中 \(s=\sigma+j\omega_0\)。展开得
+这两组关系使正余弦与虚指数能够相互转换：用欧拉公式可以把虚指数拆开，也可以把正余弦写成正、负频率虚指数的组合。后续傅里叶分析会反复用到这种转换。</p>
+<p>把实指数的幅度变化与虚指数的旋转结合起来，就得到复指数 \(Ke^{st}\)。本节取实幅度系数 \(K\)，其中 \(s=\sigma+j\omega_0\)。展开得
 \[
 Ke^{st}=Ke^{\sigma t}\cos\omega_0t+jKe^{\sigma t}\sin\omega_0t.
 \]
-实部和虚部带有同一个指数包络：\(\sigma&lt;0\)衰减，\(\sigma&gt;0\)增长，\(\sigma=0\)退化为等幅虚指数。波形在振荡并不自动代表周期；若包络变化，通常不能经过固定时间完全重复。转写中的“负指数”在这段实际对应课件p.49“复指数”，已据公式订正。</p>
+实部和虚部带有同一个指数包络：\(\sigma&lt;0\)衰减，\(\sigma&gt;0\)增长，\(\sigma=0\)退化为等幅虚指数。波形在振荡并不自动代表周期；若包络变化，通常不能经过固定时间完全重复。</p>
 <p><img alt="课件 PDF 第 48 页" src="assets/slides/p-48.jpg" /></p>
 <p><img alt="课件 PDF 第 49 页" src="assets/slides/p-49.jpg" /></p>
 <details>
 <summary>自测：σ&lt;0的复指数虽然振荡，是否仍是周期信号？</summary>
 <p>通常不是。相隔一个正弦周期后相位重复，但指数包络改变，所以整个信号并未重复。</p>
 </details>
-<p><a href="#T20">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T20">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N08"></a></p>
-<h2 id="notes-8-sasinc">8. Sa、sinc与高斯：会读形状，也会读归一化</h2>
-<p>\[
+<h2 id="notes-8-sasinc">8. Sa、sinc与高斯脉冲：形状与尺度</h2>
+<p>接下来比较两类常见脉冲：Sa函数有衰减振荡的旁瓣，高斯脉冲则呈平滑的钟形。Sa函数定义为
+\[
 \operatorname{Sa}(t)=\begin{cases}\sin t/t,&amp;t\ne0,\\1,&amp;t=0.\end{cases}
 \]
-零点为 \(t=k\pi\)（非零整数k），它是偶函数，中心主瓣最高为1，两侧振荡幅值逐渐减小。\(t=0\)的值来自极限，不是把0/0当作普通除法。教师口头“周期振荡”应理解为有振荡外观，<strong>Sa本身不满足周期定义</strong>。</p>
-<p>课件采用归一化 \(\operatorname{sinc}(t)=\sin(\pi t)/(\pi t)=\operatorname{Sa}(\pi t)\)，其非零整数点为零点。不同书籍可能把sinc用于不同归一化，遇到符号先查定义。本课给出的积分性质为 \(\int_0^\infty\operatorname{Sa}(t)dt=\pi/2\)，\(\int_{-\infty}^{\infty}\operatorname{Sa}(t)dt=\pi\)。教师此处要求掌握使用，不要求课堂完成收敛性证明。</p>
-<p>“抽样信号”这一函数名不要与“对任意连续信号抽样得到的离散序列”混淆。教师用矩形脉冲与傅里叶变换的联系作预告，具体幅度和尺度将在后续按变换约定计算。</p>
-<p>高斯钟形脉冲写成 \(x(t)=Ee^{-(t/\tau)^2}\)，取 \(\tau&gt;0\)。它关于原点对称，峰值E，\(t=\tau\)时为E/e，\(t=\tau/2\)时为约0.78E；参数τ控制宽度。课上只作简要介绍，本节参数解读由课件和教材PDF p.27补足。</p>
+零点为 \(t=k\pi\)（非零整数k），它是偶函数，中心主瓣最高为1，两侧振荡幅值逐渐减小。\(t=0\)的值来自极限，不是把0/0当作普通除法。虽然它不断穿过横轴，但相邻波瓣的幅度在变化，<strong>Sa不是周期信号</strong>。</p>
+<p>课件采用归一化 \(\operatorname{sinc}(t)=\sin(\pi t)/(\pi t)=\operatorname{Sa}(\pi t)\)，其非零整数点为零点。不同书籍可能把sinc用于不同归一化，遇到符号先查定义。本课给出的积分性质为 \(\int_0^\infty\operatorname{Sa}(t)dt=\pi/2\)，\(\int_{-\infty}^{\infty}\operatorname{Sa}(t)dt=\pi\)。本讲先掌握这些性质的使用，收敛性证明不作展开。</p>
+<p>“抽样信号”这一函数名不要与“对任意连续信号抽样得到的离散序列”混淆。在后续傅里叶分析中，矩形脉冲的变换也会出现这种形状，具体幅度和尺度届时再结合变换公式计算。</p>
+<p>高斯钟形脉冲写成 \(x(t)=Ee^{-(t/\tau)^2}\)，取 \(E&gt;0\)、\(\tau&gt;0\)。它关于纵轴对称，峰值E，\(t=\tau\)时为E/e，\(t=\tau/2\)时为约0.78E。参数τ控制宽度：增大τ会使脉冲变宽，减小τ则使脉冲变窄。</p>
 <p><img alt="课件 PDF 第 50 页" src="assets/slides/p-50.jpg" /></p>
 <p><img alt="课件 PDF 第 51 页" src="assets/slides/p-51.jpg" /></p>
 <details>
 <summary>自测：Sa与本课sinc的第一个正零点各在哪里？</summary>
 <p>Sa(t)在π；sinc(t)=Sa(πt)在1。两者归一化不同，不能只记名称。</p>
 </details>
-<p><a href="#T22">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T22">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N09"></a></p>
 <h2 id="notes-9">9. 平移、反褶与尺度：用特征点避免方向错误</h2>
-<p>信号的自变量运算改变波形在时间轴上的位置和尺度；函数值运算改变幅值或建立其他信号。先区分 \(f(2t)\) 与 \(2f(t)\)：前者时间压缩，后者纵向放大。</p>
-<p>平移：\(y(t)=f(t-\tau)\)。原来发生在 \(u=t_0\) 的特征，现在满足 \(t-\tau=t_0\)，所以发生于 \(t=t_0+\tau\)。\(\tau&gt;0\)右移/延迟，\(\tau&lt;0\)左移/超前。口头“往前往后”容易混，使用方程比依赖方向词可靠。</p>
-<p>反褶：\(y(t)=f(-t)\)，特征点 \(t_0\to-t_0\)，左右镜像、幅值不变。课堂说物理器件不能实现，需理解为任意未知、全时间信号的实时反演需要未来信息；已经存储的有限序列可以倒序读取，并不矛盾。</p>
+<p>同一种基本波形可以出现在不同时间，也可以有不同宽度。描述这些变化，需要对信号的自变量进行运算。自变量运算改变波形在时间轴上的位置和尺度；对函数值作运算，则会改变幅值或形成新的信号。先区分 \(f(2t)\) 与 \(2f(t)\)：前者时间压缩，后者纵向放大。</p>
+<p>平移：\(y(t)=f(t-\tau)\)。原来发生在 \(u=t_0\) 的特征，现在满足 \(t-\tau=t_0\)，所以发生于 \(t=t_0+\tau\)。\(\tau&gt;0\)右移/延迟，\(\tau&lt;0\)左移/超前。用特征点方程核对，就能直接判断平移方向。</p>
+<p>反褶：\(y(t)=f(-t)\)，特征点 \(t_0\to-t_0\)，左右镜像、幅值不变。对任意未知信号进行全时间范围的实时反演，需要取得未来的信息；已经存储的有限序列则可以倒序读取。两种任务的条件不同，讨论能否实现时需要区分。</p>
 <p>尺度：\(y(t)=f(at)\)，\(a\ne0\)，特征点 \(t_0\to t_0/a\)。\(|a|&gt;1\)压缩，\(0&lt;|a|&lt;1\)扩展，宽度变为原来的 \(1/|a|\)；\(a&lt;0\)还反褶。课件p.56的三条斜坡在1、1/2、2处达到同样高度，说明变的是时间，不是峰值。</p>
-<p><strong>补充推导：通用特征点法。</strong> 对 \(y(t)=f(at+b)\)，令旧自变量为u，则每个原特征点映射到
+<p>把这三种变换合在一起，可以得到通用的特征点方法。对 \(y(t)=f(at+b)\)，令旧自变量为u，则每个原特征点映射到
 \[
 t=\frac{u-b}{a}.
 \]
@@ -190,10 +192,10 @@ t=\frac{u-b}{a}.
 <summary>自测：f(2t)的峰值是否变成原来两倍？</summary>
 <p>不会。原峰值对应的时刻除以2，峰值仍相同；2f(t)才是幅值乘2。</p>
 </details>
-<p><a href="#T25">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T25">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N10"></a></p>
 <h2 id="notes-10">10. 组合变换例题：把中间每一步写出来</h2>
-<p><strong>课堂主要例题（PPT p.58）：</strong> 原三角波支撑在[-1,2]，峰值在u=1处为2，求 \(f(-t-1)\)。用 \(u=-t-1\)，得 \(t=-u-1\)：</p>
+<p><strong>例1：平移与反褶（课件第58页）。</strong> 原三角波支撑在[-1,2]，峰值在u=1处为2，求 \(f(-t-1)\)。用 \(u=-t-1\)，得 \(t=-u-1\)：</p>
 <table>
 <thead>
 <tr>
@@ -219,9 +221,11 @@ t=\frac{u-b}{a}.
 </tbody>
 </table>
 <p>按新时间排序，波形从(-3,0)升到(-2,2)，再降到(0,0)，其余为0。两种操作路线均可达到它：先把f(t)延迟1成f(t−1)，再将整个函数的t换成−t；或者先反褶得到g(t)=f(−t)，再将g超前1，得到g(t+1)=f(−t−1)。</p>
-<p><strong>重要条件：</strong> “可以换次序”是指调整每一步参数后可到达同一目标，不表示保持相同平移量任意交换仍相等。原转写末尾有f(−t+1)的混乱表达，整理稿保留编者注，正确路线由原课件图与逐步代入确定。</p>
-<p><strong>课件自学＋补充推导（p.59）：</strong> 原图为 \(f(u)=u\)（0≤u≤2），区间外0，求 \(f(4-2t)\)。先解 \(0\le4-2t\le2\)，得 \(1\le t\le2\)；在此区间输出为4−2t，从(1,2)下降到(2,0)。也可先反褶、再压缩2倍、最后右移2：\(f(t)\to f(-t)\to f(-2t)\to f[-2(t-2)]\)。</p>
-<p><strong>课件自学＋补充推导（p.60）：</strong> 已知g(t)=f(2−2t)，反求f。令u=2−2t，解t=1−u/2，所以 \(f(u)=g(1-u/2)\)。原g图的t=0,1,2分别映到u=2,0,−2，时间方向反转并拉宽2倍。原图在t=1有跳变，恢复后的u=0仍有跳变，只是左右侧互换；不要把跳变连成一条连续斜线。</p>
+<p>比较两条路线：先平移时用的是延迟1，先反褶时用的是超前1。改变操作次序后，平移参数也随之改变，才能得到同一个结果。因此，检查组合变换时，应把每一步的表达式写出来，再与目标比较。</p>
+<p><strong>例2：加入尺度变换（课件第59页，自学）。</strong> 原图为 \(f(u)=u\)（0≤u≤2），区间外0，求 \(f(4-2t)\)。</p>
+<p>先确定非零区间：原自变量u在0到2之间，因此解 \(0\le4-2t\le2\)，得到 \(1\le t\le2\)。在这个区间内，输出为4−2t，波形从(1,2)下降到(2,0)；区间外仍为0。也可以按操作顺序核对：先反褶，再压缩2倍，最后右移2，即\(f(t)\to f(-t)\to f(-2t)\to f[-2(t-2)]\)。</p>
+<p><strong>例3：由变换后的波形还原原信号（课件第60页，自学）。</strong> 已知g(t)=f(2−2t)，反求f。</p>
+<p>令u=2−2t，解得t=1−u/2，所以 \(f(u)=g(1-u/2)\)。原g图的t=0,1,2分别对应u=2,0,−2，时间方向反转，宽度变为原来的2倍。原图在t=1有跳变，恢复后的u=0仍有跳变，只是左右侧互换；画图时应保留这个跳变，不能把两侧连成一条连续斜线。</p>
 <p><img alt="课件 PDF 第 58 页" src="assets/slides/p-58.jpg" /></p>
 <p><img alt="课件 PDF 第 59 页" src="assets/slides/p-59.jpg" /></p>
 <p><img alt="课件 PDF 第 60 页" src="assets/slides/p-60.jpg" /></p>
@@ -229,54 +233,55 @@ t=\frac{u-b}{a}.
 <summary>自测：从g(t)=f(−t)到f(−t−1)，应该把g左移还是右移1？</summary>
 <p>左移1：g(t+1)=f(−t−1)。若右移1则g(t−1)=f(−t+1)，不是题目目标。</p>
 </details>
-<p><a href="#T28">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p>
+<p><a href="#T28">课堂回顾</a> · <a href="#sources">来源</a></p>
 <p><a id="N11"></a></p>
-<h2 id="notes-11">11. 微分、积分、相加与相乘：课件自学部分</h2>
-<p>转写末尾教师将其余图形内容留作自学，下面保留原图并补足步骤，不写进教师整理稿冒充课堂推导。</p>
-<p>微分 \(y(t)=df/dt\) 读的是局部变化率；积分 \(z(t)=\int_{-\infty}^{t}f(\lambda)d\lambda\) 读的是累积面积，积分变量应与上限t区分。p.61原图在−τ到0线性升到1，0到τ恒为1，τ以后降为0。前一段斜率为1/τ，平台斜率0；τ处的向下跳变在广义导数中还对应负冲激，原简图没有完整表示它，不能将图中普通函数部分当成全部导数。</p>
-<p><strong>补充推导：</strong> 对这条原波形，累积积分为
+<h2 id="notes-11">11. 微分、积分、相加与相乘（自学）</h2>
+<p>前面改变的是波形的时间位置和尺度。微分、积分、相加与相乘则进一步利用函数值形成新的信号。这部分按课堂要求自学，可以结合下面的波形，分别从斜率、面积和同一时刻的取值来理解。</p>
+<p>微分 \(y(t)=df/dt\) 读的是局部变化率；积分 \(z(t)=\int_{-\infty}^{t}f(\lambda)d\lambda\) 读的是累积面积，积分变量应与上限t区分。</p>
+<p>课件第61页的原波形在−τ到0线性升到1，0到τ恒为1，τ以后降为0，其中\(\tau&gt;0\)。上升段的斜率为1/τ，平台段的斜率为0；τ处还存在从1降到0的跳变。导数图在这个位置画了一个向下箭头，表示该跳变对应的负冲激。它与前面的矩形部分共同构成导数。下讲学习冲激信号后，再回看这个跳变点就能理解这种表示。</p>
+<p>对这条原波形，累积积分为
 \[
 z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\t+\tau/2,&amp;0\le t&lt;\tau,\\3\tau/2,&amp;t\ge\tau.\end{cases}
 \]
 第一段由三角形面积得二次函数，平台段积分线性增加，信号结束后总面积保持1.5τ。图上0处0.5τ与最终1.5τ可以用面积直接验算。</p>
-<p>两信号相加、相乘都是同一时刻的对应值运算。p.62相加的例子表现叠加干扰；相乘的例子表现调制。不要把逐点相乘等同于卷积：卷积是后续涉及位移、乘积与积分的另一种运算，这里仅作预告。</p>
+<p>两信号相加、相乘，都是取同一时刻的值再进行运算。课件第62页中，相加的例子表现干扰叠加，相乘的例子表现调制。后续还会学习卷积，它涉及位移、乘积与积分，需要与这里的逐点相乘区分。</p>
 <p><img alt="课件 PDF 第 61 页" src="assets/slides/p-61.jpg" /></p>
 <p><img alt="课件 PDF 第 62 页" src="assets/slides/p-62.jpg" /></p>
 <details>
 <summary>自测：原信号在某段为零，累积积分是否也必须为零？</summary>
 <p>不一定。积分保存此前累积的面积；信号结束后可保持非零常数。</p>
 </details>
-<p><a href="#sources">来源与覆盖</a></p>
+<p><a href="#sources">来源</a></p>
 <p><a id="N12"></a></p>
-<h2 id="notes-12">12. 作业、教材对应和复习出口</h2>
-<p>课件p.64作业为 <strong>1-3、1-4、1-5，1-10(a)(b)(c)，1-12单号小题</strong>；预习§1.4–§1.8。课堂最后确认有画图相关作业，但未逐题口述，题号以课件所列为证据。</p>
-<p>当前第三版上册已核页：印刷p.40/PDF p.56有1-3及1-4开头，p.41/PDF p.57接续1-4并列1-5，p.42/PDF p.58有1-10与1-12。其中1-4是变换次序练习，1-10含三角波、阶梯波和半周期正弦图；这些定位直接来自当前版本原页，不由题号猜测。第四版尚未归档，不能宣称跨版题面逐字相同。</p>
-<p>教材主题定位：信号与系统PDF p.17–20；分类p.20–24；典型波形p.24–27；运算p.27–31。课堂只简略解释的步骤，可用本讲补充推导后再回页核验。</p>
-<p>读完后应能自己做三件事：给一条波形按正确的轴分类；从参数解释正弦、指数和Sa的形状；把任意 \(f(at+b)\) 的端点和拐点映射出来。下讲从阶跃、冲激等信号继续，尚不熟悉冲激时可先理解普通分段波形，并将第11节跳变导数说明作为连接点。</p>
+<h2 id="notes-12">12. 作业与复习检查</h2>
+<p>本讲作业见课件第64页：<strong>1-3、1-4、1-5，1-10(a)(b)(c)，1-12单号小题</strong>；预习§1.4–§1.8。画图题要自己画出中间步骤，尤其注意平移、反褶和尺度变换的组合。</p>
+<p>配套的第三版上册中，印刷第40页（PDF第56页）有1-3及1-4开头，第41页（PDF第57页）接续1-4并列出1-5，第42页（PDF第58页）有1-10与1-12。其中，1-4练习变换次序，1-10包含三角波、阶梯波和半周期正弦图。使用第四版时请核对题面，少数习题与第三版不同。</p>
+<p>需要回看教材时，可按主题查找：信号与系统的概念在PDF第17–20页，信号分类在第20–24页，典型波形在第24–27页，信号运算在第27–31页。</p>
+<p>完成复习后，可以用三项任务检查理解：拿到一条波形，能从时间和幅值的取值判断其类别；给定正弦、指数或Sa函数，能说明参数与波形的关系；面对 \(f(at+b)\)（\(a\ne0\)），能算出端点和拐点的新位置并画图。下讲将继续学习阶跃和冲激信号，第11节提到的跳变导数也会有更完整的表达。</p>
 <p><a href="../../Global/Textbook_Index.md">教材目录入口</a> · <a href="../../Global/Raw/信号与系统_第三版_郑君里_上.pdf#page=56">实际第三版作业页</a></p>
 <p><img alt="课件 PDF 第 64 页" src="assets/slides/p-64.jpg" /></p>
 <details>
-<summary>自测：本讲讲义里的自测和PPT指定作业有什么关系？</summary>
-<p>自测检验本节理解，由编者编写；指定作业来自PPT p.64，两者分开，完成自测不代表已交作业。</p>
+<summary>复习检查：画完组合变换的波形后，怎样核对结果？</summary>
+<p>把原波形的端点、峰值点和跳变点逐一代入特征点方程，检查新时刻、幅值和左右顺序。再核对整个非零区间；若含反褶，跳变点两侧的波形也应交换位置。</p>
 </details>
-<p><a href="#T28">回到教师讲解</a> · <a href="#sources">来源与覆盖</a></p></article>
+<p><a href="#T28">课堂回顾</a> · <a href="#sources">来源</a></p></article>
 <article id="transcript" data-view="transcript" hidden><h1 id="transcript-_1">课堂回顾 · 忠实整理与订正稿</h1>
-<p>按原始转写顺序整理。时间为转写段落定位，不是核听后的精确切点；同一片段可对应多页。删除口头赘词、无意义重复和点名姓名，保留解释、例子、要求和有效问答。编者注不属于教师原话。音频尚未核听，关键疑点在原处保留。</p>
+<p>本页按课堂顺序回顾讲解，可通过时间定位播放录音，也可以展开对应课件，或跳转到相关讲义。</p>
+<p><a href="#sources">来源与订正</a></p>
 <p><audio id="class-audio" controls preload="metadata" src="Raw/7685575952903801798_record_audio.m4a">请打开Raw中的音频文件。</audio></p>
 <p><a id="T01"></a></p>
 <h2 id="transcript-t01">T01 · 教材版本与预习</h2>
 <p>原转写：00:00–03:09；课件：PDF p.5。</p>
-<div class="segment-tools"><button type="button" data-seek="0">原音定位 00:00（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="0">原音定位 00:00</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-05.jpg" alt="课件 PDF 第 5 页"><figcaption>PDF 第 5 页</figcaption></figure></details>
 
 <p>课程使用郑君里等编写的《信号与系统》。现在推荐的是2024年的第四版，2011年的第三版也能用，主要内容没有那么大的差别，但少数习题有变化。大家使用不同版本时，做题要注意对应，不能只看题号。</p>
 <p>希望大家课前预习。预习时应当先看书，而不是只看PPT。课件是上课讲解的线索，并没有把教材的内容全部放进去。上课要做笔记，课后也不要马上拿作业一题题做，先把本堂课的内容过一遍，再用作业检查自己哪里没有理解。学这门课要有连续的过程。</p>
-<p><strong>编者注：</strong> 原转写中的作者姓名识别依据PPT p.5订为“郑君里”；当前档案实际保存第三版上册，并没有第四版正文。</p>
 <p><a href="#N01">回到讲义</a></p>
 <p><a id="T02"></a></p>
 <h2 id="transcript-t02-ai">T02 · 参考书、专业英语与AI</h2>
 <p>原转写：03:09–08:37；课件：PDF p.5, 7。</p>
-<div class="segment-tools"><button type="button" data-seek="189">原音定位 03:09（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="189">原音定位 03:09</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-05.jpg" alt="课件 PDF 第 5 页"><figcaption>PDF 第 5 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-07.jpg" alt="课件 PDF 第 7 页"><figcaption>PDF 第 7 页</figcaption></figure></details>
 
 <p>除了主教材，还有奥本海姆的《信号与系统》，中英文版都可以参考。不同作者会以不同的顺序组织同一套内容，看另一种讲法有助于理解。鼓励大家接触英文材料，这门课里的专业词汇以后还会反复见到，早一点熟悉并不吃亏。</p>
@@ -286,7 +291,7 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T03"></a></p>
 <h2 id="transcript-t03">T03 · 课程结构：连续走向离散</h2>
 <p>原转写：08:37–11:57；课件：PDF p.6。</p>
-<div class="segment-tools"><button type="button" data-seek="517">原音定位 08:37（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="517">原音定位 08:37</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-06.jpg" alt="课件 PDF 第 6 页"><figcaption>PDF 第 6 页</figcaption></figure></details>
 
 <p>我们会从连续时间信号与系统走向离散时间信号与系统。第一章是绪论，安排两次课，先把基本概念、分类、常用信号和系统认识起来。第二章在时域研究连续系统，接着学习傅里叶变换、拉普拉斯变换，再看变换的应用。</p>
@@ -296,17 +301,16 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T04"></a></p>
 <h2 id="transcript-t04">T04 · 学习投入与教学日历</h2>
 <p>原转写：11:57–15:31；课件：PDF p.8。</p>
-<div class="segment-tools"><button type="button" data-seek="717">原音定位 11:57（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="717">原音定位 11:57</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-08.jpg" alt="课件 PDF 第 8 页"><figcaption>PDF 第 8 页</figcaption></figure></details>
 
 <p>大学学习有很多可利用的资源，大家可以去图书馆找书、阅读，而不只围绕眼前作业。愿意花时间深入学习，会逐渐看到这些知识之间的联系。</p>
 <p>下面看教学日历。课程会受到假期和调课的影响，有些日期不上课，有些安排需要调整；中间安排期中考试，后面继续离散部分。请留意实际课程安排，不要只按平时每周的习惯判断。</p>
-<p><strong>编者注：</strong> 这一段转写出现日期不一致，包括“11月6日不上”等表达。PPT p.8可读到11月13日期中，11月6日为第六章安排；未核听前不替教师确认是哪一天口误，也不据此创建新的日程。此段保留日历用途，具体日期看原图并以课程通知核准。</p>
 <p><a href="#N01">回到讲义</a></p>
 <p><a id="T05"></a></p>
 <h2 id="transcript-t05">T05 · 数学、物理图像和工程意义</h2>
 <p>原转写：15:31–18:20；课件：PDF p.9。</p>
-<div class="segment-tools"><button type="button" data-seek="931">原音定位 15:31（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="931">原音定位 15:31</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-09.jpg" alt="课件 PDF 第 9 页"><figcaption>PDF 第 9 页</figcaption></figure></details>
 
 <p>这门课有数学，但不只是数学计算。要把基本概念、数学描述和物理意义联系起来，知道一个公式为什么要这样写、它描述什么现象。只背公式，题目换一种表达就容易出问题。</p>
@@ -315,7 +319,7 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T06"></a></p>
 <h2 id="transcript-t06">T06 · 成绩构成与学习责任</h2>
 <p>原转写：18:20–22:49；课件：PDF p.10。</p>
-<div class="segment-tools"><button type="button" data-seek="1100">原音定位 18:20（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1100">原音定位 18:20</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-10.jpg" alt="课件 PDF 第 10 页"><figcaption>PDF 第 10 页</figcaption></figure></details>
 
 <p>本课程作业占15%，课堂参与占5%，期中与期末各占40%。今年不再按以前的方式安排通常的大作业。大家应当在平时完成相应学习，不要到最后才来问能不能多给几分。</p>
@@ -325,18 +329,17 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T07"></a></p>
 <h2 id="transcript-t07">T07 · 作业提交、诚信与绪论范围</h2>
 <p>原转写：22:49–29:53；课件：PDF p.11, 12, 13, 14, 15。</p>
-<div class="segment-tools"><button type="button" data-seek="1369">原音定位 22:49（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1369">原音定位 22:49</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-11.jpg" alt="课件 PDF 第 11 页"><figcaption>PDF 第 11 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-12.jpg" alt="课件 PDF 第 12 页"><figcaption>PDF 第 12 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-13.jpg" alt="课件 PDF 第 13 页"><figcaption>PDF 第 13 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-14.jpg" alt="课件 PDF 第 14 页"><figcaption>PDF 第 14 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-15.jpg" alt="课件 PDF 第 15 页"><figcaption>PDF 第 15 页</figcaption></figure></details>
 
 <p>作业要求自己手写，再上传到网络学堂。一般安排在下一周一晚上23:59之前提交，碰到假期可能调整。迟交的作业会按80%计算，前半学期的作业要在期中相关截止要求前补齐，后半学期也有期末前的截止边界，不能无限期拖下去。</p>
 <p>可以讨论作业，也可以利用AI等工具帮助理解，但最后的推理要自己明白、自己完成。直接复制别人的答案不等于学习。考试必须遵守纪律，作弊的后果很严重，不要抱侥幸心理。</p>
 <p>接下来进入第一章。绪论分两堂课，本堂从信号与系统的基本概念开始，介绍信号怎样描述和分类、一些典型信号以及基本运算。后面还会讲阶跃、冲激等内容，不在今天一次展开。</p>
-<p><strong>编者注：</strong> 删除了纪律警告中的重复修辞；保留课程诚信要求，不将未经核查的处分细节转写成制度依据。</p>
 <p><a href="#N01">回到讲义</a></p>
 <p><a id="T08"></a></p>
 <h2 id="transcript-t08">T08 · 信号、消息与信息</h2>
 <p>原转写：29:53–34:26；课件：PDF p.16, 17。</p>
-<div class="segment-tools"><button type="button" data-seek="1793">原音定位 29:53（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="1793">原音定位 29:53</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-16.jpg" alt="课件 PDF 第 16 页"><figcaption>PDF 第 16 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-17.jpg" alt="课件 PDF 第 17 页"><figcaption>PDF 第 17 页</figcaption></figure></details>
 
 <p>什么是信号？可以把它看成随时间或空间变化、承载消息的量。消息是要传达的具体内容，信号是这种内容的表现和传递方式。信息又与接收者通过消息得到什么新的认识有关，这几个词有联系，但不是完全同一个层次。</p>
@@ -346,28 +349,26 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T09"></a></p>
 <h2 id="transcript-t09">T09 · 一维语音与二维图像</h2>
 <p>原转写：34:26–37:09；课件：PDF p.18, 19, 20。</p>
-<div class="segment-tools"><button type="button" data-seek="2066">原音定位 34:26（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2066">原音定位 34:26</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-18.jpg" alt="课件 PDF 第 18 页"><figcaption>PDF 第 18 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-19.jpg" alt="课件 PDF 第 19 页"><figcaption>PDF 第 19 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-20.jpg" alt="课件 PDF 第 20 页"><figcaption>PDF 第 20 页</figcaption></figure></details>
 
 <p>比如声音，空气压力随时间变化，就形成了一个信号。把这个变化记录下来，可以画成波形，横轴是时间，纵轴是信号值。这样的信号只有一个自变量，是一维的。</p>
 <p>图像也可以看成信号。一幅灰度图，每个位置有不同的亮度；要确定一个位置，需要横、纵两个坐标，所以是二维信号。彩色图可以用红、绿、蓝几个通道表示，每个通道仍然对应图像上的空间位置。</p>
 <p>不要把信号只理解成电压、电流。其他物理量可以先由传感器转换成电信号，再进行处理，或者直接在数学上表示为随时间、空间变化的函数。</p>
-<p><strong>编者注：</strong> RGB是输出的三个分量，不是三个空间自变量。</p>
 <p><a href="#N02">回到讲义</a></p>
 <p><a id="T10"></a></p>
 <h2 id="transcript-t10">T10 · 分析、处理和传输</h2>
 <p>原转写：37:09–40:14；课件：PDF p.21。</p>
-<div class="segment-tools"><button type="button" data-seek="2229">原音定位 37:09（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2229">原音定位 37:09</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-21.jpg" alt="课件 PDF 第 21 页"><figcaption>PDF 第 21 页</figcaption></figure></details>
 
 <p>信号理论涉及分析、处理、传输等不同方面。分析是认识信号具有什么性质、可以分解成什么成分；处理是对它作适当改变，以达到需要的目的；传输则是把信号从一处送到另一处。</p>
 <p>我们这门课主要讲分析，也会涉及一些处理和传输中的基本问题。比如以后出现调制的概念，就和传输相关，但不会把通信系统全部内容都在这里讲完。建立基本分析工具，是为了以后在不同应用里使用。</p>
-<p><strong>编者注：</strong> 相邻PPT p.22–26有通信发展与应用插图，原转写没有逐页展开，讲义把它们作为课件背景处理，不新增教师逐图讲解。</p>
 <p><a href="#N02">回到讲义</a></p>
 <p><a id="T11"></a></p>
 <h2 id="transcript-t11">T11 · 系统与两个框图</h2>
 <p>原转写：40:14–44:47；课件：PDF p.27。</p>
-<div class="segment-tools"><button type="button" data-seek="2414">原音定位 40:14（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2414">原音定位 40:14</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-27.jpg" alt="课件 PDF 第 27 页"><figcaption>PDF 第 27 页</figcaption></figure></details>
 
 <p>系统是若干相互作用、相互依赖的事物组成、具有特定功能的整体。系统可以很大，也可以分成若干子系统。你研究什么问题，就要明确自己把哪一部分当作整体。</p>
@@ -377,7 +378,7 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T12"></a></p>
 <h2 id="transcript-t12">T12 · 电路、网络、系统与分类</h2>
 <p>原转写：44:47–47:04；课件：PDF p.28, 29。</p>
-<div class="segment-tools"><button type="button" data-seek="2687">原音定位 44:47（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2687">原音定位 44:47</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-28.jpg" alt="课件 PDF 第 28 页"><figcaption>PDF 第 28 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-29.jpg" alt="课件 PDF 第 29 页"><figcaption>PDF 第 29 页</figcaption></figure></details>
 
 <p>电系统很重要，但系统不限于电系统。电路、网络和系统这几个词在一些情况下会混用，侧重点不同：电路更多看内部电压、电流，网络看连接关系，系统更多看实现的功能和输入输出关系。</p>
@@ -386,7 +387,7 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T13"></a></p>
 <h2 id="transcript-t13">T13 · 系统分析与系统综合</h2>
 <p>原转写：47:04–50:54；课件：PDF p.30。</p>
-<div class="segment-tools"><button type="button" data-seek="2824">原音定位 47:04（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="2824">原音定位 47:04</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-30.jpg" alt="课件 PDF 第 30 页"><figcaption>PDF 第 30 页</figcaption></figure></details>
 
 <p>分析和综合是两类问题。给定系统，知道输入是什么，要求它会产生什么输出，这是分析。算出答案以后，还要能说明它意味着什么，不能只停留在一个式子。</p>
@@ -396,7 +397,7 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T14"></a></p>
 <h2 id="transcript-t14">T14 · 信号与系统的联系及应用</h2>
 <p>原转写：50:54–54:56；课件：PDF p.31, 32, 33, 34。</p>
-<div class="segment-tools"><button type="button" data-seek="3054">原音定位 50:54（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3054">原音定位 50:54</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-31.jpg" alt="课件 PDF 第 31 页"><figcaption>PDF 第 31 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-32.jpg" alt="课件 PDF 第 32 页"><figcaption>PDF 第 32 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-33.jpg" alt="课件 PDF 第 33 页"><figcaption>PDF 第 33 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-34.jpg" alt="课件 PDF 第 34 页"><figcaption>PDF 第 34 页</figcaption></figure></details>
 
 <p>信号与系统不能完全分开看。信号需要系统来传输、处理，研究系统也总要涉及输入信号、输出响应。不同系统对同一信号可能产生不同作用，同一系统面对不同信号也会表现出不同输出。</p>
@@ -406,7 +407,7 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T15"></a></p>
 <h2 id="transcript-t15">T15 · 确定性、随机与其他分类</h2>
 <p>原转写：54:56–58:30；课件：PDF p.35, 36, 37。</p>
-<div class="segment-tools"><button type="button" data-seek="3296">原音定位 54:56（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3296">原音定位 54:56</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-35.jpg" alt="课件 PDF 第 35 页"><figcaption>PDF 第 35 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-36.jpg" alt="课件 PDF 第 36 页"><figcaption>PDF 第 36 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-37.jpg" alt="课件 PDF 第 37 页"><figcaption>PDF 第 37 页</figcaption></figure></details>
 
 <p>信号有很多分类角度，可以分确定性和随机、连续和离散、周期和非周期，也有能量与功率、一维与多维、因果与非因果等分类。课程都会逐步接触，多维信号在后面的数字图像处理里更常见。</p>
@@ -416,29 +417,27 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T16"></a></p>
 <h2 id="transcript-t16">T16 · 连续时间、抽样与数字化</h2>
 <p>原转写：58:30–01:01:50；课件：PDF p.38, 39, 40。</p>
-<div class="segment-tools"><button type="button" data-seek="3510">原音定位 58:30（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3510">原音定位 58:30</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-38.jpg" alt="课件 PDF 第 38 页"><figcaption>PDF 第 38 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-39.jpg" alt="课件 PDF 第 39 页"><figcaption>PDF 第 39 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-40.jpg" alt="课件 PDF 第 40 页"><figcaption>PDF 第 40 页</figcaption></figure></details>
 
 <p>按自变量划分，连续时间信号在相应时间范围内任意时刻都有定义，曲线上允许出现间断。离散时间信号只在一些规定的时刻给出值，其他时间没有定义。自然界中很多信号按连续方式描述，但也有按天、按年等离散记录的数据。</p>
 <p>连续信号和离散信号有联系。对连续信号取某些特定时刻的值，就得到离散样本；如果按相等时间间隔取值，就是均匀抽样。横轴也可以用样本序号来表示。</p>
 <p>信号幅值本身也有连续和离散之分，所以结合时间和幅值，可以分成四种组合：连续时间、连续幅值是模拟信号；离散时间、连续幅值是抽样信号；连续时间、离散幅值是量化信号；时间和幅值都离散，是数字信号。本课程会由连续走到离散。</p>
-<p><strong>编者注：</strong> 原转写“时间被量化”后紧接自我修正“值被量化”，整理为幅值量化；抽样序号按定义为所有整数，包含0，PPT公式的列举未列0不作为排除依据。</p>
 <p><a href="#N04">回到讲义</a></p>
 <p><a id="T17"></a></p>
 <h2 id="transcript-t17">T17 · 周期信号与周期延拓</h2>
 <p>原转写：01:01:50–01:03:00；课件：PDF p.41, 42。</p>
-<div class="segment-tools"><button type="button" data-seek="3710">原音定位 01:01:50（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3710">原音定位 01:01:50</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-41.jpg" alt="课件 PDF 第 41 页"><figcaption>PDF 第 41 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-42.jpg" alt="课件 PDF 第 42 页"><figcaption>PDF 第 42 页</figcaption></figure></details>
 
 <p>还可以看波形是否经过一定时间重复，区分周期信号与非周期信号。周期信号相隔整数倍周期，值保持相同。</p>
 <p>周期和非周期信号之间也有联系。把一段非周期波形按时间间隔重复排列，可以得到周期延拓；把重复间隔增大，考虑趋于无穷的情况，又能联系到非周期信号。这个思想以后会反复使用。</p>
 <p>因果信号后面再讲，现在先把分类放在这里。</p>
-<p><strong>编者注：</strong> “周期趋于无穷”是构造极限的说法，不是非周期信号的严格周期定义。</p>
 <p><a href="#N05">回到讲义</a></p>
 <p><a id="T18"></a></p>
 <h2 id="transcript-t18">T18 · 三幅波形判别</h2>
 <p>原转写：01:03:00–01:04:07；课件：PDF p.43, 44。</p>
-<div class="segment-tools"><button type="button" data-seek="3780">原音定位 01:03:00（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3780">原音定位 01:03:00</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-43.jpg" alt="课件 PDF 第 43 页"><figcaption>PDF 第 43 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-44.jpg" alt="课件 PDF 第 44 页"><figcaption>PDF 第 44 页</figcaption></figure></details>
 
 <p>这类分类是应该能够拿到分的基本问题。给出三个波形，首先判断连续还是离散，再判断是不是数字信号。</p>
@@ -448,18 +447,17 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T19"></a></p>
 <h2 id="transcript-t19">T19 · 直流、正弦与实指数</h2>
 <p>原转写：01:04:07–01:06:06；课件：PDF p.44, 45, 46, 47。</p>
-<div class="segment-tools"><button type="button" data-seek="3847">原音定位 01:04:07（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3847">原音定位 01:04:07</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-44.jpg" alt="课件 PDF 第 44 页"><figcaption>PDF 第 44 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-45.jpg" alt="课件 PDF 第 45 页"><figcaption>PDF 第 45 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-46.jpg" alt="课件 PDF 第 46 页"><figcaption>PDF 第 46 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-47.jpg" alt="课件 PDF 第 47 页"><figcaption>PDF 第 47 页</figcaption></figure></details>
 
 <p>今天先介绍直流、正弦、指数、抽样等常用信号，奇异信号留到下一堂。直流信号不随时间变化，就是常数。</p>
 <p>正弦信号涉及振幅、角频率和初始相位，给定这些量就能画波形。为什么不单独讲余弦？这里说的正弦类包含正余弦，它们只是相位不同。</p>
 <p>实指数可以写成 \(f(t)=Ke^{\alpha t}\)。α大于0时增长，小于0时衰减，等于0时变成直流。单边指数在t小于0时为0，正时间按指数衰减，其中τ叫时间常数，表示衰减快慢。这些都是以后常用的基本信号。</p>
-<p><strong>编者注：</strong> 原稿口述的字母及指数按PPT p.46–47规范书写，单边指数的τ取正。</p>
 <p><a href="#N06">回到讲义</a></p>
 <p><a id="T20"></a></p>
 <h2 id="transcript-t20">T20 · 欧拉公式要双向熟练</h2>
 <p>原转写：01:06:06–01:08:00；课件：PDF p.48。</p>
-<div class="segment-tools"><button type="button" data-seek="3966">原音定位 01:06:06（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="3966">原音定位 01:06:06</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-48.jpg" alt="课件 PDF 第 48 页"><figcaption>PDF 第 48 页</figcaption></figure></details>
 
 <p>虚指数信号需要重点掌握。大家数学课可能用i，这门课用j表示虚数单位，含义相同。\(e^{j\omega_0t}\)可以看作单位圆上随时间变化的向量，它与正余弦联系在一起。</p>
@@ -469,38 +467,35 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T21"></a></p>
 <h2 id="transcript-t21">T21 · 复指数与变换工具</h2>
 <p>原转写：01:08:00–01:09:22；课件：PDF p.49。</p>
-<div class="segment-tools"><button type="button" data-seek="4080">原音定位 01:08:00（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4080">原音定位 01:08:00</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-49.jpg" alt="课件 PDF 第 49 页"><figcaption>PDF 第 49 页</figcaption></figure></details>
 
 <p>虚指数的重要性会在傅里叶变换中体现。更一般的复指数，指数里有实部和虚部，可以分成实指数部分与虚指数部分。</p>
 <p>写成 \(Ke^{st}\)，其中 \(s=\sigma+j\omega_0\)。σ大于0时包络增长，小于0时衰减。这类复指数与后续拉普拉斯变换密切相关，所以这些形式不是只在绪论出现一次，后面会不断使用。下来可以自己画一画，看看参数变化会带来什么不同。</p>
 <p>下面还有抽样信号，使用也非常多。课程后续会学习抽样定理、卷积定理等重要内容，这里先认识它的形状。</p>
-<p><strong>编者注：</strong> 原文连续识别为“负指数”“负数”“基本的和函数”，由PPT p.49的复数s与明确上下文订为“复指数”；末一术语不作无依据的逐字恢复。</p>
 <p><a href="#N07">回到讲义</a></p>
 <p><a id="T22"></a></p>
 <h2 id="transcript-t22-sa">T22 · Sa函数的形状和性质</h2>
 <p>原转写：01:09:22–01:10:43；课件：PDF p.50。</p>
-<div class="segment-tools"><button type="button" data-seek="4162">原音定位 01:09:22（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4162">原音定位 01:09:22</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-50.jpg" alt="课件 PDF 第 50 页"><figcaption>PDF 第 50 页</figcaption></figure></details>
 
 <p>抽样信号定义为Sa函数，\(\operatorname{Sa}(t)=\sin t/t\)。这个函数在微积分中已经见过：0处取1，是偶函数，有许多过零点，π及其他非零整数倍π处为0，向两边振幅逐渐衰减。</p>
 <p>它还有一些常用积分性质，正半轴的积分是π/2。这门课会使用数学规律，但这里并不要求大家把复杂的收敛性、一致收敛等证明全部重做一遍，而是要理解并掌握所需性质。</p>
-<p><strong>编者注：</strong> 原稿称“周期振荡”和“Sa是三角波的简称”。前者若指整个函数周期性则不成立，按图与公式应为衰减振荡；后者无法由现有材料确认，保留原词为待核听疑点，不当作Sa的词源解释。Sa(0)=1由极限补定义。</p>
 <p><a href="#N08">回到讲义</a></p>
 <p><a id="T23"></a></p>
 <h2 id="transcript-t23-sinc">T23 · sinc与高斯脉冲</h2>
 <p>原转写：01:10:43–01:11:46；课件：PDF p.50, 51, 52。</p>
-<div class="segment-tools"><button type="button" data-seek="4243">原音定位 01:10:43（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4243">原音定位 01:10:43</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-50.jpg" alt="课件 PDF 第 50 页"><figcaption>PDF 第 50 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-51.jpg" alt="课件 PDF 第 51 页"><figcaption>PDF 第 51 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-52.jpg" alt="课件 PDF 第 52 页"><figcaption>PDF 第 52 页</figcaption></figure></details>
 
 <p>有时还会见到sinc函数，注意定义中有没有π。它与Sa的形状相关，只是自变量归一化不同。这个波形要会画，后面一个简单矩形脉冲的傅里叶变换就与它联系起来，会经常使用。</p>
 <p>还有高斯信号，也叫钟形脉冲。高斯函数在相关分析中很重要，本课程会涉及一些，但这里不作很多展开。</p>
-<p><strong>编者注：</strong> 原稿一处“sinc与sin有点像”，结合前后及PPT p.50整理为sinc与Sa的关系；具体采用 \(\operatorname{sinc}(t)=\operatorname{Sa}(\pi t)\)。</p>
 <p><a href="#N08">回到讲义</a></p>
 <p><a id="T24"></a></p>
 <h2 id="transcript-t24">T24 · 分解思想与运算分类</h2>
 <p>原转写：01:11:46–01:13:47；课件：PDF p.52, 53。</p>
-<div class="segment-tools"><button type="button" data-seek="4306">原音定位 01:11:46（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4306">原音定位 01:11:46</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-52.jpg" alt="课件 PDF 第 52 页"><figcaption>PDF 第 52 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-53.jpg" alt="课件 PDF 第 53 页"><figcaption>PDF 第 53 页</figcaption></figure></details>
 
 <p>为什么要学这些看起来简单的典型信号？因为复杂信号可以分解成简单信号的组合。这是课程很核心的思想：把复杂问题拆成能掌握的基本部分，再组织起来。</p>
@@ -510,48 +505,45 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <p><a id="T25"></a></p>
 <h2 id="transcript-t25">T25 · 平移的方向</h2>
 <p>原转写：01:13:47–01:14:52；课件：PDF p.54, 55。</p>
-<div class="segment-tools"><button type="button" data-seek="4427">原音定位 01:13:47（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4427">原音定位 01:13:47</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-54.jpg" alt="课件 PDF 第 54 页"><figcaption>PDF 第 54 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-55.jpg" alt="课件 PDF 第 55 页"><figcaption>PDF 第 55 页</figcaption></figure></details>
 
 <p>平移是从 \(f(t)\) 变成 \(f(t-\tau)\)。τ大于0，表示信号延迟；τ小于0，表示超前。比如f(t−1)延迟一个单位，f(t+1)超前一个单位。</p>
 <p>从波形上看，一个向右移、一个向左移。要把公式和图对应起来，不要只记一个方向词。</p>
 <p>另一个运算是反褶，把时间变量取负，从f(t)变成f(−t)，也就是对时间轴上的左右位置作镜像。</p>
-<p><strong>编者注：</strong> 原转写有“往前/往后”和把结果写成f(t)=f(t−τ)的口头混用。本段按PPT p.54区分原信号与变换后信号：延迟向右，超前向左；不是声称二者恒等。</p>
 <p><a href="#N09">回到讲义</a></p>
 <p><a id="T26"></a></p>
 <h2 id="transcript-t26">T26 · 反褶及实现含义</h2>
 <p>原转写：01:14:52–01:15:34；课件：PDF p.55。</p>
-<div class="segment-tools"><button type="button" data-seek="4492">原音定位 01:14:52（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4492">原音定位 01:14:52</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-55.jpg" alt="课件 PDF 第 55 页"><figcaption>PDF 第 55 页</figcaption></figure></details>
 
 <p>反褶就是相对于纵轴作镜像，原来的过去和未来位置互换。看图，左边的部分移到右边，右边的部分移到左边。</p>
 <p>这个功能在物理实现上需要注意。一般说不能让一个实际器件把任意信号的时间直接倒过来；数字处理可以用后进先出等方式等效实现。</p>
-<p><strong>编者注：</strong> 为避免把教师概括理解成绝对禁令：对任意未知信号的全时间实时反演涉及未来信息，而已经录下的有限信号倒序播放是另一种有缓存的任务。此解释不改变原段对实现差异的提醒。</p>
 <p><a href="#N09">回到讲义</a></p>
 <p><a id="T27"></a></p>
 <h2 id="transcript-t27">T27 · 尺度变换与读图</h2>
 <p>原转写：01:15:34–01:17:13；课件：PDF p.56, 57。</p>
-<div class="segment-tools"><button type="button" data-seek="4534">原音定位 01:15:34（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4534">原音定位 01:15:34</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-56.jpg" alt="课件 PDF 第 56 页"><figcaption>PDF 第 56 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-57.jpg" alt="课件 PDF 第 57 页"><figcaption>PDF 第 57 页</figcaption></figure></details>
 
-<p>尺度变换是从f(t)变成f(at)。a的绝对值大于1，时间轴上压缩；绝对值小于1，时间轴上扩展。</p>
+<p>尺度变换是从f(t)变成f(at)。a的绝对值大于1，时间轴上压缩；绝对值大于0且小于1，时间轴上扩展。</p>
 <p>比如f(2t)，原来在1达到同样高度，现在在1/2就达到，波形变窄。换成f(t/2)，就要到2才达到同样位置，波形变宽。所以我们要学会画图，也要学会从图上判断发生了什么。</p>
 <p>更一般的变换既有平移，也有反褶和尺度变化。给原图，应当会画变换后的图；反过来给变换后的图，也应当能够还原原图。习题会出现这两种要求。</p>
 <p><a href="#N09">回到讲义</a></p>
 <p><a id="T28"></a></p>
 <h2 id="transcript-t28">T28 · 组合例题、自学与作业</h2>
 <p>原转写：01:17:13–录音末尾；课件：PDF p.57, 58, 59, 60, 61, 62, 63, 64。</p>
-<div class="segment-tools"><button type="button" data-seek="4633">原音定位 01:17:13（未核听）</button></div>
+<div class="segment-tools"><button type="button" data-seek="4633">原音定位 01:17:13</button></div>
 <details><summary>展开对应课件页</summary><figure><img loading="lazy" src="assets/slides/p-57.jpg" alt="课件 PDF 第 57 页"><figcaption>PDF 第 57 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-58.jpg" alt="课件 PDF 第 58 页"><figcaption>PDF 第 58 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-59.jpg" alt="课件 PDF 第 59 页"><figcaption>PDF 第 59 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-60.jpg" alt="课件 PDF 第 60 页"><figcaption>PDF 第 60 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-61.jpg" alt="课件 PDF 第 61 页"><figcaption>PDF 第 61 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-62.jpg" alt="课件 PDF 第 62 页"><figcaption>PDF 第 62 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-63.jpg" alt="课件 PDF 第 63 页"><figcaption>PDF 第 63 页</figcaption></figure><figure><img loading="lazy" src="assets/slides/p-64.jpg" alt="课件 PDF 第 64 页"><figcaption>PDF 第 64 页</figcaption></figure></details>
 
 <p>组合变换涉及平移、反褶和尺度。可以采用不同的操作次序，但一定记住，所有变换都相对于当前表达式的自变量t进行。这个地方很容易出错，不能光听，必须认真画几遍。</p>
 <p>例如给f(t)的三角波，要求画f(−t−1)。可以先把f(t)变成f(t−1)，再把整个表达式的t换成−t，得到f(−t−1)。也可以先得到f(−t)，再作相应时移得到目标。关键是每一步都针对t，而不是看到括号里一个负号就凭直觉移动。</p>
-<p><strong>编者注：</strong> 原文后一条路线中出现“f(−t+1)”的混乱表达。按PPT p.58，第二步应为把g(t)=f(−t)左移1，得到g(t+1)=f[−(t+1)]。不同次序需要相应改变参数，并不意味着原参数不变也可任意交换。原音尚待核听。</p>
 <p>其他例子和微分积分相对容易一些，大家自己学习。今天有几个与画图相关的作业，自己动手感受。再提醒一次，若选课太多、觉得很困难，要及早评估自己的时间安排。今天到这里，下课。</p>
-<p><strong>编者注：</strong> PPT p.64列作业1-3、1-4、1-5、1-10(a)(b)(c)、1-12单号，以及预习§1.4–§1.8；这里来自课件，不假称教师逐题念出。末段转写从1:18:00持续到录音末尾，结束秒数由播放器元数据另记，不能把最后一个转写起点当作结束时间。</p>
 <p><a href="#N10">回到讲义</a></p></article>
 <article id="sources" data-view="sources" hidden><h1 id="sources-_1">来源、覆盖与订正</h1>
-<p>S1课件65页文字全文读取，关键图像页视觉核验；S2转写全文重读，按28段整理。S3音频存在，未核听。G1第三版上册PDF17–30及56–58本轮视觉阅读，版次与L02同一指纹。</p>
+<p>此前编译记录：S1课件65页文字全文读取，关键图像页视觉核验；S2转写全文重读，按28段整理。S3音频存在，未核听。G1第三版上册PDF17–30及56–58已视觉阅读，版次与L02同一指纹。</p>
+<p>2026-09-22语言修订：采用v2.0.1，完整通读讲义与课堂回顾，调整教学衔接并归并正文中的编校说明。下列历史核验状态不因此升级；本轮新增核查与工程结果见<a href="QA_Report.md">验收记录</a>。</p>
 <h2 id="sources-_2">原始材料</h2>
 <table>
 <thead>
@@ -673,7 +665,7 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 </tr>
 <tr>
 <td>61–62</td>
-<td>课件自学微积分与加乘，标明跳变导数缺项</td>
+<td>课件自学微积分与加乘，解释跳变导数的负冲激箭头</td>
 <td><a href="#N11">N11</a></td>
 </tr>
 <tr>
@@ -725,8 +717,8 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 </tr>
 <tr>
 <td>1:08:00–1:09:22</td>
-<td>“负指数”“负数”</td>
-<td>复指数、复数s=σ+jω；重要术语已订</td>
+<td>“负指数”“负数”“基本的和函数”</td>
+<td>复指数、复数s=σ+jω；末一术语无法逐字恢复，保留待核听</td>
 <td>PPT49；G1 PDF26</td>
 </tr>
 <tr>
@@ -766,16 +758,31 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 <td>PPT58、逐步代入</td>
 </tr>
 <tr>
-<td>PPT61</td>
-<td>跳变后的导数图未画冲激</td>
-<td>讲义注明普通段图不完整，跳变须负冲激</td>
-<td>同页原函数及广义导数定义；后讲再展开</td>
+<td>PPT61（旧编译判断）</td>
+<td>旧讲义称导数图未画冲激</td>
+<td>本轮复看原图，τ处已有向下箭头；正文改为解释该负冲激</td>
+<td>第61页实际图像；从1降到0的跳变量为−1</td>
 </tr>
 </tbody>
 </table>
-<h2 id="sources-_5">教材调用</h2>
+<h2 id="sources-_5">整理方式与补充内容</h2>
+<p>本节汇总从学习正文移出的编校信息；关键订正以此前表格为准，避免在正文和记录中重复维护。</p>
+<ul>
+<li>课堂回顾保留28段实际讲解顺序、解释、例子、要求与有效问答，删除口头赘词、无意义重复和点名姓名。时间来自转写段落定位，可跨多页；没有核听后的精确切点。T28结尾按音频元数据确定，最后一个转写起点不是音频结束时间。原音尚未核听，学术状态为draft。</li>
+<li>N01/T01：作者姓名据课件第5页订正；课堂推荐第四版，配套资料为第三版上册，未确认跨版题面一致。T04具体日期冲突见订正表；T07合并重复纪律警告，保留诚信要求，未核实的处分细节未作为制度收录。</li>
+<li>N02/T09：RGB的三个输出分量与两个空间自变量分开；课堂回顾保留图像维数与通道讲解，详细概念辨析在讲义。第22–26页应用插图仅有课件依据，无逐图口述记录。N03的CT应用未涉及重建算法推导。</li>
+<li>N04/T16：原转写“时间被量化”后紧接“值被量化”的自我修正，整理为幅值量化；均匀抽样序号按整数定义，包含0，课件列举省略0不构成排除条件。</li>
+<li>N05/T17：周期延拓极限不作为非周期信号的周期定义。虚指数序列周期条件的推演是为复习补足的步骤；能量/功率等分类仅列后续学习方向。</li>
+<li>N06/T19：实指数的字母、指数和正时间常数按课件第46–47页规范书写；时间常数的数值解释依据第三版印刷第8–9页（PDF第24–25页）。本轮讲义明确非零正弦振幅K&gt;0，角频率大小与频率满足|ω|=2πf。</li>
+<li>N07/T20–T21：欧拉公式相加、相减的步骤在讲义补足；复指数展开采用实幅度系数K，明确该条件以对应原式的实部/虚部解释。术语订正见上表。</li>
+<li>N08/T22–T23：Sa(0)=1以极限补定义；词源疑点不作确定知识。sinc采用课件第50页的归一化。高斯参数解释依据课件第51页与教材PDF第27页，未加到课堂回顾中。本轮将高斯的对称性准确写为关于纵轴对称，并明确正脉冲取E&gt;0。</li>
+<li>N09/T25–T27：平移方向与实时反褶的适用范围见订正表；通用特征点方程是讲义补足的推导。尺度扩展条件补齐为0&lt;|a|&lt;1，排除a=0。</li>
+<li>N10–N11/T28：第58页为课堂主要例题；第59–62页依课堂要求自学，细算与微积分步骤在讲义补足。第61页旧版误判冲激缺项，本轮据原图订正，见上表；波形时间尺度明确为τ&gt;0。</li>
+<li>N12/T28：明确作业题号和预习范围来自课件第64页，转写末尾仅提到画图相关作业，未逐题口述。逐节自测为复习辅助，不属于课件指定作业。</li>
+</ul>
+<h2 id="sources-_6">教材调用</h2>
 <p><a href="../../Global/Textbook_Index.md">第三版目录</a>：公式条件复核PDF25–27；本讲作业1-4跨PDF56–57、1-10与1-12在PDF58。原页已持久缓存。课堂推荐第四版但档案仅有第三版，跨版题目仍须核对。</p>
-<h2 id="sources-_6">全文片段对应</h2>
+<h2 id="sources-_7">全文片段对应</h2>
 <table>
 <thead>
 <tr>
@@ -1014,7 +1021,7 @@ z(t)=\begin{cases}0,&amp;t&lt;-\tau,\\(t+\tau)^2/(2\tau),&amp;-\tau\le t&lt;0,\\
 </tr>
 </tbody>
 </table>
-<h2 id="sources-_7">验证边界</h2>
+<h2 id="sources-_8">验证边界</h2>
 <p>本次不修改 Raw。音频实际核听范围：无；凡有录音仅提供原音定位，订正依据为课件、转写上下文及注明的教材页。不能将本版 draft 当作教师审定版。</p></article><footer>课程资料 v2 · 内容状态 draft · 本地离线阅读</footer></main></div>
 <dialog id="lightbox"><button id="close-image" type="button">关闭图片 ×</button><img alt="放大课件图"><p></p></dialog>
 <noscript><style>article[hidden]{display:block!important}</style><p>脚本未启用：所有底稿仍可阅读，公式显示为 LaTeX。</p></noscript></body></html>
