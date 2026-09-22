@@ -869,6 +869,240 @@
       "ocr": false,
       "visual_verified": false,
       "verification_note": null
+    },
+    "109": {
+      "image": "p-109.png",
+      "image_sha256": "118944d15e55ef80fc568301923580390652e06df7afd1126783a1cf89307799",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "110": {
+      "image": "p-110.png",
+      "image_sha256": "f13e55b7fcf5c262eed40dc538c891a045fd23a2fc7a4bd71a61bb0b1dd19150",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "111": {
+      "image": "p-111.png",
+      "image_sha256": "30aa178af0079dfe2343a24dc14405c8e3b4a3c0d4a0daa1eb6e45bc4fa243a9",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "112": {
+      "image": "p-112.png",
+      "image_sha256": "60d45f460a3760037fa2c318867c06a0df9f5723fa2254f5b5d14736509adf68",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "113": {
+      "image": "p-113.png",
+      "image_sha256": "d806cb1a27f7c5393820d63758983b9354c1df79a4fdc21192cac7bf573f69fd",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "114": {
+      "image": "p-114.png",
+      "image_sha256": "9dff5c5ec4f6b2c7bae36d74907e9138b0c875d0a9c396b7d83eef0c84b21817",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "115": {
+      "image": "p-115.png",
+      "image_sha256": "33601bcd4a55795d75d158f5ad0e7b5e8e3941cdd5df302b2c4bb2aef58f9331",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "116": {
+      "image": "p-116.png",
+      "image_sha256": "8100bbce1d1727848d01593e1b6e654e36476b1e9aa370741bac365043bd4f94",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "117": {
+      "image": "p-117.png",
+      "image_sha256": "e10e850b293e43363cf3e4784ef288c83d2e3c5eb0277041da5e4e297ce6652c",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "118": {
+      "image": "p-118.png",
+      "image_sha256": "9d12cbbe24767f9db12efe6befb77a2881519c3896757aabe32ee7d88b6372f6",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "119": {
+      "image": "p-119.png",
+      "image_sha256": "598ad5a6bf7dec7f7266422d2bebd7ee927fb30f43f5889b5d3fd9647f8a961b",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "120": {
+      "image": "p-120.png",
+      "image_sha256": "ddaa8e451fa2c87eb77a7557c475aa20c8c3f1c3169d2292aa28f03fcb3924e1",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "121": {
+      "image": "p-121.png",
+      "image_sha256": "c09e8873f1dee277e7626f3e0cb05ced6205957a6efe25b81d2b484722371492",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "122": {
+      "image": "p-122.png",
+      "image_sha256": "b3130268bed65afc04b618755e93c70e7d240a77c372a9f424a39fc4012cd980",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "123": {
+      "image": "p-123.png",
+      "image_sha256": "49050a2a9e782208821f382fb162d91a57d3ee37eb69eca1cecca94ba66e3356",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "124": {
+      "image": "p-124.png",
+      "image_sha256": "f5cb6db312ba7ada5313d16f25a1e363d88175e18007b231079175837f1e6598",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "125": {
+      "image": "p-125.png",
+      "image_sha256": "c676f95e5a1abc3c25e5d7b96ef4a6f29404e731f944267d447b369b76eb7ead",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "126": {
+      "image": "p-126.png",
+      "image_sha256": "3870dcd891debda3952355fbe363a983cc381851d6fde8dbcb8ed5d62ccbd4f1",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "127": {
+      "image": "p-127.png",
+      "image_sha256": "11f686642b24b92aeade8c3bbf65e6cd9b16982aaf034fb998914b78ef689234",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "128": {
+      "image": "p-128.png",
+      "image_sha256": "c14efed2f6a70330abf8a7e0a23f994dd0e55d837d9d15fedb62c854ea7d40c1",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "129": {
+      "image": "p-129.png",
+      "image_sha256": "f348a006d3126d4215bef3ebd10ac362a1ae3d565fcd6a8ee07bed58c7e64893",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "130": {
+      "image": "p-130.png",
+      "image_sha256": "ac9e838915b4afc56ac8c1f39fc0a6afc3c5ad5e0aab714d89ada345ed5f1adb",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "186": {
+      "image": "p-186.png",
+      "image_sha256": "b954ead4164b9f24b4a35c5cc5fff7465a379d3cc5bb5b9ced756779301e0d91",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "187": {
+      "image": "p-187.png",
+      "image_sha256": "003cdb49bec9d5ccf5f023dcefcd966f2f4c37d2c897f8f83505874ca1b9dcc1",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "188": {
+      "image": "p-188.png",
+      "image_sha256": "f14478e7958f85bff61669182af41dbcfb5a67cdeac75e788726dff64402543b",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": "2026-09-22查看本页为3-7/3-8题图，无3-9题图；仅定位排除，非题面精读。"
+    },
+    "189": {
+      "image": "p-189.png",
+      "image_sha256": "0c2477f14655a3bc5d7eaba83edd209f735726fef527deb81f28d92436040a26",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
     }
   }
 }
