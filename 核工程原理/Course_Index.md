@@ -2,7 +2,7 @@
 type: course-index
 course: "核工程原理"
 title: "核工程原理"
-updated: "2026-09-22"
+updated: "2026-09-28"
 status: draft
 ---
 
@@ -11,7 +11,7 @@ status: draft
 > 默认阅读入口：[课程复习室](../index.html#course=核工程原理)；下方单讲网页保留为兼容入口。
 
 
-> 课程总入口。当前已收录前三节课；主教材已入库，参考教材保留为辅助核对来源；板书尚未提供。
+> 课程总入口。当前已收录前五节课；主教材已入库，参考教材保留为辅助核对来源；板书尚未提供。
 
 ## Global
 
@@ -62,13 +62,35 @@ status: draft
 - [验收报告](Lectures/L03/QA_Report.md)
 - 沿用L02的344页课件；25–28复习、29–85本讲范围，英文插页与重复页另记。
 
+#### Lecture 04 — 从中子通量到堆内重要核反应
+
+- Topics：2026-09-23；中子数密度与通量密度；反应率和平均截面；散射、俘获、裂变；铀钍转化及冷却剂活化
+- 状态：`draft`
+- [完整复习网页](Lectures/L04/Review.html)
+- [讲义底稿](Lectures/L04/Lecture_Notes.md)
+- [课堂回顾](Lectures/L04/Transcript_Corrected.md)
+- [来源与覆盖](Lectures/L04/Lecture_Source_Map.md)
+- [验收报告](Lectures/L04/QA_Report.md)
+- 继续沿用L02课件；81–85开场回顾，86与100–105课后自学，新授主范围87–149，150起留后续。
+
+#### Lecture 05 — 核反应截面的能量规律与裂变能量
+
+- Topics：2026-09-28；1/v规律与共振；散射/裂变截面；ν、α、η；裂变产额；功率与通量；能量回收与停堆余热
+- 状态：`draft`
+- [完整复习网页](Lectures/L05/Review.html)
+- [讲义底稿](Lectures/L05/Lecture_Notes.md)
+- [课堂回顾](Lectures/L05/Transcript_Corrected.md)
+- [来源与覆盖](Lectures/L05/Lecture_Source_Map.md)
+- [验收报告](Lectures/L05/QA_Report.md)
+- 继续沿用L02课件；新授PDF150–219，220起留待后续。原音未核听；仅本地归档。
+
 ## Planned Course Topics
 
 以下顺序来自第一节课课件中的课程安排，不表示相应内容已经完成编译。
 
 | Topic | Planned location | Current archive status |
 |---|---|---|
-| 核反应堆的核物理基础 | [L02开篇](Lectures/L02/Review.html#N06)、[L03续讲](Lectures/L03/Review.html#N01)，后续待归档 | partial |
+| 核反应堆的核物理基础 | [L02开篇](Lectures/L02/Review.html#N06)、[L03续讲](Lectures/L03/Review.html#N01)、[L04通量与重要反应](Lectures/L04/Review.html#N01)、[L05截面规律与裂变能量](Lectures/L05/Review.html#N01)，后续待归档 | partial |
 | 堆内中子的慢化 | 后续课程 | not compiled |
 | 中子的扩散 | 后续课程 | not compiled |
 | 反应堆临界理论 | 后续课程 | not compiled |
@@ -88,6 +110,8 @@ status: draft
 | 中国核能发展数据 | [讲义 N07](Lectures/L01/Review.html#N07) | [来源与疑点](Lectures/L01/Review.html#sources) |
 | 质量亏损与结合能 | [讲义 N09](Lectures/L02/Review.html#N09) | [来源与疑点](Lectures/L02/Review.html#sources) |
 | 平均结合能与聚变/裂变 | [讲义 N10](Lectures/L02/Review.html#N10) | [来源与疑点](Lectures/L02/Review.html#sources) |
+| 中子通量密度与反应率 | [讲义 N03](Lectures/L04/Review.html#N03)、[讲义 N04](Lectures/L04/Review.html#N04) | [来源与疑点](Lectures/L04/Review.html#sources) |
+| 散射、俘获与裂变 | [讲义 N06](Lectures/L04/Review.html#N06) | [来源与疑点](Lectures/L04/Review.html#sources) |
 
 ## 阅读与版本
 

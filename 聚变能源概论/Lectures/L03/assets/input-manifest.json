@@ -1,0 +1,25 @@
+{
+  "pages": 38,
+  "blocks": 100,
+  "audio_duration": 5508.24,
+  "files": [
+    {
+      "name": "7690368626402184153_record_audio.m4a",
+      "bytes": 82142369,
+      "sha256": "3d553f5e9ce4cdf1b804a65282d2b35774ac23c1ca41d9e39036e14e44c99885",
+      "matches_download": true
+    },
+    {
+      "name": "核聚变概念与相关原理讲解.txt",
+      "bytes": 73960,
+      "sha256": "13b97206c9a67e3374596940cc3a26602c8433acc801a198639d6de27f765732",
+      "matches_download": true
+    },
+    {
+      "name": "聚变能源概论2026L3.pdf",
+      "bytes": 3858757,
+      "sha256": "bda0829409d9f118b3a23dfffbf71ac37409dd817ee5e83dcda6210e3f800092",
+      "matches_download": true
+    }
+  ]
+}

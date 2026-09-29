@@ -1,0 +1,8 @@
+{
+  "inputs": {
+    "Lecture_Notes.md": "c157fb15b1a407551341d3b248447bd885027dff2c5e40337e00d10fc2c4205d",
+    "Transcript_Corrected.md": "a0479d1db29bce0714ee6cc9b5ceb7d58175e58e736ecc8d54c59cfecf8f053d",
+    "Lecture_Source_Map.md": "6883dc4940b51759e7d88c2305f83213785c8e969a88169e9e0f1e6bbff6fabc"
+  },
+  "renderer": "Markdown 3.8.2 + KaTeX 0.16.22"
+}

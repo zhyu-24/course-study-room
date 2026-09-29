@@ -9,7 +9,7 @@ status: draft
 > 默认阅读入口：[课程复习室](../index.html#course=聚变能源概论)；下方单讲网页保留为兼容入口。
 
 
-已收录L01课件、L02课件/录音/转写、用户拍摄的教材前三章（目录＋正文1–29）及目录VI补图。L01仍无录音/转写；L02按2026-09-21课堂材料整理，可定位播放。讲义按知识主线组织解释、推导和例题。
+已收录L01课件、L02及L03课件/录音/转写、用户拍摄的教材第一至四章（目录＋正文1–51）及目录VI补图。L01仍无录音/转写；L02按2026-09-21、L03按2026-09-28课堂材料整理，均可定位播放。讲义按知识主线组织解释、推导和例题。
 
 ## 课程定位
 
@@ -33,11 +33,12 @@ status: draft
 |---|---|---|---|
 | L01 | 太阳和恒星中的核聚变 | draft | [Lecture_Notes](Lectures/L01/Lecture_Notes.md) · [Source_Map](Lectures/L01/Lecture_Source_Map.md) |
 | L02 | 可用的聚变反应 | draft | [完整复习网页](Lectures/L02/Review.html) · [Lecture_Notes](Lectures/L02/Lecture_Notes.md) · [课堂回顾](Lectures/L02/Transcript_Corrected.md) · [Source_Map](Lectures/L02/Lecture_Source_Map.md) · [QA](Lectures/L02/QA_Report.md) |
+| L03 | 热核聚变与聚变系统中的功率产生和损失 | draft | [完整复习网页](Lectures/L03/Review.html) · [Lecture_Notes](Lectures/L03/Lecture_Notes.md) · [课堂回顾](Lectures/L03/Transcript_Corrected.md) · [Source_Map](Lectures/L03/Lecture_Source_Map.md) · [QA](Lectures/L03/QA_Report.md) |
 
 ## 当前资料边界
 
-- 已归档：L01课件44页；L02课件43页、转写91个时间锚点、录音5393.34秒（89:53.34）；教材拍摄PDF33页（目录与正文1–29）；目录VI完整补图。
-- 未提供：L01课堂录音/转写；板书图片、教材版权页、第4章及以后正文、附录A核数据、课件所提独立参考材料“fusion reaction”、完整课程安排。
+- 已归档：L01课件44页；L02课件43页、转写91个时间锚点、录音5393.34秒（89:53.34）；L03课件38页、转写100个时间锚点、录音5508.24秒（91:48.24）；教材前三章拍摄PDF33页（目录与正文1–29）、第四章22页（正文30–51）；第四章转正版及55页合订本；目录VI完整补图。
+- 未提供：L01课堂录音/转写；板书图片、教材版权页、第5章及以后正文、附录A核数据、课件所提独立参考材料“fusion reaction”、完整课程安排。
 - 后续每讲新增Lectures/Lxx；先复用Global索引与缓存，再按所需范围补入教材页。
 
 ## 阅读与版本

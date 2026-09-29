@@ -1103,6 +1103,321 @@
       "ocr": false,
       "visual_verified": true,
       "verification_note": "2026-09-22 L04：实际打开本页图核验公式/条件/题面；非全书核验。"
+    },
+    "131": {
+      "image": "p-131.png",
+      "image_sha256": "0c45913f0ea36fa6cb99451e46e66ef83981f3646c930c9c4bf053f9aa9bff74",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "132": {
+      "image": "p-132.png",
+      "image_sha256": "79f9e377beea4e1d2e369b2f1aa60e41a02bd8d3a04734acc40bb915d566062f",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "133": {
+      "image": "p-133.png",
+      "image_sha256": "3d0f799e5f11f288702a145f3cf91d1fd231efb44f00266eff80467dfb93dd25",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "134": {
+      "image": "p-134.png",
+      "image_sha256": "4441ee060664dd1129b7d1ea7d1e7a083488577a5b8165237dbcdaf15d902ef1",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "135": {
+      "image": "p-135.png",
+      "image_sha256": "758d28dd22636db22ee93fbf24fb49cd5f81475918af3bf1bd76bf9acad6b596",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "136": {
+      "image": "p-136.png",
+      "image_sha256": "8b1ae3a82f2bfcb52e5ec62e5bd4b6a096a820ee6077fef37b7b2757ca88f95a",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "137": {
+      "image": "p-137.png",
+      "image_sha256": "e83889eacd30cdca07172ce0e8a3ce50a7d4b9323028d10822aee415cccf7775",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "138": {
+      "image": "p-138.png",
+      "image_sha256": "47e56739e7e920d9cc68206ddba42a9f7397d05b93a421058eaf9b7935098e4e",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "139": {
+      "image": "p-139.png",
+      "image_sha256": "d3812afffa68d46b775b216178e29b4ac9887afd1571838e5e5b84dbf54d7a18",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "140": {
+      "image": "p-140.png",
+      "image_sha256": "ba78121baaad1ac01f55068f961f6c2714270654072b2ef707416d7c434dabe9",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "141": {
+      "image": "p-141.png",
+      "image_sha256": "79beff95cd4ed7ebb1007829db5e13b3fe872d841519c7bfc1542a55b5c44439",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "142": {
+      "image": "p-142.png",
+      "image_sha256": "1f1442567bd416183a4d388993ad262d1e6db9d6a0ef2716f6b29b37b7ffa108",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "143": {
+      "image": "p-143.png",
+      "image_sha256": "63e918fd88b508b3393a2c89661aecab246053a79abd0f37566743fea3589206",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "144": {
+      "image": "p-144.png",
+      "image_sha256": "1d4c4981a540363aa79e45972e80e67123aab06ac5a1fcb6253ba71741da366d",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "145": {
+      "image": "p-145.png",
+      "image_sha256": "49aba89857a0c11e8bfa7726b82f682f9b6f69b1404a5478b600e232daf9cd59",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "146": {
+      "image": "p-146.png",
+      "image_sha256": "0f2d26d66f6f5f95f8076989e2e25a46bca69fa87cb6a6a7d7ef73f1e3277b3f",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "147": {
+      "image": "p-147.png",
+      "image_sha256": "2d0505fc43903184a842f8d5fd9ed12c8e915d6d93b0cd03d4783f9a3a3d5062",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "148": {
+      "image": "p-148.png",
+      "image_sha256": "cbc6ddfd2eed7004db581e0119cc191ccc49a35f1ba312bc8686185d55f8f575",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "149": {
+      "image": "p-149.png",
+      "image_sha256": "d57f84d61620666b5e2db04cd88dfb4abf58adb7283f56006ebecd3c506dd170",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "150": {
+      "image": "p-150.png",
+      "image_sha256": "8568497ddf0d591de8ac591f5466a4675334a130897862660ee9459159ac5e32",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "151": {
+      "image": "p-151.png",
+      "image_sha256": "b4654f40cfe3ec59420ae4a2c9bd56c260cc5dd80643aabe1fb82ceb57cb6daa",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "152": {
+      "image": "p-152.png",
+      "image_sha256": "da5d31b078869c7ef76f8cfbaefa0c7ed11af376d3e968a7198637ce5c32acc3",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "153": {
+      "image": "p-153.png",
+      "image_sha256": "b7841a701ccbc396f0a50af67dffb349850c4fe465228a9a753f8b4c1b19de26",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "154": {
+      "image": "p-154.png",
+      "image_sha256": "0c2f55f1a0ad9676d1e780b6b6f6a9ea09c2d73feecd3ad54af12d989915f0a2",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "155": {
+      "image": "p-155.png",
+      "image_sha256": "1aefc295786927f5f069c3d0d10a87da7e9689b606c64cea26b23e2c670d37e1",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "156": {
+      "image": "p-156.png",
+      "image_sha256": "5522140d9d4aaf3202df11021b51d72d0ddbbf728bd60386c289605b04ff732e",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "157": {
+      "image": "p-157.png",
+      "image_sha256": "e5bb28a2411cc18de8b19b6b83a673a197ee8078c01ed28fde978f166b4b2855",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
+    },
+    "158": {
+      "image": "p-158.png",
+      "image_sha256": "b44b268f6899b33953b1d9c0144fc14e50a1a0d9a5f81cf89b8ffad347751f30",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "159": {
+      "image": "p-159.png",
+      "image_sha256": "59b8e3fec818c0b54d6993d00a7ea810242ddd05722b84d5496ed7da78ca8b27",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "190": {
+      "image": "p-190.png",
+      "image_sha256": "d4c77a33c819bcf115af095175cb990a14076d8b9d8d7ad9b0b40bc8b396f1d7",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "191": {
+      "image": "p-191.png",
+      "image_sha256": "26c7ae4a63d3d8278ef49ad18bf047c56f69bf2693109027450dcaff0f8caa04",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "192": {
+      "image": "p-192.png",
+      "image_sha256": "ad98bb39c923f3dd735ed4031bf9ef479c9d0c152d728c69c2af234036b290e3",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "193": {
+      "image": "p-193.png",
+      "image_sha256": "f3d787899070d018c25624860de4764d3d05ce8e30ce692f4073b8e3dfc38f49",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "194": {
+      "image": "p-194.png",
+      "image_sha256": "ead4dcfeea9a14734dc9233a842c500661dff92f780a9c721d9bfd897e5d0af9",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "195": {
+      "image": "p-195.png",
+      "image_sha256": "b0010dc56b8377f1dffe7c6a3e0cc741c6c3a439709ae403e88c6176b940ff2c",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-29 L05：原页视觉核对；134–141典型变换，154–157频移/微积分，195指定3-29题面；非全文OCR。"
     }
   }
 }

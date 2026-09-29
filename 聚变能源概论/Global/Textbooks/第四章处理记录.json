@@ -1,0 +1,39 @@
+{
+  "source_sha256": "ccd2b2157e4daa1d30a5192ee51b1cd110ea6330db25049228e3cb27c1c29053",
+  "source_original_sha256": "ccd2b2157e4daa1d30a5192ee51b1cd110ea6330db25049228e3cb27c1c29053",
+  "rotated_pdf_pages_ccw90": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    17,
+    18
+  ],
+  "mapping": "chapter PDF page + 29 = printed page; merged PDF page = printed page + 4",
+  "corrected_sha256": "d248b10f6ebab2709f8fd0c88bbf8dcc49ef995fe0f08f00bca6fcdb8640178e",
+  "merged_sha256": "6f4a4c36a752d12428cda7c64ac01047c738b4f7219bc110065fd175e92d805f",
+  "merged_pages": 55,
+  "originals_preserved": true,
+  "validation": {
+    "source_pixels_preserved_all_22": true,
+    "merged_first_33_page_contents_unchanged": true,
+    "merged_last_22_pixels_match": true,
+    "page_labels_verified": true,
+    "all_22_directions_visually_checked": true,
+    "printed_page_inferred": [
+      30,
+      51
+    ],
+    "ocr": false,
+    "offline_portal_checks": 129,
+    "offline_views": 28,
+    "textbook_index_visual_check": "2026-09-28 desktop",
+    "cache_reuse_pages": [
+      8,
+      21,
+      22
+    ]
+  }
+}

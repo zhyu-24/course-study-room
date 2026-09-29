@@ -3,7 +3,7 @@ type: course-index
 course: "信号与系统"
 title: "信号与系统"
 term: "2026年秋季学期"
-updated: "2026-09-22"
+updated: "2026-09-29"
 status: draft
 ---
 
@@ -72,6 +72,17 @@ status: draft
 - [课堂回顾](Lectures/L04/Transcript_Corrected.md)
 - [来源、覆盖与订正](Lectures/L04/Lecture_Source_Map.md)
 - [验收报告](Lectures/L04/QA_Report.md)
+
+#### Lecture 05 — 傅里叶变换、典型信号与运算性质
+
+- 日期：2026-09-29。
+- Topics：级数到变换；连续频谱；指数、矩形、三角、升余弦与高斯；广义变换；对偶、奇偶、展缩、时移、频移和微积分。
+- 状态：`draft`；19主题讲义、43段课堂回顾；原音未核听，仅本地归档。
+- [完整复习网页](Lectures/L05/Review.html)
+- [讲义底稿](Lectures/L05/Lecture_Notes.md)
+- [课堂回顾](Lectures/L05/Transcript_Corrected.md)
+- [来源、逐页覆盖与订正](Lectures/L05/Lecture_Source_Map.md)
+- [验收报告](Lectures/L05/QA_Report.md)
 
 ## Major Topics
 

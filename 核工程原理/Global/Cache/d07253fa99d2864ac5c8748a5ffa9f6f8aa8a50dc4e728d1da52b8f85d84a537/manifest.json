@@ -456,6 +456,204 @@
       "ocr": false,
       "visual_verified": false,
       "verification_note": null
+    },
+    "39": {
+      "image": "p-039.png",
+      "image_sha256": "ff790fcfcaec74b2bbf46ee62742b3e4ba351f9eb1896041a3f2ffefb059cbb2",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "40": {
+      "image": "p-040.png",
+      "image_sha256": "5030af3fa803779cef0e54c20c4661203ab8876dffba4e71954a33c9c55accd5",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "41": {
+      "image": "p-041.png",
+      "image_sha256": "8663295bf7488c7c3ffa58bf9016ef9f98b0a03018a5dc7b5657790a3b5c0cf3",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-26 L04: opened rendered original page and checked definitions/formulas/figure relevant to this lecture."
+    },
+    "42": {
+      "image": "p-042.png",
+      "image_sha256": "9944ea5b33fc41dbbd33f07ffa0f9cc5bdd0c9634ff4870537246951b8e040de",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-26 L04: opened rendered original page and checked definitions/formulas/figure relevant to this lecture."
+    },
+    "50": {
+      "image": "p-050.png",
+      "image_sha256": "8742fa8247211f2dde0638a65b53ad0d387889e9343a6bdc5e6279bd84a3a012",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "51": {
+      "image": "p-051.png",
+      "image_sha256": "61508d05c62be3cda519dc14fa19e3d9ae7086a7538daf5ab111636d430291ac",
+      "rendered": true,
+      "text_extracted": false,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-26 L04: opened rendered original page and checked definitions/formulas/figure relevant to this lecture."
+    },
+    "54": {
+      "image": "p-054.png",
+      "image_sha256": "3ea79ca2377b59bc483d4b997e9d8afe19b26871176276e0bb17b7b448cbe5c3",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-26 L04: opened rendered original page and checked definitions/formulas/figure relevant to this lecture."
+    },
+    "55": {
+      "image": "p-055.png",
+      "image_sha256": "45ea2f03543da4b0144be5032b345a11734818d263cae581986e8797e93fe896",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-28 L05：核对公式、图表或例题原页；不等同整章学术复核。"
+    },
+    "56": {
+      "image": "p-056.png",
+      "image_sha256": "627781bed08a77da563e1709b67686b5a054189e432e0db95be793cbf6d0cc4e",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "57": {
+      "image": "p-057.png",
+      "image_sha256": "fa0bc7bb4141a10125028d5121b3d6c99bd44f69e5ca0baf9fd7d6267c5b0c2f",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "58": {
+      "image": "p-058.png",
+      "image_sha256": "98cac43af279245b7f90c8e35c7934cf9da85759439db6b2b0eec8e9c14f5759",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-28 L05：核对公式、图表或例题原页；不等同整章学术复核。"
+    },
+    "59": {
+      "image": "p-059.png",
+      "image_sha256": "3eda5e743d6be72f6fc8c9f93df7efc0fccb610f5fd702db6613db56d7cc1a22",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "60": {
+      "image": "p-060.png",
+      "image_sha256": "13c2b20124ec45d483120db881ba4de31994ba921612039d8408242a6c1178b6",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "61": {
+      "image": "p-061.png",
+      "image_sha256": "98f0ea25546bf08bd102047983beeb66427f8441297cc47a223dacc05d423211",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "62": {
+      "image": "p-062.png",
+      "image_sha256": "e9a694ccc83a447883a003fa4c753d841154e18a8c6fd883d78d1fa3f72ecd20",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "63": {
+      "image": "p-063.png",
+      "image_sha256": "7c06e6d95dc56fe436f8fff2ab8275e68baa4ee9c46c13b35e39db8225ee2fa1",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "64": {
+      "image": "p-064.png",
+      "image_sha256": "bab7aa15d9025e4d5008c7fc277d2f9c7a88b8542048ac8f0acee4fa6d822590",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
+    },
+    "65": {
+      "image": "p-065.png",
+      "image_sha256": "c689a09f130539795cf350098fc2254b5a9a596ad27cfa05021fef4a6f4fb408",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-28 L05：核对公式、图表或例题原页；不等同整章学术复核。"
+    },
+    "162": {
+      "image": "p-162.png",
+      "image_sha256": "1236a537f14c6a6e69ebf1b4cddc416e35860aa5d7bed6f637f063434978b5f3",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-28 L05：核对公式、图表或例题原页；不等同整章学术复核。"
+    },
+    "163": {
+      "image": "p-163.png",
+      "image_sha256": "726ef75561843c30313bacee049c0395e10bfe22c0098ee5d09931ae08568674",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-28 L05：核对公式、图表或例题原页；不等同整章学术复核。"
+    },
+    "165": {
+      "image": "p-165.png",
+      "image_sha256": "0d499b4a39bd5f1cd5f25ecbccdd5d61f8cdb14a63cef943f3b0678bc980f96c",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": true,
+      "verification_note": "2026-09-28 L05：核对公式、图表或例题原页；不等同整章学术复核。"
+    },
+    "166": {
+      "image": "p-166.png",
+      "image_sha256": "b46eec5c6f0c21c5c1fc37ea1d1bf2ca9a1c8d7d3b5a89e32dbb93c38dc7c33b",
+      "rendered": true,
+      "text_extracted": true,
+      "ocr": false,
+      "visual_verified": false,
+      "verification_note": null
     }
   }
 }
